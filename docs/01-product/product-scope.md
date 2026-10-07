@@ -5,15 +5,10 @@
 ## 2. In Scope
 
 ### 2.1. Student Request Submission
-
 ### 2.2. Request Tracking
-
 ### 2.3. Request Classification & Assignment
-
 ### 2.4. Request Processing
-
 ### 2.5. Management & Reporting
-
 ### 2.6. Security & Privacy
 
 ## 3. Out of Scope
