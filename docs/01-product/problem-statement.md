@@ -1,12 +1,8 @@
 # Problem Statement
 
-## 1. Current Situation
+## Problems
 
-...
-
-## 2. Problems
-
-### 2.1. Student Problems
+### 1. Student Problems
 
 - Không biết yêu cầu đã được tiếp nhận hay chưa.
 - Không biết ai đang phụ trách.
@@ -14,7 +10,7 @@
 - Phải liên hệ nhiều lần để hỏi tiến độ.
 - Có thể nhận được câu trả lời không thống nhất.
 
-### 2.2. Staff Problems
+### 2. Staff Problems
 
 - Yêu cầu đến từ nhiều kênh.
 - Khó theo dõi và phân công.
@@ -23,7 +19,7 @@
 - Khó tra cứu lịch sử xử lý.
 - Báo cáo phải được tổng hợp thủ công.
 
-### 2.3. Management Problems
+### 3. Management Problems
 
 - Không có cái nhìn tổng quan về số lượng yêu cầu đang xử lý.
 - Khó theo dõi thời gian xử lý trung bình.
