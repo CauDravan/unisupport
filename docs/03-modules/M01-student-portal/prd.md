@@ -15,7 +15,7 @@ Cổng dành cho sinh viên để **gửi, theo dõi và tương tác với yêu
 * Chọn loại yêu cầu.
 * Nhập tiêu đề và nội dung yêu cầu.
 * Đính kèm tệp nếu cần.
-* Gửi yêu cầu và nhận mã định danh.
+* Gửi yêu cầu và nhận xác nhận rằng yêu cầu đã được tiếp nhận.
 
 ### 2. Track Request
 
@@ -45,6 +45,6 @@ Cổng dành cho sinh viên để **gửi, theo dõi và tương tác với yêu
 
 ## Related Requirements
 
-* [FR-S1 – Gửi yêu cầu hỗ trợ](../../05-requirements/functional-requirements.md#fr-s1-gửi-yêu-cầu-hỗ-trợ)
-* [FR-S2 – Theo dõi hành trình yêu cầu](../../05-requirements/functional-requirements.md#fr-s2-theo-dõi-hành-trình-yêu-cầu)
+* [FR-S1 – Request Submission](../../05-requirements/functional-requirements.md#fr-s1-gửi-yêu-cầu-hỗ-trợ)
+* [FR-S2 – Request Tracking & Timeline](../../05-requirements/functional-requirements.md#fr-s2-theo-dõi-hành-trình-yêu-cầu)
 * [FR-S3 – Cơ chế tương tác và bổ sung thông tin](../../05-requirements/functional-requirements.md#fr-s3-cơ-chế-tương-tác--bổ-sung-thông-tin)
