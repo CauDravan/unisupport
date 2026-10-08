@@ -6,9 +6,9 @@ Module hỗ trợ **kiểm soát quyền truy cập và bảo vệ các chức n
 
 ## Users
 
-* Sinh viên
-* Nhân viên
-* Ban quản lý
+* Student
+* Staff
+* Management
 
 ## Main capabilities
 
@@ -18,9 +18,9 @@ Hệ thống phân quyền người sử dụng dựa trên vai trò được c�
 
 Mỗi vai trò chỉ được phép truy cập và thực hiện các chức năng phù hợp với quyền của mình:
 
-* **Sinh viên:** gửi yêu cầu, xem các yêu cầu của mình và cung cấp thêm thông tin hoặc phản hồi.
-* **Nhân viên:** xem các yêu cầu được phân công, phân loại, phân công hoặc chuyển yêu cầu, cập nhật trạng thái và hoàn tất xử lý.
-* **Ban quản lý:** truy cập dashboard, xem báo cáo và quản lý người dùng hoặc vai trò.
+* **Student:** gửi yêu cầu, xem các yêu cầu của mình và cung cấp thêm thông tin hoặc phản hồi.
+* **Staff:** xem các yêu cầu được phân công, phân loại, phân công hoặc chuyển yêu cầu, cập nhật trạng thái và hoàn tất xử lý.
+* **Management:** truy cập dashboard, xem báo cáo và quản lý người dùng hoặc vai trò.
 
 ### 2. Access Restriction
 
@@ -28,9 +28,9 @@ Hệ thống phải ngăn người sử dụng truy cập các chức năng khô
 
 Ví dụ:
 
-* Sinh viên không được truy cập các chức năng xử lý yêu cầu dành cho Nhân viên.
-* Nhân viên không được truy cập các chức năng quản lý dành cho Ban quản lý nếu không được cấp quyền.
-* Ban quản lý có thể truy cập các chức năng quản lý theo quyền được cấp.
+* Student không được truy cập các chức năng xử lý yêu cầu dành cho Staff.
+* Staff không được truy cập các chức năng quản lý dành cho Management nếu không được cấp quyền.
+* Management có thể truy cập các chức năng quản lý theo quyền được cấp.
 
 ### 3. Activity Logging
 

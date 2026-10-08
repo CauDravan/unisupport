@@ -3,7 +3,7 @@
 ## Request Status
 
 * Mỗi yêu cầu chỉ có một trạng thái hiện tại.
-* Yêu cầu có thể chuyển từ **"Chờ bổ sung thông tin"** trở lại **"Đang xử lý"** sau khi sinh viên cung cấp đầy đủ thông tin được yêu cầu.
+* Yêu cầu có thể chuyển từ **"Chờ bổ sung thông tin"** trở lại **"Đang xử lý"** sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
 
 ## Request Priority
 
@@ -18,4 +18,4 @@
 
 ## Additional Information
 
-* Khi yêu cầu chuyển sang trạng thái **"Chờ bổ sung thông tin"**, sinh viên cần được thông báo để cung cấp thông tin cần thiết.
+* Khi yêu cầu chuyển sang trạng thái **"Chờ bổ sung thông tin"**, Student cần được thông báo để cung cấp thông tin cần thiết.

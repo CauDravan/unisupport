@@ -6,8 +6,8 @@ Quy trình này mô tả cách **Staff** phân loại request đã được ti�
 
 ## 2. Actors
 
-* **Staff**: kiểm tra thông tin request, phân loại request và assign cho Staff phù hợp.
-* **System**: hiển thị request cần xử lý, lưu thông tin phân loại và assignment, đồng thời cập nhật lịch sử request.
+**Primary Actor:** Staff
+**System:** UniSupport
 
 ## 3. Trigger
 
@@ -27,14 +27,14 @@ Quy trình bắt đầu khi một request mới đã được hệ thống tiế
 * Subject
 * Description
 * Attachment (nếu có)
-* Thông tin sinh viên
+* Thông tin Student
 * Thông tin Department và Staff có liên quan
 
 ## 6. Main Flow
 
 ### Step 1 — Review Request
 
-Staff mở request và kiểm tra các thông tin do sinh viên cung cấp.
+Staff mở request và kiểm tra các thông tin do Student cung cấp.
 
 ### Step 2 — Classify Request
 

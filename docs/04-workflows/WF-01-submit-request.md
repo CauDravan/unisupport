@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-Mô tả quy trình sinh viên gửi một yêu cầu hỗ trợ vào UniSupport và nhận xác nhận rằng yêu cầu đã được hệ thống tiếp nhận.
+Mô tả quy trình Student gửi một yêu cầu hỗ trợ vào UniSupport và nhận xác nhận rằng yêu cầu đã được hệ thống tiếp nhận.
 
 ## 2. Actors
 
@@ -11,17 +11,17 @@ Mô tả quy trình sinh viên gửi một yêu cầu hỗ trợ vào UniSupport
 
 ## 3. Trigger
 
-Sinh viên cần gửi một yêu cầu hỗ trợ đến nhà trường.
+Student cần gửi một yêu cầu hỗ trợ đến nhà trường.
 
 ## 4. Preconditions
 
-* Sinh viên có thể truy cập UniSupport.
-* Sinh viên đang ở Student Portal.
-* Sinh viên có các thông tin cần thiết để mô tả yêu cầu.
+* Student có thể truy cập UniSupport.
+* Student đang ở Student Portal.
+* Student có các thông tin cần thiết để mô tả yêu cầu.
 
 ## 5. Input
 
-Sinh viên cung cấp:
+Student cung cấp:
 
 * Request Type
 * Subject
@@ -40,35 +40,35 @@ Các loại yêu cầu có thể bao gồm:
 
 ### Step 1 — Open Request Form
 
-Sinh viên mở chức năng **Submit Request** trên Student Portal.
+Student mở chức năng **Submit Request** trên Student Portal.
 
 ### Step 2 — Select Request Type
 
-Sinh viên chọn loại yêu cầu phù hợp với vấn đề cần hỗ trợ.
+Student chọn loại yêu cầu phù hợp với vấn đề cần hỗ trợ.
 
 ### Step 3 — Enter Request Information
 
-Sinh viên nhập các thông tin bắt buộc:
+Student nhập các thông tin bắt buộc:
 
 * Subject
 * Request Type
 * Description
 
-Sinh viên có thể cung cấp thêm thông tin cần thiết để nhân viên hiểu và xử lý yêu cầu.
+Student có thể cung cấp thêm thông tin cần thiết để Staff hiểu và xử lý yêu cầu.
 
 ### Step 4 — Attach Supporting Documents
 
-Sinh viên có thể đính kèm các tài liệu liên quan, chẳng hạn như hình ảnh hoặc PDF.
+Student có thể đính kèm các tài liệu liên quan, chẳng hạn như hình ảnh hoặc PDF.
 
 ### Step 5 — Submit Request
 
-Sinh viên kiểm tra thông tin và gửi yêu cầu.
+Student kiểm tra thông tin và gửi yêu cầu.
 
 Hệ thống kiểm tra các trường thông tin bắt buộc trước khi tạo request.
 
 ### Step 6 — Validate Request
 
-Nếu thông tin bắt buộc còn thiếu, hệ thống không tạo request và thông báo cho sinh viên biết thông tin cần bổ sung.
+Nếu thông tin bắt buộc còn thiếu, hệ thống không tạo request và thông báo cho Student biết thông tin cần bổ sung.
 
 Nếu thông tin hợp lệ, hệ thống tiếp tục tạo request.
 
@@ -99,12 +99,12 @@ Request bắt đầu ở trạng thái:
 
 ### A1 — Missing Required Information
 
-Nếu sinh viên chưa nhập đầy đủ thông tin bắt buộc:
+Nếu Student chưa nhập đầy đủ thông tin bắt buộc:
 
 1. Hệ thống xác định các trường còn thiếu.
-2. Hệ thống hiển thị thông báo cho sinh viên.
-3. Sinh viên bổ sung thông tin.
-4. Sinh viên gửi lại request.
+2. Hệ thống hiển thị thông báo cho Student.
+3. Student bổ sung thông tin.
+4. Student gửi lại request.
 
 ### A2 — Attachment Validation Failed
 
@@ -112,8 +112,8 @@ Nếu tệp đính kèm không đáp ứng yêu cầu của hệ thống:
 
 1. Hệ thống từ chối tệp không hợp lệ.
 2. Hệ thống thông báo lý do.
-3. Sinh viên có thể xóa tệp hoặc chọn tệp khác.
-4. Sinh viên tiếp tục gửi request.
+3. Student có thể xóa tệp hoặc chọn tệp khác.
+4. Student tiếp tục gửi request.
 
 ## 8. Postconditions
 
@@ -121,14 +121,14 @@ Nếu tệp đính kèm không đáp ứng yêu cầu của hệ thống:
 
 * Request được tạo thành công.
 * Request có một Request ID duy nhất.
-* Request được lưu với thông tin do sinh viên cung cấp.
+* Request được lưu với thông tin do Student cung cấp.
 * Request có trạng thái **Đã tiếp nhận**.
-* Sinh viên biết request đã được hệ thống tiếp nhận.
+* Student biết request đã được hệ thống tiếp nhận.
 
 ### Failed
 
 * Request không được tạo.
-* Thông tin sinh viên nhập vẫn có thể được giữ lại trên form để sinh viên chỉnh sửa và gửi lại.
+* Thông tin Student nhập vẫn có thể được giữ lại trên form để Student chỉnh sửa và gửi lại.
 
 ## 9. Business Rules
 
@@ -136,20 +136,20 @@ Nếu tệp đính kèm không đáp ứng yêu cầu của hệ thống:
 * Mỗi request phải có một Request ID.
 * Request mới bắt đầu ở trạng thái **Đã tiếp nhận**.
 * Attachment phải được liên kết với request tương ứng.
-* Sinh viên chỉ có thể tạo request cho tài khoản của mình.
+* Student chỉ có thể tạo request cho tài khoản của mình.
 * Request và dữ liệu liên quan phải được bảo vệ theo quyền truy cập của người dùng.
 
 ## 10. Expected Outcome
 
-Sinh viên gửi thành công một request và nhận được **Request ID** để sử dụng cho việc theo dõi request trong các workflow tiếp theo.
+Student gửi thành công một request và nhận được **Request ID** để sử dụng cho việc theo dõi request trong các workflow tiếp theo.
 
 ## 11. Related Requirements
 
 * **FR-S1 — Request Submission**
 * **FR-S2 — Request Tracking**
-* **AC-01 — Sinh viên gửi yêu cầu đầy đủ**
-* **AC-02 — Sinh viên gửi thông tin chưa đầy đủ**
-* **AC-10 — Sinh viên kiểm tra yêu cầu**
+* **AC-01 — Student gửi yêu cầu đầy đủ**
+* **AC-02 — Student gửi thông tin chưa đầy đủ**
+* **AC-10 — Student kiểm tra yêu cầu**
 
 ## 12. Next Workflow
 

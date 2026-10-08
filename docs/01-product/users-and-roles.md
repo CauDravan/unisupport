@@ -18,7 +18,7 @@ UniSupport phục vụ ba nhóm người dùng chính:
 - Tiếp nhận và xem xét yêu cầu.
 - Phân loại và phân công yêu cầu.
 - Xử lý và cập nhật tiến độ.
-- Trao đổi với sinh viên.
+- Trao đổi với Student.
 - Duy trì lịch sử xử lý.
 
 ## 3. Management

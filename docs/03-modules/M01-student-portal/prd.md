@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Cổng dành cho sinh viên để **gửi, theo dõi và tương tác với yêu cầu hỗ trợ**.
+Cổng dành cho Student để **gửi, theo dõi và tương tác với yêu cầu hỗ trợ**.
 
 ## Users
 
-* Sinh viên
+* Student
 
 ## Main capabilities
 
@@ -25,7 +25,7 @@ Cổng dành cho sinh viên để **gửi, theo dõi và tương tác với yêu
 
 ### 3. Provide Additional Information
 
-* Nhận thông báo khi nhân viên yêu cầu bổ sung thông tin.
+* Nhận thông báo khi Staff yêu cầu bổ sung thông tin.
 * Cung cấp thông tin bổ sung cho yêu cầu.
 
 ### 4. Receive Notifications

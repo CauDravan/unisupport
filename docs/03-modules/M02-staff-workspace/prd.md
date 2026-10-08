@@ -2,19 +2,19 @@
 
 ## Purpose
 
-Không gian làm việc dành cho nhân viên để **tiếp nhận, phân loại, phân công và xử lý các yêu cầu hỗ trợ** được gửi đến phòng ban.
+Không gian làm việc dành cho Staff để **tiếp nhận, phân loại, phân công và xử lý các yêu cầu hỗ trợ** được gửi đến phòng ban.
 
 ## Users
 
-* Nhân viên
+* Staff
 
 ## Main capabilities
 
 ### 1. View Request Queue
 
-Nhân viên có thể xem các yêu cầu thuộc phòng ban của mình trên một giao diện tập trung. Danh sách hiển thị các thông tin cần thiết để nhân viên xác định yêu cầu cần xử lý.
+Staff có thể xem các yêu cầu thuộc phòng ban của mình trên một giao diện tập trung. Danh sách hiển thị các thông tin cần thiết để Staff xác định yêu cầu cần xử lý.
 
-Nhân viên có thể:
+Staff có thể:
 
 * Lọc yêu cầu theo mức độ ưu tiên.
 * Lọc yêu cầu theo trạng thái.
@@ -22,20 +22,20 @@ Nhân viên có thể:
 
 ### 2. Classify and Assign Request
 
-Nhân viên có thể phân loại yêu cầu và xác định phòng ban hoặc nhân viên chịu trách nhiệm xử lý.
+Staff có thể phân loại yêu cầu và xác định phòng ban hoặc Staff chịu trách nhiệm xử lý.
 
-Nhân viên có thể:
+Staff có thể:
 
 * Xác định loại yêu cầu.
 * Xác định mức độ ưu tiên.
-* Phân công yêu cầu cho nhân viên phù hợp.
+* Phân công yêu cầu cho Staff phù hợp.
 * Theo dõi người hoặc phòng ban đang chịu trách nhiệm.
 
 ### 3. Process Request
 
-Nhân viên có thể xử lý các yêu cầu được phân công và cập nhật tiến độ xử lý.
+Staff có thể xử lý các yêu cầu được phân công và cập nhật tiến độ xử lý.
 
-Nhân viên có thể:
+Staff có thể:
 
 * Xem nội dung và tài liệu đính kèm của yêu cầu.
 * Cập nhật trạng thái yêu cầu.
@@ -44,21 +44,21 @@ Nhân viên có thể:
 
 ### 4. Request Additional Information
 
-Nhân viên có thể yêu cầu sinh viên cung cấp thêm thông tin hoặc tài liệu khi chưa đủ thông tin để xử lý yêu cầu.
+Staff có thể yêu cầu Student cung cấp thêm thông tin hoặc tài liệu khi chưa đủ thông tin để xử lý yêu cầu.
 
-Khi yêu cầu được gửi, hệ thống cập nhật trạng thái phù hợp để sinh viên biết cần bổ sung thông tin trước khi quá trình xử lý tiếp tục.
+Khi yêu cầu được gửi, hệ thống cập nhật trạng thái phù hợp để Student biết cần bổ sung thông tin trước khi quá trình xử lý tiếp tục.
 
 ### 5. Transfer Request
 
-Nhân viên có thể chuyển yêu cầu sang nhân viên hoặc phòng ban khác khi yêu cầu không thuộc trách nhiệm xử lý của mình.
+Staff có thể chuyển yêu cầu sang Staff hoặc phòng ban khác khi yêu cầu không thuộc trách nhiệm xử lý của mình.
 
 Khi chuyển yêu cầu, hệ thống phải giữ lại các thông tin, tài liệu đính kèm và lịch sử trao đổi của yêu cầu.
 
 ### 6. Resolve and Close Request
 
-Nhân viên có thể hoàn tất xử lý yêu cầu và cập nhật kết quả xử lý.
+Staff có thể hoàn tất xử lý yêu cầu và cập nhật kết quả xử lý.
 
-Sau khi yêu cầu được giải quyết, nhân viên có thể cập nhật yêu cầu sang trạng thái hoàn thành và đóng yêu cầu theo quy trình của hệ thống.
+Sau khi yêu cầu được giải quyết, Staff có thể cập nhật yêu cầu sang trạng thái hoàn thành và đóng yêu cầu theo quy trình của hệ thống.
 
 ## Related Workflows
 
