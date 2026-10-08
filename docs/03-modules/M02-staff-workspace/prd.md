@@ -1,14 +1,14 @@
 # M02 – Staff Workspace
 
-## Mục đích
+## Purpose
 
 Không gian làm việc dành cho nhân viên để **tiếp nhận, phân loại, phân công và xử lý các yêu cầu hỗ trợ** được gửi đến phòng ban.
 
-## Người sử dụng
+## Users
 
 * Nhân viên
 
-## Chức năng chính
+## Main capabilities
 
 ### 1. View Request Queue
 
