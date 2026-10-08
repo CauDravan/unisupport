@@ -9,14 +9,14 @@ Request là đối tượng dữ liệu trung tâm của UniSupport, dùng để
 | Attribute      | Description                                       |
 | -------------- | ------------------------------------------------- |
 | Request ID     | Mã định danh của yêu cầu.                         |
-| Student ID     | Mã định danh của Student gửi yêu cầu.           |
+| Student ID     | Mã định danh của Student gửi yêu cầu.             |
 | Request Type   | Loại hoặc phân loại của yêu cầu.                  |
 | Subject        | Tiêu đề hoặc chủ đề của yêu cầu.                  |
-| Description    | Nội dung chi tiết về vấn đề Student cần hỗ trợ. |
+| Description    | Nội dung chi tiết về vấn đề Student cần hỗ trợ.   |
 | Attachment     | Tài liệu hoặc hình ảnh liên quan đến yêu cầu.     |
 | Priority       | Mức độ ưu tiên của yêu cầu.                       |
 | Department     | Bộ phận chịu trách nhiệm xử lý.                   |
-| Assigned Staff | Staff được phân công xử lý.                   |
+| Assigned Staff | Staff được phân công xử lý.                       |
 | Status         | Trạng thái hiện tại của yêu cầu.                  |
 | Created Date   | Thời điểm tạo yêu cầu.                            |
 | Updated Date   | Thời điểm cập nhật gần nhất.                      |

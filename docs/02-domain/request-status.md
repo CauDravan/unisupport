@@ -6,11 +6,11 @@ Mỗi request có một trạng thái thể hiện giai đoạn hiện tại c�
 
 | Status                | Description                                                                                  |
 | --------------------- | -------------------------------------------------------------------------------------------- |
-| Đã tiếp nhận          | Yêu cầu đã được Student gửi thành công và được hệ thống tiếp nhận.                         |
-| Đang xử lý            | Yêu cầu đã được phân công cho Staff xử lý và đang được xử lý.                            |
-| Chờ bổ sung thông tin | Yêu cầu cần Student cung cấp thêm thông tin hoặc tài liệu trước khi có thể tiếp tục xử lý. |
-| Đã hoàn thành         | Yêu cầu đã được Staff xử lý và giải quyết.                                               |
-| Đã đóng               | Yêu cầu đã hoàn tất quá trình xử lý và được đóng chính thức.                                 |
+| Received              | Yêu cầu đã được Student gửi thành công và được hệ thống tiếp nhận.                           |
+| In Progress           | Yêu cầu đã được phân công cho Staff xử lý và đang được xử lý.                                |
+| Awaiting Information  | Yêu cầu cần Student cung cấp thêm thông tin hoặc tài liệu trước khi có thể tiếp tục xử lý.   |
+| Resolved              | Yêu cầu đã được Staff xử lý và giải quyết.                                                   |
+| Closed                | Yêu cầu đã hoàn tất quá trình xử lý và được đóng chính thức.                                 |
 
 ## Status Flow
 
@@ -26,8 +26,8 @@ Mỗi request được gán một mức độ ưu tiên nhằm hỗ trợ Staff 
 
 | Priority   | Description                                                                          |
 | ---------- | ------------------------------------------------------------------------------------ |
-| Thấp       | Các yêu cầu có mức độ ảnh hưởng thấp và không cần được xử lý ngay lập tức.           |
-| Trung bình | Các yêu cầu thông thường cần được xử lý trong khoảng thời gian hỗ trợ dự kiến.       |
-| Khẩn cấp   | Các yêu cầu có mức độ ảnh hưởng hoặc tính cấp thiết cao, cần được ưu tiên xử lý sớm. |
+| Low        | Các yêu cầu có mức độ ảnh hưởng thấp và không cần được xử lý ngay lập tức.           |
+| Medium     | Các yêu cầu thông thường cần được xử lý trong khoảng thời gian hỗ trợ dự kiến.       |
+| Urgent     | Các yêu cầu có mức độ ảnh hưởng hoặc tính cấp thiết cao, cần được ưu tiên xử lý sớm. |
 
 Priority là một thuộc tính của request và **không phải là một bước trong workflow**. Staff có thể sử dụng priority để sắp xếp, lọc và xác định thứ tự xử lý các request.
