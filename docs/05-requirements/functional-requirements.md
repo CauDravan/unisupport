@@ -7,6 +7,7 @@ cần cung cấp cho từng nhóm người dùng.
 
 ## 1. Student Portal
 
+<a id="fr-s1-request-submission"></a>
 ### FR-S1 – Request Submission
 
 **Description**
@@ -28,6 +29,7 @@ thông tin cần thiết, lựa chọn loại yêu cầu và đính kèm tài li
 
 ---
 
+<a id="fr-s2-request-tracking"></a>
 ### FR-S2 – Request Tracking
 
 **Description**
@@ -48,6 +50,7 @@ Sinh viên có thể theo dõi trạng thái và lịch sử xử lý của các
 
 ---
 
+<a id="fr-s3-additional-information-feedback"></a>
 ### FR-S3 – Additional Information & Feedback
 
 **Description**

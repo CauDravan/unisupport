@@ -45,6 +45,6 @@ Cổng dành cho Student để **gửi, theo dõi và tương tác với yêu c�
 
 ## Related Requirements
 
-* [FR-S1 – Request Submission](../../05-requirements/functional-requirements.md#fr-s1-gửi-yêu-cầu-hỗ-trợ)
-* [FR-S2 – Request Tracking & Timeline](../../05-requirements/functional-requirements.md#fr-s2-theo-dõi-hành-trình-yêu-cầu)
-* [FR-S3 – Interaction & Information Update](../../05-requirements/functional-requirements.md#fr-s3-cơ-chế-tương-tác--bổ-sung-thông-tin)
+* [FR-S1 – Request Submission](../../05-requirements/functional-requirements.md#fr-s1-request-submission)
+* [FR-S2 – Request Tracking & Timeline](../../05-requirements/functional-requirements.md#fr-s2-request-tracking)
+* [FR-S3 – Interaction & Information Update](../../05-requirements/functional-requirements.md#fr-s3-additional-information-feedback)
