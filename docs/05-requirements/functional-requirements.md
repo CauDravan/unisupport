@@ -74,6 +74,7 @@ feedback sau khi yêu cầu được xử lý.
 
 ## 2. Staff Workspace
 
+<a id="fr-st1-queue-management"></a>
 ### FR-St1 – Queue Management
 
 **Description**
@@ -94,6 +95,7 @@ trên một hàng đợi tập trung.
 
 ---
 
+<a id="fr-st2-processing-and-escalation"></a>
 ### FR-St2 – Request Processing & Escalation
 
 **Description**
@@ -121,6 +123,7 @@ và chuyển Request sang bộ phận khác khi cần.
 
 ## 3. Management Dashboard
 
+<a id="fr-m1-request-monitoring-and-overdue-alerts"></a>
 ### FR-M1 – Request Monitoring & Overdue Alerts
 
 **Description**
@@ -140,6 +143,7 @@ Management có thể theo dõi tình hình xử lý Request và nhận biết c�
 
 ---
 
+<a id="fr-m2-performance-and-reporting"></a>
 ### FR-M2 – Performance & Reporting
 
 **Description**

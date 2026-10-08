@@ -70,5 +70,5 @@ Sau khi yêu cầu được giải quyết, Staff có thể cập nhật yêu c�
 
 ## Related Functional Requirements
 
-* [FR-St1 – Queue Management](../../05-requirements/functional-requirements.md#fr-st1-quản-lý-hàng-đợi)
-* [FR-St2 – Processing & Escalation](../../05-requirements/functional-requirements.md#fr-st2-xử-lý-ghi-log-và-chuyển-cấp-yêu-cầu)
+* [FR-St1 – Queue Management](../../05-requirements/functional-requirements.md#fr-st1-queue-management)
+* [FR-St2 – Processing & Escalation](../../05-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
