@@ -138,15 +138,15 @@ Request được Staff xử lý và cập nhật đầy đủ tiến độ. Khi 
 
 ## 11. Related Requirements
 
-* **Request Processing**
-* **FR-Support Workflow**
-* **AC-05 — Status change is recorded and displayed**
-* **AC-06 — Staff requests additional information**
-* **AC-07 — Student provides additional information**
-* **AC-08 — Transferred request preserves previous history**
+* [FR-St2 — Request Processing & Escalation](../05-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
+* [AC-05 — Staff thay đổi Request Status](../07-acceptance/acceptance-criteria.md#ac-05)
+
+* [AC-06 — Staff yêu cầu Student bổ sung thông tin](../07-acceptance/acceptance-criteria.md#ac-06)
+* [AC-07 — Student cung cấp thông tin bổ sung](../07-acceptance/acceptance-criteria.md#ac-07)
+* [AC-08 — Staff chuyển giao Request](../07-acceptance/acceptance-criteria.md#ac-08)
 
 ## 12. Next Workflow
 
 Sau khi request được xử lý và chuyển sang **Resolved**, request sẽ được chuyển sang:
 
-**WF-06 — Resolve and Close**
+* [WF-06 – Resolve and Close](../04-workflows/WF-06-resolve-and-close.md)

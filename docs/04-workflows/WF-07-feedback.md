@@ -125,9 +125,11 @@ Student gửi feedback về kết quả hỗ trợ. System lưu feedback cùng v
 
 ## 11. Related Requirements
 
-* **Management & Reporting**
-* **AC-14 — Feedback is stored**
-* **AC-10 — Student checks request**
+* [FR-S3 — Additional Information & Feedback](../05-requirements/functional-requirements.md#fr-s3-additional-information-feedback)
+* [FR-M2 — Performance & Reporting](../05-requirements/functional-requirements.md#fr-m2-performance-and-reporting)
+
+* [AC-14 — Student gửi Feedback sau khi Request được xử lý](../07-acceptance/acceptance-criteria.md#ac-14)
+* [AC-10 — Student kiểm tra Request](../07-acceptance/acceptance-criteria.md#ac-10)
 
 ## 12. Next Workflow
 

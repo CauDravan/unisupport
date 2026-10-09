@@ -145,14 +145,15 @@ Student gửi thành công một request và nhận được **Request ID** đ�
 
 ## 11. Related Requirements
 
-* **FR-S1 — Request Submission**
-* **FR-S2 — Request Tracking**
-* **AC-01 — Student gửi yêu cầu đầy đủ**
-* **AC-02 — Student gửi thông tin chưa đầy đủ**
-* **AC-10 — Student kiểm tra yêu cầu**
+* [FR-S1 – Request Submission](../05-requirements/functional-requirements.md#fr-s1-request-submission)
+* [FR-S2 – Request Tracking & Timeline](../05-requirements/functional-requirements.md#fr-s2-request-tracking)
+
+* [AC-01 — Student gửi yêu cầu đầy đủ](../07-acceptance/acceptance-criteria.md#ac-01)
+* [AC-02 — Student gửi thông tin chưa đầy đủ](../07-acceptance/acceptance-criteria.md#ac-02)
+* [AC-10 — Student kiểm tra yêu cầu](../07-acceptance/acceptance-criteria.md#ac-10)
 
 ## 12. Next Workflow
 
 Sau khi request được tạo và tiếp nhận, request sẽ được chuyển sang:
 
-**WF-02 — Classify and Assign**
+* [WF-02 – Classify and Assign](../04-workflows/WF-02-classify-and-assign.md)

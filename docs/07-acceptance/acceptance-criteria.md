@@ -14,20 +14,20 @@ Prototype được xem là đáp ứng yêu cầu khi các kịch bản chính �
 
 | ID        | Scenario                                                          | Expected Result                                                                                                 |
 | --------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **AC-01** | Student gửi yêu cầu đầy đủ                                        | Request được tạo thành công và Student nhận được **Request ID / Tracking ID**.                                  |
-| **AC-02** | Student gửi yêu cầu thiếu thông tin bắt buộc                      | Hệ thống xác định các thông tin còn thiếu và thông báo cho Student bổ sung trước khi tạo Request.               |
-| **AC-03** | Staff nhận Request mới                                            | Request xuất hiện trong hàng chờ (**Queue**) tương ứng để Staff có thể tiếp nhận và xử lý.                      |
-| **AC-04** | Staff phân công Request                                           | Bộ phận hoặc Staff chịu trách nhiệm được ghi nhận rõ ràng trên Request.                                         |
-| **AC-05** | Staff thay đổi Request Status                                     | Status mới được ghi nhận và hiển thị cho các user có quyền truy cập phù hợp.                                    |
-| **AC-06** | Staff yêu cầu Student bổ sung thông tin                           | Student nhận được thông báo rằng Request cần được bổ sung thông tin.                                            |
-| **AC-07** | Student cung cấp thông tin bổ sung                                | Request có thể tiếp tục được xử lý sau khi Student cung cấp đầy đủ thông tin cần thiết.                         |
-| **AC-08** | Staff chuyển giao Request                                         | Việc phân công mới được ghi nhận và lịch sử xử lý trước đó được bảo toàn.                                       |
-| **AC-09** | Staff hoàn tất và đóng Request                                    | Request được chuyển sang trạng thái **Đã đóng (Closed)** sau khi vấn đề được giải quyết.                        |
-| **AC-10** | Student kiểm tra Request                                          | Student có thể xem Request Status hiện tại và các thông tin cập nhật phù hợp.                                   |
-| **AC-11** | Management mở Management Dashboard                                | Dashboard hiển thị các số liệu tổng quan về Request, bao gồm số lượng mới, đang xử lý và quá hạn.               |
-| **AC-12** | User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | Hệ thống từ chối quyền truy cập và không cho phép User thực hiện hành động trái với role của mình.              |
-| **AC-13** | User thực hiện một hành động cần được ghi nhận                    | Hoạt động liên quan được ghi lại trong **Activity Log / Request History** để phục vụ việc theo dõi và kiểm tra. |
-| **AC-14** | Student gửi Feedback sau khi Request được xử lý                   | Feedback được lưu trữ và có thể được sử dụng cho các báo cáo hoặc đánh giá phù hợp.                             |
+| <a id="ac-01"></a>**AC-01** | Student gửi yêu cầu đầy đủ                                        | Request được tạo thành công và Student nhận được **Request ID / Tracking ID**.                                  |
+| <a id="ac-02"></a>**AC-02** | Student gửi yêu cầu thiếu thông tin bắt buộc                      | Hệ thống xác định các thông tin còn thiếu và thông báo cho Student bổ sung trước khi tạo Request.               |
+| <a id="ac-03"></a>**AC-03** | Staff nhận Request mới                                            | Request xuất hiện trong hàng chờ (**Queue**) tương ứng để Staff có thể tiếp nhận và xử lý.                      |
+| <a id="ac-04"></a>**AC-04** | Staff phân công Request                                           | Bộ phận hoặc Staff chịu trách nhiệm được ghi nhận rõ ràng trên Request.                                         |
+| <a id="ac-05"></a>**AC-05** | Staff thay đổi Request Status                                     | Status mới được ghi nhận và hiển thị cho các user có quyền truy cập phù hợp.                                    |
+| <a id="ac-06"></a>**AC-06** | Staff yêu cầu Student bổ sung thông tin                           | Student nhận được thông báo rằng Request cần được bổ sung thông tin.                                            |
+| <a id="ac-07"></a>**AC-07** | Student cung cấp thông tin bổ sung                                | Request có thể tiếp tục được xử lý sau khi Student cung cấp đầy đủ thông tin cần thiết.                         |
+| <a id="ac-08"></a>**AC-08** | Staff chuyển giao Request                                         | Việc phân công mới được ghi nhận và lịch sử xử lý trước đó được bảo toàn.                                       |
+| <a id="ac-09"></a>**AC-09** | Staff hoàn tất và đóng Request                                    | Request được chuyển sang trạng thái **Đã đóng (Closed)** sau khi vấn đề được giải quyết.                        |
+| <a id="ac-10"></a>**AC-10** | Student kiểm tra Request                                          | Student có thể xem Request Status hiện tại và các thông tin cập nhật phù hợp.                                   |
+| <a id="ac-11"></a>**AC-11** | Management mở Management Dashboard                                | Dashboard hiển thị các số liệu tổng quan về Request, bao gồm số lượng mới, đang xử lý và quá hạn.               |
+| <a id="ac-12"></a>**AC-12** | User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | Hệ thống từ chối quyền truy cập và không cho phép User thực hiện hành động trái với role của mình.              |
+| <a id="ac-13"></a>**AC-13** | User thực hiện một hành động cần được ghi nhận                    | Hoạt động liên quan được ghi lại trong **Activity Log / Request History** để phục vụ việc theo dõi và kiểm tra. |
+| <a id="ac-14"></a>**AC-14** | Student gửi Feedback sau khi Request được xử lý                   | Feedback được lưu trữ và có thể được sử dụng cho các báo cáo hoặc đánh giá phù hợp.                             |
 
 ---
 
