@@ -24,8 +24,8 @@ thông tin cần thiết, lựa chọn loại yêu cầu và đính kèm tài li
 
 **Related**
 
-- Module: [M01 – Student Portal](../03-modules/M01-student-portal/prd.md)
-- Workflow: [WF-01 – Submit Request](../04-workflows/WF-01-submit-request.md)
+- Module: [M01 – Student Portal](../04-modules/M01-student-portal/prd.md)
+- Workflow: [WF-01 – Submit Request](../05-workflows/WF-01-submit-request.md)
 
 ---
 
@@ -44,9 +44,9 @@ Sinh viên có thể theo dõi trạng thái và lịch sử xử lý của các
 
 **Related**
 
-- Module: [M01 – Student Portal](../03-modules/M01-student-portal/prd.md)
-- Workflow: [WF-01 – Submit Request](../04-workflows/WF-01-submit-request.md)
-- Workflow: [WF-06 – Resolve and Close](../04-workflows/WF-06-resolve-and-close.md)
+- Module: [M01 – Student Portal](../04-modules/M01-student-portal/prd.md)
+- Workflow: [WF-01 – Submit Request](../05-workflows/WF-01-submit-request.md)
+- Workflow: [WF-06 – Resolve and Close](../05-workflows/WF-06-resolve-and-close.md)
 
 ---
 
@@ -66,9 +66,9 @@ feedback sau khi yêu cầu được xử lý.
 
 **Related**
 
-- Module: [M01 – Student Portal](../03-modules/M01-student-portal/prd.md)
-- Workflow: [WF-04 – Request Additional Information](../04-workflows/WF-04-request-additional-information.md)
-- Workflow: [WF-07 – Feedback](../04-workflows/WF-07-feedback.md)
+- Module: [M01 – Student Portal](../04-modules/M01-student-portal/prd.md)
+- Workflow: [WF-04 – Request Additional Information](../05-workflows/WF-04-request-additional-information.md)
+- Workflow: [WF-07 – Feedback](../05-workflows/WF-07-feedback.md)
 
 ---
 
@@ -90,8 +90,8 @@ trên một hàng đợi tập trung.
 
 **Related**
 
-- Module: [M02 – Staff Workspace](../03-modules/M02-staff-workspace/prd.md)
-- Workflow: [WF-02 – Classify and Assign](../04-workflows/WF-02-classify-and-assign.md)
+- Module: [M02 – Staff Workspace](../04-modules/M02-staff-workspace/prd.md)
+- Workflow: [WF-02 – Classify and Assign](../05-workflows/WF-02-classify-and-assign.md)
 
 ---
 
@@ -113,11 +113,11 @@ và chuyển Request sang bộ phận khác khi cần.
 
 **Related**
 
-- Module: [M02 – Staff Workspace](../03-modules/M02-staff-workspace/prd.md)
-- Workflow: [WF-03 – Process Request](../04-workflows/WF-03-process-request.md)
-- Workflow: [WF-04 – Request Additional Information](../04-workflows/WF-04-request-additional-information.md)
-- Workflow: [WF-05 – Transfer Request](../04-workflows/WF-05-transfer-request.md)
-- Workflow: [WF-06 – Resolve and Close](../04-workflows/WF-06-resolve-and-close.md)
+- Module: [M02 – Staff Workspace](../04-modules/M02-staff-workspace/prd.md)
+- Workflow: [WF-03 – Process Request](../05-workflows/WF-03-process-request.md)
+- Workflow: [WF-04 – Request Additional Information](../05-workflows/WF-04-request-additional-information.md)
+- Workflow: [WF-05 – Transfer Request](../05-workflows/WF-05-transfer-request.md)
+- Workflow: [WF-06 – Resolve and Close](../05-workflows/WF-06-resolve-and-close.md)
 
 ---
 
@@ -139,7 +139,7 @@ Management có thể theo dõi tình hình xử lý Request và nhận biết c�
 
 **Related**
 
-- Module: [M03 – Management Dashboard](../03-modules/M03-management-dashboard/prd.md)
+- Module: [M03 – Management Dashboard](../04-modules/M03-management-dashboard/prd.md)
 
 ---
 
@@ -159,4 +159,4 @@ xử lý yêu cầu hỗ trợ.
 
 **Related**
 
-- Module: [M03 – Management Dashboard](../03-modules/M03-management-dashboard/prd.md)
+- Module: [M03 – Management Dashboard](../04-modules/M03-management-dashboard/prd.md)

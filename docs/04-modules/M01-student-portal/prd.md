@@ -39,12 +39,12 @@ Cổng dành cho Student để **gửi, theo dõi và tương tác với yêu c�
 
 ## Related Workflows
 
-* [WF-01 – Submit Request](../../04-workflows/WF-01-submit-request.md)
-* [WF-04 – Request Additional Information](../../04-workflows/WF-04-request-additional-information.md)
-* [WF-07 – Feedback](../../04-workflows/WF-07-feedback.md)
+* [WF-01 – Submit Request](../../05-workflows/WF-01-submit-request.md)
+* [WF-04 – Request Additional Information](../../05-workflows/WF-04-request-additional-information.md)
+* [WF-07 – Feedback](../../05-workflows/WF-07-feedback.md)
 
 ## Related Requirements
 
-* [FR-S1 – Request Submission](../../05-requirements/functional-requirements.md#fr-s1-request-submission)
-* [FR-S2 – Request Tracking & Timeline](../../05-requirements/functional-requirements.md#fr-s2-request-tracking)
-* [FR-S3 – Interaction & Information Update](../../05-requirements/functional-requirements.md#fr-s3-additional-information-feedback)
+* [FR-S1 – Request Submission](../../06-requirements/functional-requirements.md#fr-s1-request-submission)
+* [FR-S2 – Request Tracking & Timeline](../../06-requirements/functional-requirements.md#fr-s2-request-tracking)
+* [FR-S3 – Interaction & Information Update](../../06-requirements/functional-requirements.md#fr-s3-additional-information-feedback)

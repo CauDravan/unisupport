@@ -130,14 +130,14 @@ Request được chuyển đến **Department hoặc Staff phù hợp**, đồng
 
 ## 11. Related Requirements
 
-* [FR-St1 — Queue Management](../05-requirements/functional-requirements.md#fr-st1-queue-management)
-* [FR-St2 — Request Processing & Escalation](../05-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
+* [FR-St1 — Queue Management](../06-requirements/functional-requirements.md#fr-st1-queue-management)
+* [FR-St2 — Request Processing & Escalation](../06-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
 
-* [AC-04 — Staff phân công Request](../07-acceptance/acceptance-criteria.md#ac-04)
-* [AC-08 — Staff chuyển giao Request](../07-acceptance/acceptance-criteria.md#ac-08)
+* [AC-04 — Staff phân công Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-04)
+* [AC-08 — Staff chuyển giao Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-08)
 
 ## 12. Next Workflow
 
 Sau khi transfer thành công, request sẽ được tiếp tục xử lý theo:
 
-* [WF-03 – Process Request](../04-workflows/WF-03-process-request.md)
+* [WF-03 – Process Request](../05-workflows/WF-03-process-request.md)

@@ -63,5 +63,5 @@ Dữ liệu phản hồi được sử dụng để:
 
 ## Related Functional Requirements
 
-* [FR-M1 – Request Monitoring & Overdue Alerts](../../05-requirements/functional-requirements.md#fr-m1-request-monitoring-and-overdue-alerts)
-* [FR-M2 – Performance & Reporting](../../05-requirements/functional-requirements.md#fr-m2-performance-and-reporting)
+* [FR-M1 – Request Monitoring & Overdue Alerts](../../06-requirements/functional-requirements.md#fr-m1-request-monitoring-and-overdue-alerts)
+* [FR-M2 – Performance & Reporting](../../06-requirements/functional-requirements.md#fr-m2-performance-and-reporting)

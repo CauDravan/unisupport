@@ -134,15 +134,15 @@ Request được giải quyết và đóng thành công. System lưu lại **Res
 
 ## 11. Related Requirements
 
-* [FR-St2 — Request Processing & Escalation](../05-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
-* [FR-S2 — Request Tracking](../05-requirements/functional-requirements.md#fr-s2-request-tracking)
+* [FR-St2 — Request Processing & Escalation](../06-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
+* [FR-S2 — Request Tracking](../06-requirements/functional-requirements.md#fr-s2-request-tracking)
 
-* [AC-05 — Staff thay đổi Request Status](../07-acceptance/acceptance-criteria.md#ac-05)
-* [AC-09 — Staff hoàn tất và đóng Request](../07-acceptance/acceptance-criteria.md#ac-09)
-* [AC-10 — Student kiểm tra Request](../07-acceptance/acceptance-criteria.md#ac-10)
+* [AC-05 — Staff thay đổi Request Status](../08-testing-and-acceptance/acceptance-criteria.md#ac-05)
+* [AC-09 — Staff hoàn tất và đóng Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-09)
+* [AC-10 — Student kiểm tra Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-10)
 
 ## 12. Next Workflow
 
 Sau khi request được đóng:
 
-* [WF-07 – Feedback](../04-workflows/WF-07-feedback.md)
+* [WF-07 – Feedback](../05-workflows/WF-07-feedback.md)
