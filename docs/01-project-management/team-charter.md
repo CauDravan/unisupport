@@ -25,8 +25,8 @@ Nhóm sử dụng các giới hạn trong Project Proposal làm cơ sở lập k
     Proposal.
 -   **Effort limit:** Tổng công sức dự kiến không vượt quá 320
     person-hours.
--   **Midterm review:** Dự kiến tại tuần 7.
--   **Final handover:** Dự kiến tại tuần 15.
+-   **Intermediate Review:** Dự kiến tại tuần 7.
+-   **Final Presentation & Handover:** Dự kiến tại tuần 15.
 
 Các mốc trên là cơ sở lập kế hoạch, không phải cam kết rằng mọi thay đổi
 đều có thể được hoàn thành trong cùng nguồn lực. Nếu thành viên thực tế
@@ -53,13 +53,13 @@ việc phải được xác định rõ.
                                       Requirements Document (PRD),
                                       workflow và acceptance criteria.
 
-  **Front-end Developer**             Xây dựng giao diện prototype theo
+  **Front-end Developer (FE)**        Xây dựng giao diện prototype theo
                                       yêu cầu đã thống nhất; kết nối giao
                                       diện với các chức năng backend
                                       trong phạm vi dự án; báo cáo sớm
                                       các vấn đề ảnh hưởng đến tiến độ.
 
-  **Back-end Developer**              Xây dựng xử lý nghiệp vụ, API và
+  **Back-end Developer (BE)**         Xây dựng xử lý nghiệp vụ, API và
                                       cấu trúc dữ liệu cần thiết cho
                                       prototype; hỗ trợ kiểm tra luồng dữ
                                       liệu và quyền truy cập trong phạm
@@ -102,6 +102,10 @@ Mỗi đầu việc cần có:
 
 Nhóm có thể sử dụng GitHub Issues, Project Board hoặc công cụ quản lý
 tương đương. Công cụ được chọn cần được cả nhóm sử dụng thống nhất.
+
+GitHub Milestones được sử dụng để nhóm các công việc theo từng project phase hoặc milestone. GitHub Issues được sử dụng để theo dõi các task cụ thể, bao gồm người phụ trách, deadline và trạng thái thực hiện.
+
+Project Schedule chỉ quản lý timeline tổng thể và các key milestones, không thay thế việc theo dõi công việc hằng ngày trên GitHub.
 
 ### 5.2 Progress Updates
 
@@ -165,8 +169,7 @@ thể xảy ra và phương án xử lý đề xuất.
 
 Nhóm ưu tiên giải quyết vấn đề sớm bằng trao đổi và điều chỉnh công
 việc. Nếu chưa thống nhất được, Project Manager ghi nhận các lựa chọn và
-tác động để nhóm cùng quyết định. Các rủi ro quan trọng cần được cập
-nhật trong `risks.md` hoặc tài liệu quản lý rủi ro tương ứng.
+tác động để nhóm cùng quyết định. Các rủi ro quan trọng cần được ghi nhận và cập nhật trong 'risk-register.md'. Project Manager chịu trách nhiệm theo dõi Risk Register và phối hợp với Risk Owner để đánh giá tình trạng cũng như biện pháp ứng phó.
 
 ## 8. Quality Standards & Definition of Done
 
@@ -188,6 +191,8 @@ trường hợp lỗi quan trọng trong khả năng của dự án. Việc hoà
 prototype không đồng nghĩa hệ thống đã sẵn sàng để triển khai vận hành
 chính thức trên toàn trường.
 
+Đối với các chức năng chính, việc xác nhận hoàn thành cần dựa trên Acceptance Criteria đã được thống nhất. Business Analyst phối hợp với Front-end Developer và Back-end Developer để kiểm tra kết quả trước khi đánh dấu công việc là hoàn thành.
+
 ## 9. Commitment & Review
 
 Các thành viên thống nhất sử dụng Team Charter này làm hướng dẫn phối
@@ -201,6 +206,12 @@ quán với Project Proposal, Project Plan, PRD và các tài liệu liên quan.
 
 ------------------------------------------------------------------------
 
-**Document location:** `docs/09-project/team-charter.md`\
-**Related documents:** `project-proposal.md`, `project-plan.md`,
-`scope.md`, `risks.md` and the Product Requirements Document (PRD).
+**Document Location:** `docs/01-project-management/team-charter.md`
+
+**Related Documents:**
+- `project-proposal.docx`
+- `project-schedule.md`
+- `raci-matrix.md`
+- `risk-register.md`
+- `../02-product-management/product-scope.md`
+- Product Requirements Document (PRD)
