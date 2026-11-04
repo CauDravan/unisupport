@@ -25,6 +25,14 @@ Các rủi ro được đánh giá dựa trên hai tiêu chí:
 | Medium | Có khả năng xảy ra | Có thể ảnh hưởng đến tiến độ hoặc chất lượng một số deliverables. |
 | High | Khả năng xảy ra cao | Có thể ảnh hưởng đáng kể đến project scope, schedule, effort hoặc kết quả dự án. |
 
+Mức độ Rủi ro Tổng thể được xác định bằng cách kết hợp các chỉ số Đánh giá Xác suất và Mức độ Ảnh hưởng theo ma trận dưới đây:
+
+| Probability / Impact | Low Impact | Medium Impact | High Impact |
+|---|---|---|---|
+| **Low Probability** | Low | Low | Medium |
+| **Medium Probability** | Low | Medium | High |
+| **High Probability** | Medium | High | High |
+
 **Risk Level** được xác định dựa trên sự kết hợp giữa Probability và Impact. Những rủi ro có mức đánh giá cao cần được ưu tiên theo dõi và xử lý.
 
 ## 3. Risk Register
@@ -34,7 +42,7 @@ Các rủi ro được đánh giá dựa trên hai tiêu chí:
 | R01 | Scope Creep – Các bên liên quan yêu cầu bổ sung hoặc thay đổi chức năng sau khi phạm vi ban đầu đã được thống nhất. | High | High | High | PM |
 | R02 | Resource Overload – Thành viên gặp quá tải hoặc không thể hoàn thành công việc theo kế hoạch. | Medium | High | High | PM |
 | R03 | Conflicting Stakeholder Requirements – Các bên liên quan đưa ra những yêu cầu khác nhau hoặc mâu thuẫn. | Medium | Medium | Medium | BA |
-| R04 | Design or Testing Delays – Hoạt động thiết kế hoặc kiểm thử bị chậm, làm giảm thời gian dành cho việc hoàn thiện prototype. | Medium | High | High | PM |
+| R04 | Design and Testing Delays – Hoạt động thiết kế hoặc kiểm thử bị chậm, làm giảm thời gian dành cho việc hoàn thiện prototype. | Medium | High | High | PM |
 | R05 | Data Security and Unauthorized Access – Dữ liệu bị sử dụng không phù hợp hoặc người dùng có thể truy cập thông tin ngoài quyền hạn. | Medium | High | High | BE |
 | R06 | Prototype Quality Issues – Prototype không đáp ứng đầy đủ các yêu cầu chức năng hoặc acceptance criteria đã thống nhất. | Medium | High | High | BA |
 | R07 | Incomplete Documentation and Handover – Tài liệu hoặc hướng dẫn bàn giao không đầy đủ, khiến nhóm tiếp nhận khó hiểu và tiếp tục phát triển hệ thống. | Medium | Medium | Medium | PM |
@@ -59,7 +67,6 @@ Project Manager chịu trách nhiệm theo dõi Risk Register và phối hợp v
 - Khi xuất hiện rủi ro mới, nhóm cần ghi nhận và đánh giá trước khi quyết định biện pháp xử lý.
 - Khi Probability hoặc Impact thay đổi, Risk Level cần được đánh giá lại.
 - Các rủi ro có thể ảnh hưởng đến project scope, schedule hoặc giới hạn 320 person-hours cần được thông báo và thảo luận trong nhóm.
-- Những biện pháp ứng phó đã thực hiện cần được ghi nhận để theo dõi kết quả.
-- Những rủi ro có khả năng ảnh hưởng đến các Key Milestones hoặc tổng thời gian thực hiện dự án 15 tuần cần được đánh giá và thảo luận để xác định phương án điều chỉnh phù hợp.
+- Các rủi ro có thể ảnh hưởng đến Phạm vi Dự án, Các cột mốc quan trọng, Tổng thời gian 15 tuần của dự án, hoặc Giới hạn nỗ lực tối đa 320 giờ-người phải được cả nhóm báo cáo, đánh giá và thảo luận để đưa ra các biện pháp ứng phó phù hợp.
 
 Risk Register có thể được cập nhật trong suốt vòng đời dự án nhằm phản ánh tình trạng thực tế và những thay đổi đã được thống nhất.

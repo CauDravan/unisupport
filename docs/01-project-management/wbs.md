@@ -143,23 +143,23 @@ Tổng effort được ước lượng dựa trên các work packages trong WBS 
 | Contingency Reserve | 16h |
 | **Maximum Effort Limit** | **320h** |
 
-### 3.2 Effort by Team Role
+### 3.2 Effort Allocation Baseline by Team Role
 
-Theo Project Proposal, effort được phân bổ cho bốn vai trò như sau:
+Mức phân bổ nỗ lực dự kiến cho từng vai trò trong dự án được căn cứ dựa trên Project Proposal.
 
-| Role | Planned Effort |
+| Team Role | Planned Effort |
 |---|---:|
-| Project Manager (PM) | 68h |
-| Business Analyst (BA) | 78h |
-| Front-end Developer (FE) | 79h |
-| Back-end Developer (BE) | 79h |
-| **Total Planned Effort** | **304h** |
-| Contingency Reserve | 16h |
-| **Maximum Effort Limit** | **320h** |
+| Project Manager (PM) | 68 hours |
+| Business Analyst (BA) | 78 hours |
+| Front-end Developer (FE) | 79 hours |
+| Back-end Developer (BE) | 79 hours |
+| **Total Planned Effort** | **304 hours** |
+| Contingency Reserve | 16 hours |
+| **Maximum Effort** | **320 hours** |
 
-Contingency Reserve được dành cho những công việc phát sinh hoặc điều chỉnh cần thiết trong quá trình thực hiện. Khoản dự phòng này không được xem là effort đã phân công cho một work package cụ thể.
+**Note:** Mức phân bổ nỗ lực theo vai trò dự án thể hiện mức độ đóng góp kế hoạch tổng thể của từng vai trò, chứ không phải được tính bằng cách cộng thuần túy các ước tính nỗ lực của các gói công việc (work packages) được giao cho vai trò đó. Vai trò Chủ trì (Lead Role) trong mỗi gói công việc xác định vai trò chính chịu trách nhiệm điều phối và dẫn dắt công việc. Các thành viên khác trong nhóm cũng có thể tham gia đóng góp vào cùng gói công việc đó.
 
-Các effort estimates trong WBS là cơ sở lập kế hoạch ban đầu. Nhóm cần theo dõi planned effort và actual effort trong quá trình thực hiện để đánh giá mức độ sử dụng nguồn lực.
+Nỗ lực thực tế sẽ được theo dõi sát sao trong quá trình thực hiện dự án và được so sánh với nỗ lực dự kiến nhằm kiểm soát mức độ sử dụng nguồn lực, đồng thời sớm phát hiện các sai lệch có thể xảy ra.
 
 ## 4. WBS Management
 
