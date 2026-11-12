@@ -94,7 +94,7 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 
 **Priority**
 
-- High – Giúp sinh viên chủ động theo dõi tiến độ và hạn chế việc liên hệ nhiều lần để hỏi tình trạng xử lý.
+- Medium – Giúp sinh viên chủ động theo dõi tiến độ và hạn chế việc liên hệ nhiều lần để hỏi tình trạng xử lý.
 
 **Preconditions**
 
@@ -131,7 +131,7 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 - FR-STU-02/AC-02: Hệ thống hiển thị Status hiện tại của từng Request.
 - FR-STU-02/AC-03: Hệ thống hiển thị lịch sử cập nhật liên quan đến Request.
 - FR-STU-02/AC-04: Hệ thống tạo thông báo khi Status của Request thay đổi.
-- FR-STU-02/AC-05: Hệ thống thông báo khi Staff yêu cầu Student bổ sung thông tin.
+- FR-STU-02/AC-05: Hệ thống gửi thông báo cho Student khi Request chuyển sang trạng thái "Chờ bổ sung thông tin" theo yêu cầu của Staff.
 - FR-STU-02/AC-06: Student không thể truy cập Request thuộc tài khoản của người dùng khác.
 
 **Edge Cases**
@@ -163,7 +163,7 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 
 **Priority**
 
-- High – Đảm bảo quá trình xử lý có đủ thông tin và cho phép sinh viên phản hồi kết quả hỗ trợ.
+- Medium – Đảm bảo quá trình xử lý có đủ thông tin và cho phép sinh viên phản hồi kết quả hỗ trợ.
 
 **Preconditions**
 
@@ -248,7 +248,7 @@ Staff có thể phân loại Request, xác định mức độ ưu tiên và chu
 2. Hệ thống hiển thị các Request chưa được phân công hoặc cần phân loại.
 3. Staff xem nội dung và thông tin của Request.
 4. Staff xác định Request Type.
-5. Staff xác định Priority phù hợp.
+5. Hệ thống lưu Priority phù hợp cho Request dựa trên mức độ ảnh hưởng và tính cấp thiết của yêu cầu.
 6. Staff lựa chọn Department tiếp nhận.
 7. Staff chỉ định người chịu trách nhiệm.
 8. Staff xác nhận việc phân công.
@@ -258,7 +258,7 @@ Staff có thể phân loại Request, xác định mức độ ưu tiên và chu
 **Business Rules**
 
 - BR-01: Mỗi Request phải được phân loại theo Request Type phù hợp.
-- BR-02: Mỗi Request phải có Priority được xác định.
+- BR-02: Priority của mỗi Request được xác định dựa trên mức độ ảnh hưởng và tính cấp thiết của yêu cầu. Priority là thuộc tính của Request, không phải một bước độc lập trong quy trình xử lý.
 - BR-03: Request phải được phân công đến Department phù hợp.
 - BR-04: Request được phân công phải có người chịu trách nhiệm cụ thể.
 - BR-05: Các thay đổi liên quan đến Classification và Assignment phải được ghi nhận.
@@ -407,6 +407,7 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - BR-05: Khi Transfer Request, thông tin và lịch sử xử lý phải được bảo toàn.
 - BR-06: Request chỉ được đóng khi vấn đề đã được giải quyết theo quy trình.
 - BR-07: Hoạt động Escalation phải được ghi nhận khi Request cần chuyển cấp xử lý.
+- BR-08: Khi Student cung cấp đầy đủ thông tin được yêu cầu, Request có thể chuyển từ trạng thái "Chờ bổ sung thông tin" trở lại "Đang xử lý".
 
 **Alternative and Error Flows**
 
@@ -431,6 +432,7 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - FR-STA-03/AC-08: Staff có thể Escalate Request theo quy trình.
 - FR-STA-03/AC-09: Hệ thống không cho phép đóng Request khi chưa đáp ứng điều kiện giải quyết.
 - FR-STA-03/AC-10: Hệ thống ghi nhận thời điểm và người thực hiện các hoạt động xử lý.
+- FR-STA-03/AC-11: Hệ thống cho phép Request chuyển từ "Chờ bổ sung thông tin" sang "Đang xử lý" sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
 
 **Edge Cases**
 
@@ -464,7 +466,7 @@ Management có thể theo dõi tình hình tiếp nhận và xử lý Request th
 
 **Priority**
 
-- High – Giúp Ban Quản Lý giám sát tình hình xử lý và nhận biết các vấn đề cần can thiệp.
+- Medium – Giúp Ban Quản Lý giám sát tình hình xử lý và nhận biết các vấn đề cần can thiệp.
 
 **Preconditions**
 
@@ -532,7 +534,7 @@ Management có thể xem các báo cáo và số liệu tổng hợp để đán
 
 **Priority**
 
-- High – Cung cấp dữ liệu hỗ trợ Ban Quản Lý đánh giá và cải thiện hoạt động hỗ trợ sinh viên.
+- Medium – Cung cấp dữ liệu hỗ trợ Ban Quản Lý đánh giá và cải thiện hoạt động hỗ trợ sinh viên.
 
 **Preconditions**
 
@@ -625,6 +627,10 @@ Hệ thống cung cấp cơ chế xác thực người dùng và kiểm soát qu
 6. Hệ thống cấp quyền truy cập tương ứng.
 7. Người dùng truy cập các chức năng phù hợp với Role của mình.
 8. Hệ thống kiểm tra quyền khi người dùng thực hiện các thao tác liên quan đến dữ liệu.
+9. Management truy cập chức năng quản lý người dùng và vai trò theo quyền được cấp.
+10. Hệ thống hiển thị thông tin người dùng và Role hiện tại.
+11. Management cập nhật Role khi cần thiết.
+12. Hệ thống lưu thay đổi và ghi nhận hoạt động liên quan.
 
 **Business Rules**
 
@@ -653,6 +659,8 @@ Hệ thống cung cấp cơ chế xác thực người dùng và kiểm soát qu
 - FR-SEC-01/AC-05: Management chỉ có thể truy cập dữ liệu và chức năng theo quyền được cấp.
 - FR-SEC-01/AC-06: Hệ thống từ chối thao tác truy cập trái phép.
 - FR-SEC-01/AC-07: Hệ thống yêu cầu xác thực lại khi phiên đăng nhập hết hạn.
+- FR-SEC-01/AC-08: Management có thể xem thông tin người dùng và Role hiện tại theo quyền được cấp.
+- FR-SEC-01/AC-09: Management có thể cập nhật Role của người dùng theo quyền được cấp.
 
 **Edge Cases**
 
@@ -723,7 +731,7 @@ Hệ thống ghi nhận các hoạt động quan trọng liên quan đến Reque
 
 - FR-SEC-02/AC-01: Hệ thống ghi nhận các thay đổi quan trọng về Status của Request.
 - FR-SEC-02/AC-02: Hệ thống ghi nhận các thay đổi về Priority và Assignment.
-- FR-SEC-02/AC-03: Hệ thống ghi nhận người thực hiện và thời điểm của hoạt động.
+- FR-SEC-02/AC-03: Hệ thống ghi nhận người thực hiện, thao tác được thực hiện, thời điểm thực hiện và các thay đổi liên quan đến Request.
 - FR-SEC-02/AC-04: Student không thể truy cập tài liệu đính kèm thuộc Request của người dùng khác.
 - FR-SEC-02/AC-05: Staff chỉ được truy cập tài liệu thuộc phạm vi được phân công.
 - FR-SEC-02/AC-06: Chỉ người dùng có quyền phù hợp mới được xem Audit Log.
