@@ -145,8 +145,8 @@ Student gửi thành công một request và nhận được **Request ID** đ�
 
 ## 11. Related Requirements
 
-* [FR-S1 – Request Submission](../06-requirements/functional-requirements.md#fr-s1-request-submission)
-* [FR-S2 – Request Tracking & Timeline](../06-requirements/functional-requirements.md#fr-s2-request-tracking)
+* [FR-STU-01 – Request Submission](../05-requirements/functional-requirements.md#fr-stu-01--request-submission)
+* [FR-STU-02 – Request Tracking and Notifications](../05-requirements/functional-requirements.md#fr-stu-02--request-tracking-and-notifications)
 
 * [AC-01 — Student gửi yêu cầu đầy đủ](../08-testing-and-acceptance/acceptance-criteria.md#ac-01)
 * [AC-02 — Student gửi thông tin chưa đầy đủ](../08-testing-and-acceptance/acceptance-criteria.md#ac-02)
@@ -156,4 +156,4 @@ Student gửi thành công một request và nhận được **Request ID** đ�
 
 Sau khi request được tạo và tiếp nhận, request sẽ được chuyển sang:
 
-* [WF-02 – Classify and Assign](../05-workflows/WF-02-classify-and-assign.md)
+* [WF-02 – Classify and Assign](../04-workflows/WF-02-classify-and-assign.md)

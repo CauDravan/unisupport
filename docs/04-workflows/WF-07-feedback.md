@@ -125,8 +125,8 @@ Student gửi feedback về kết quả hỗ trợ. System lưu feedback cùng v
 
 ## 11. Related Requirements
 
-* [FR-S3 — Additional Information & Feedback](../06-requirements/functional-requirements.md#fr-s3-additional-information-feedback)
-* [FR-M2 — Performance & Reporting](../06-requirements/functional-requirements.md#fr-m2-performance-and-reporting)
+* [FR-STU-03 – Additional Information and Feedback](../05-requirements/functional-requirements.md#fr-stu-03--additional-information-and-feedback)
+* [FR-MGT-02 – Performance and Management Reporting](../05-requirements/functional-requirements.md#fr-mgt-02--performance-and-management-reporting)
 
 * [AC-14 — Student gửi Feedback sau khi Request được xử lý](../08-testing-and-acceptance/acceptance-criteria.md#ac-14)
 * [AC-10 — Student kiểm tra Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-10)

@@ -39,9 +39,9 @@ Cổng dành cho Student để **gửi, theo dõi và tương tác với yêu c�
 
 ## Related Workflows
 
-* [WF-01 – Submit Request](../../05-workflows/WF-01-submit-request.md)
-* [WF-04 – Request Additional Information](../../05-workflows/WF-04-request-additional-information.md)
-* [WF-07 – Feedback](../../05-workflows/WF-07-feedback.md)
+* [WF-01 – Submit Request](../../04-workflows/WF-01-submit-request.md)
+* [WF-04 – Request Additional Information](../../04-workflows/WF-04-request-additional-information.md)
+* [WF-07 – Feedback](../../04-workflows/WF-07-feedback.md)
 
 ## Related Requirements
 

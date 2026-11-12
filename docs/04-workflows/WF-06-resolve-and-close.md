@@ -134,8 +134,8 @@ Request được giải quyết và đóng thành công. System lưu lại **Res
 
 ## 11. Related Requirements
 
-* [FR-St2 — Request Processing & Escalation](../06-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
-* [FR-S2 — Request Tracking](../06-requirements/functional-requirements.md#fr-s2-request-tracking)
+* [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
+* [FR-STU-02 – Request Tracking and Notifications](../05-requirements/functional-requirements.md#fr-stu-02--request-tracking-and-notifications)
 
 * [AC-05 — Staff thay đổi Request Status](../08-testing-and-acceptance/acceptance-criteria.md#ac-05)
 * [AC-09 — Staff hoàn tất và đóng Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-09)
@@ -145,4 +145,4 @@ Request được giải quyết và đóng thành công. System lưu lại **Res
 
 Sau khi request được đóng:
 
-* [WF-07 – Feedback](../05-workflows/WF-07-feedback.md)
+* [WF-07 – Feedback](../04-workflows/WF-07-feedback.md)

@@ -138,7 +138,8 @@ Request được Staff xử lý và cập nhật đầy đủ tiến độ. Khi 
 
 ## 11. Related Requirements
 
-* [FR-St2 — Request Processing & Escalation](../06-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
+* [FR-STA-02 – Queue Management](../05-requirements/functional-requirements.md#fr-sta-02--queue-management)
+* [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
 * [AC-05 — Staff thay đổi Request Status](../08-testing-and-acceptance/acceptance-criteria.md#ac-05)
 
 * [AC-06 — Staff yêu cầu Student bổ sung thông tin](../08-testing-and-acceptance/acceptance-criteria.md#ac-06)
@@ -149,4 +150,4 @@ Request được Staff xử lý và cập nhật đầy đủ tiến độ. Khi 
 
 Sau khi request được xử lý và chuyển sang **Resolved**, request sẽ được chuyển sang:
 
-* [WF-06 – Resolve and Close](../05-workflows/WF-06-resolve-and-close.md)
+* [WF-06 – Resolve and Close](../04-workflows/WF-06-resolve-and-close.md)

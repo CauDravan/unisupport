@@ -62,11 +62,11 @@ Sau khi yêu cầu được giải quyết, Staff có thể cập nhật yêu c�
 
 ## Related Workflows
 
-* [WF-02 – Classify and Assign](../../05-workflows/WF-02-classify-and-assign.md)
-* [WF-03 – Process Request](../../05-workflows/WF-03-process-request.md)
-* [WF-04 – Request Additional Information](../../05-workflows/WF-04-request-additional-information.md)
-* [WF-05 – Transfer Request](../../05-workflows/WF-05-transfer-request.md)
-* [WF-06 – Resolve and Close](../../05-workflows/WF-06-resolve-and-close.md)
+* [WF-02 – Classify and Assign](../../04-workflows/WF-02-classify-and-assign.md)
+* [WF-03 – Process Request](../../04-workflows/WF-03-process-request.md)
+* [WF-04 – Request Additional Information](../../04-workflows/WF-04-request-additional-information.md)
+* [WF-05 – Transfer Request](../../04-workflows/WF-05-transfer-request.md)
+* [WF-06 – Resolve and Close](../../04-workflows/WF-06-resolve-and-close.md)
 
 ## Related Functional Requirements
 

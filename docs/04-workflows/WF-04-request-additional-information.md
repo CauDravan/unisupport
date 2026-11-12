@@ -139,8 +139,8 @@ Student cung cấp đủ thông tin cần thiết để Staff tiếp tục xử 
 
 ## 11. Related Requirements
 
-* [FR-St2 — Request Processing & Escalation](../06-requirements/functional-requirements.md#fr-st2-processing-and-escalation)
-* [FR-S3 — Additional Information & Feedback](../06-requirements/functional-requirements.md#fr-s3-additional-information-feedback)
+* [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
+* [FR-STU-03 – Additional Information and Feedback](../05-requirements/functional-requirements.md#fr-stu-03--additional-information-and-feedback)
 
 * [AC-06 — Staff yêu cầu Student bổ sung thông tin](../08-testing-and-acceptance/acceptance-criteria.md#ac-06)
 * [AC-07 — Student cung cấp thông tin bổ sung](../08-testing-and-acceptance/acceptance-criteria.md#ac-07)
@@ -149,4 +149,4 @@ Student cung cấp đủ thông tin cần thiết để Staff tiếp tục xử 
 
 Sau khi Student cung cấp đủ thông tin, request quay lại:
 
-* [WF-03 – Process Request](../05-workflows/WF-03-process-request.md)
+* [WF-03 – Process Request](../04-workflows/WF-03-process-request.md)
