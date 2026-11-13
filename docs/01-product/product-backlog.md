@@ -19,17 +19,18 @@ Product Backlog được xây dựng dựa trên Product Goals, Product Scope v�
 | ID | Product Backlog Item | Description | Priority |
 |---|---|---|---|
 | PBI-01 | User Authentication | Cho phép người dùng đăng nhập vào hệ thống bằng tài khoản phù hợp. | High |
-| PBI-02 | Student Request Submission | Cho phép Student tạo và gửi yêu cầu hỗ trợ, bao gồm loại yêu cầu và nội dung cần thiết. | High |
-| PBI-03 | Request Tracking | Cho phép Student theo dõi trạng thái và các cập nhật liên quan đến yêu cầu đã gửi. | High |
+| PBI-02 | Student Request Submission | Cho phép Student tạo và gửi yêu cầu hỗ trợ bằng cách cung cấp Request Type, Subject, Description và tài liệu đính kèm nếu cần. Hệ thống tạo Request ID và xác nhận khi yêu cầu được tiếp nhận thành công. | High |
+| PBI-03 | Request Tracking | Cho phép Student xem danh sách yêu cầu đã gửi, trạng thái hiện tại, lịch sử xử lý và nhận thông báo khi có cập nhật liên quan đến yêu cầu. | High |
 | PBI-04 | Request Classification | Cho phép Staff xem xét và phân loại yêu cầu theo nhóm phù hợp. | High |
 | PBI-05 | Request Assignment | Cho phép Staff phân công yêu cầu cho người hoặc bộ phận phụ trách. | High |
-| PBI-06 | Request Processing | Cho phép Staff cập nhật tiến độ, trao đổi thông tin và xử lý yêu cầu. | High |
+| PBI-06 | Request Processing | Cho phép Staff xem các yêu cầu được giao, cập nhật trạng thái, ghi nhận hoạt động xử lý và chuyển yêu cầu sang Staff hoặc Department khác khi cần thiết. | High |
 | PBI-07 | Additional Information Handling | Cho phép Staff yêu cầu Student bổ sung thông tin và ghi nhận thông tin được cung cấp. | Medium |
 | PBI-08 | Request Resolution & Closure | Cho phép Staff ghi nhận kết quả xử lý và hoàn tất yêu cầu. | High |
 | PBI-09 | Student Feedback | Cho phép Student gửi đánh giá hoặc phản hồi sau khi yêu cầu được giải quyết. | Medium |
-| PBI-10 | Management Dashboard | Cung cấp thông tin tổng quan về số lượng và trạng thái các yêu cầu hỗ trợ. | Medium |
-| PBI-11 | Management Reporting | Cho phép Management xem các báo cáo về tình hình xử lý và những vấn đề hỗ trợ phổ biến. | Medium |
-| PBI-12 | Role-based Access Control | Kiểm soát quyền truy cập và chức năng theo vai trò người dùng. | High |
+| PBI-10 | Management Dashboard | Cung cấp Dashboard giúp Management theo dõi số lượng yêu cầu mới, yêu cầu đang xử lý, yêu cầu quá hạn và các cảnh báo liên quan. | Medium |
+| PBI-11 | Management Reporting | Cho phép Management xem báo cáo về thời gian xử lý trung bình, loại yêu cầu phổ biến, khối lượng công việc theo Department và dữ liệu Feedback của Student. | Medium |
+| PBI-12 | Role-based Access Control | Kiểm soát quyền truy cập dựa trên vai trò Student, Staff và Management; hỗ trợ Management xem thông tin người dùng và quản lý vai trò theo quyền được cấp. | High |
+| PBI-13 | Audit Logging & Data Access Protection | Ghi nhận các hoạt động quan trọng, người thực hiện, thời điểm và những thay đổi liên quan đến Request; hỗ trợ kiểm tra lịch sử xử lý và bảo vệ dữ liệu theo quyền truy cập. | High |
 
 ## 4. Backlog Management
 
