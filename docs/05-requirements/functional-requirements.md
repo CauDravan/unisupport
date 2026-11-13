@@ -36,7 +36,7 @@ Sinh viên có thể gửi yêu cầu hỗ trợ thông qua hệ thống bằng 
 1. Student truy cập chức năng Submit Request.
 2. Hệ thống hiển thị biểu mẫu gửi yêu cầu.
 3. Student lựa chọn Request Type.
-4. Student nhập các thông tin cần thiết và nội dung yêu cầu.
+4. Student nhập Subject, Request Type và Description cùng các thông tin cần thiết để mô tả yêu cầu.
 5. Student đính kèm tài liệu liên quan nếu cần.
 6. Student gửi Request.
 7. Hệ thống kiểm tra tính hợp lệ và đầy đủ của thông tin.
@@ -48,14 +48,13 @@ Sinh viên có thể gửi yêu cầu hỗ trợ thông qua hệ thống bằng 
 - BR-01: Các trường thông tin bắt buộc phải được cung cấp trước khi tạo Request.
 - BR-02: Request Type phải thuộc danh sách loại yêu cầu được hệ thống hỗ trợ.
 - BR-03: Mỗi Request được tạo thành công phải có một Request ID duy nhất.
-- BR-04: Tệp đính kèm phải đáp ứng các quy định về định dạng và dung lượng do hệ thống cấu hình.
 
 **Alternative and Error Flows**
 
 - AF-01: Student không cần đính kèm tài liệu nếu yêu cầu không cần tài liệu bổ sung.
 - EF-01: Nếu thiếu thông tin bắt buộc, hệ thống thông báo các trường cần bổ sung và không tạo Request.
 - EF-02: Nếu Request Type không hợp lệ, hệ thống yêu cầu Student lựa chọn lại.
-- EF-03: Nếu tệp đính kèm không đáp ứng quy định, hệ thống thông báo lỗi và yêu cầu Student thay thế tệp.
+- EF-03: Nếu tệp đính kèm không đáp ứng yêu cầu của hệ thống, hệ thống thông báo cho Student và yêu cầu chọn lại hoặc bỏ tệp.
 
 **Acceptance Criteria**
 
@@ -63,15 +62,13 @@ Sinh viên có thể gửi yêu cầu hỗ trợ thông qua hệ thống bằng 
 - FR-STU-01/AC-02: Hệ thống không tạo Request khi thiếu bất kỳ trường thông tin bắt buộc nào.
 - FR-STU-01/AC-03: Hệ thống tạo Request ID duy nhất sau khi Request được gửi thành công.
 - FR-STU-01/AC-04: Hệ thống cho phép gửi Request không có tệp đính kèm khi tài liệu không bắt buộc.
-- FR-STU-01/AC-05: Hệ thống từ chối tệp đính kèm không đáp ứng quy định được cấu hình.
+- FR-STU-01/AC-05: Hệ thống thông báo khi tệp đính kèm không đáp ứng yêu cầu và không tiếp nhận tệp đó.
 - FR-STU-01/AC-06: Student nhận được thông báo xác nhận sau khi Request được tiếp nhận thành công.
 
 **Edge Cases**
 
 - Student gửi biểu mẫu chỉ chứa khoảng trắng trong trường nội dung bắt buộc.
 - Student gửi nhiều Request có nội dung giống nhau.
-- Student tải lên tệp có định dạng không được hỗ trợ.
-- Student gửi biểu mẫu khi phiên đăng nhập đã hết hạn.
 
 **Related**
 
@@ -120,7 +117,6 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 
 **Alternative and Error Flows**
 
-- AF-01: Student có thể tìm kiếm Request bằng Request ID nếu hệ thống hỗ trợ chức năng tìm kiếm.
 - EF-01: Nếu Request không tồn tại hoặc không thuộc tài khoản của Student, hệ thống không hiển thị dữ liệu Request.
 - EF-02: Nếu không có lịch sử cập nhật, hệ thống hiển thị thông tin phù hợp thay vì một trang trống không có giải thích.
 - EF-03: Nếu không thể tải thông tin Request, hệ thống thông báo lỗi và cho phép Student thử lại.
@@ -187,6 +183,7 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - BR-02: Thông tin bổ sung phải được liên kết với Request tương ứng.
 - BR-03: Feedback chỉ được gửi sau khi Request đã được giải quyết theo quy trình.
 - BR-04: Nội dung bổ sung và Feedback phải được lưu lại để phục vụ việc theo dõi.
+- BR-05: Sau khi Student cung cấp đầy đủ thông tin được yêu cầu, Request có thể chuyển từ trạng thái "Chờ bổ sung thông tin" trở lại "Đang xử lý" theo quy trình.
 
 **Alternative and Error Flows**
 
@@ -248,12 +245,11 @@ Staff có thể phân loại Request, xác định mức độ ưu tiên và chu
 2. Hệ thống hiển thị các Request chưa được phân công hoặc cần phân loại.
 3. Staff xem nội dung và thông tin của Request.
 4. Staff xác định Request Type.
-5. Hệ thống lưu Priority phù hợp cho Request dựa trên mức độ ảnh hưởng và tính cấp thiết của yêu cầu.
-6. Staff lựa chọn Department tiếp nhận.
-7. Staff chỉ định người chịu trách nhiệm.
-8. Staff xác nhận việc phân công.
-9. Hệ thống lưu thông tin phân loại và Assignment.
-10. Hệ thống ghi nhận hoạt động và cập nhật thông tin Request.
+5. Staff lựa chọn Department tiếp nhận.
+6. Staff chỉ định người chịu trách nhiệm.
+7. Staff xác nhận việc phân công.
+8. Hệ thống lưu thông tin phân loại và Assignment.
+9. Hệ thống ghi nhận hoạt động và cập nhật thông tin Request.
 
 **Business Rules**
 
@@ -406,15 +402,13 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - BR-04: Khi yêu cầu bổ sung thông tin, Request phải thể hiện rõ tình trạng chờ thông tin.
 - BR-05: Khi Transfer Request, thông tin và lịch sử xử lý phải được bảo toàn.
 - BR-06: Request chỉ được đóng khi vấn đề đã được giải quyết theo quy trình.
-- BR-07: Hoạt động Escalation phải được ghi nhận khi Request cần chuyển cấp xử lý.
 - BR-08: Khi Student cung cấp đầy đủ thông tin được yêu cầu, Request có thể chuyển từ trạng thái "Chờ bổ sung thông tin" trở lại "Đang xử lý".
 
 **Alternative and Error Flows**
 
 - AF-01: Staff có thể yêu cầu Student bổ sung thông tin trước khi tiếp tục xử lý.
 - AF-02: Staff có thể Transfer Request sang Department khác khi cần chuyên môn hoặc thẩm quyền phù hợp.
-- AF-03: Staff có thể Escalate Request khi vấn đề vượt quá phạm vi xử lý thông thường.
-- AF-04: Staff có thể tiếp tục xử lý Request sau khi nhận được thông tin bổ sung.
+- AF-03: Staff có thể tiếp tục xử lý Request sau khi nhận được đầy đủ thông tin bổ sung từ Student.
 - EF-01: Nếu Staff không có quyền xử lý Request, hệ thống từ chối thao tác.
 - EF-02: Nếu Status không hợp lệ với quy trình, hệ thống không chấp nhận cập nhật.
 - EF-03: Nếu không xác định được Department tiếp nhận khi Transfer, hệ thống không hoàn tất thao tác.
@@ -429,7 +423,6 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - FR-STA-03/AC-05: Hệ thống cập nhật trạng thái phù hợp khi Request chờ thông tin bổ sung.
 - FR-STA-03/AC-06: Staff có thể Transfer Request sang Department khác.
 - FR-STA-03/AC-07: Hệ thống bảo toàn thông tin và lịch sử xử lý sau khi Transfer.
-- FR-STA-03/AC-08: Staff có thể Escalate Request theo quy trình.
 - FR-STA-03/AC-09: Hệ thống không cho phép đóng Request khi chưa đáp ứng điều kiện giải quyết.
 - FR-STA-03/AC-10: Hệ thống ghi nhận thời điểm và người thực hiện các hoạt động xử lý.
 - FR-STA-03/AC-11: Hệ thống cho phép Request chuyển từ "Chờ bổ sung thông tin" sang "Đang xử lý" sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
@@ -440,7 +433,6 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - Request được Transfer nhiều lần giữa các Department.
 - Request được cập nhật bởi hai Staff trong cùng khoảng thời gian.
 - Staff cố gắng đóng Request khi vẫn còn thông tin cần xử lý.
-- Request cần Escalation nhưng chưa xác định được đơn vị tiếp nhận.
 
 **Related**
 
@@ -493,8 +485,7 @@ Management có thể theo dõi tình hình tiếp nhận và xử lý Request th
 
 **Alternative and Error Flows**
 
-- AF-01: Management có thể lựa chọn khoảng thời gian hoặc điều kiện lọc nếu Dashboard hỗ trợ.
-- AF-02: Management có thể truy cập danh sách chi tiết từ số liệu tổng quan.
+- AF-01: Management có thể truy cập danh sách chi tiết từ số liệu tổng quan.
 - EF-01: Nếu không có dữ liệu Request, hệ thống hiển thị các chỉ số bằng 0 hoặc thông báo phù hợp.
 - EF-02: Nếu không thể tải dữ liệu tổng quan, hệ thống thông báo lỗi.
 - EF-03: Nếu Management không có quyền truy cập, hệ thống từ chối truy cập Dashboard.
@@ -564,7 +555,6 @@ Management có thể xem các báo cáo và số liệu tổng hợp để đán
 **Alternative and Error Flows**
 
 - AF-01: Management có thể xem các nhóm báo cáo khác nhau tùy theo nhu cầu quản lý.
-- AF-02: Management có thể lọc dữ liệu theo khoảng thời gian nếu hệ thống hỗ trợ.
 - EF-01: Nếu chưa có đủ dữ liệu để tính toán chỉ số, hệ thống hiển thị thông báo phù hợp.
 - EF-02: Nếu dữ liệu báo cáo không thể tải, hệ thống thông báo lỗi.
 - EF-03: Nếu Management không có quyền truy cập báo cáo, hệ thống từ chối thao tác.
@@ -595,11 +585,11 @@ Management có thể xem các báo cáo và số liệu tổng hợp để đán
 
 ## 4. Security and Access
 
-### FR-SEC-01 – User Authentication and Role-Based Access Control
+### FR-SEC-01 – Role-Based Access Control and User Management
 
 **Description**
 
-Hệ thống cung cấp cơ chế xác thực người dùng và kiểm soát quyền truy cập dựa trên Role nhằm đảm bảo mỗi nhóm người dùng chỉ có thể sử dụng các chức năng và dữ liệu được cấp phép.
+Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Management quản lý thông tin người dùng, vai trò theo quyền được cấp.
 
 **Actor**
 
@@ -613,61 +603,46 @@ Hệ thống cung cấp cơ chế xác thực người dùng và kiểm soát qu
 
 **Preconditions**
 
-- Người dùng có tài khoản hợp lệ trong hệ thống.
-- Các Role và quyền truy cập đã được cấu hình.
-- Hệ thống có cơ chế xác thực người dùng.
+- Người dùng có tài khoản trong hệ thống.
+- Các Role và quyền truy cập đã được xác định.
 
 **Main Flow**
 
-1. Người dùng truy cập hệ thống.
-2. Hệ thống hiển thị giao diện đăng nhập.
-3. Người dùng cung cấp thông tin xác thực.
-4. Hệ thống kiểm tra thông tin đăng nhập.
-5. Hệ thống xác định Role của người dùng.
-6. Hệ thống cấp quyền truy cập tương ứng.
-7. Người dùng truy cập các chức năng phù hợp với Role của mình.
-8. Hệ thống kiểm tra quyền khi người dùng thực hiện các thao tác liên quan đến dữ liệu.
-9. Management truy cập chức năng quản lý người dùng và vai trò theo quyền được cấp.
-10. Hệ thống hiển thị thông tin người dùng và Role hiện tại.
-11. Management cập nhật Role khi cần thiết.
-12. Hệ thống lưu thay đổi và ghi nhận hoạt động liên quan.
+1. Người dùng truy cập chức năng tương ứng với vai trò của mình.
+2. Hệ thống xác định Role và kiểm tra quyền truy cập của người dùng.
+3. Hệ thống cho phép người dùng sử dụng các chức năng thuộc phạm vi quyền được cấp.
+4. Management truy cập chức năng quản lý người dùng và vai trò theo quyền được cấp.
+5. Hệ thống hiển thị thông tin người dùng và Role hiện tại.
+6. Management cập nhật Role khi cần thiết.
+7. Hệ thống lưu thay đổi và ghi nhận hoạt động liên quan.
 
 **Business Rules**
 
-- BR-01: Người dùng phải được xác thực trước khi truy cập các chức năng yêu cầu đăng nhập.
-- BR-02: Mỗi người dùng phải được gán Role phù hợp.
-- BR-03: Student chỉ được truy cập dữ liệu và chức năng dành cho Student.
-- BR-04: Staff chỉ được truy cập dữ liệu và chức năng thuộc phạm vi trách nhiệm được cấp.
-- BR-05: Management chỉ được truy cập chức năng và dữ liệu phục vụ giám sát, báo cáo theo quyền được cấp.
-- BR-06: Quyền truy cập phải được kiểm tra đối với cả giao diện và các thao tác xử lý dữ liệu.
+- BR-01: Mỗi người dùng phải được gán Role phù hợp.
+- BR-02: Student chỉ được truy cập dữ liệu và chức năng dành cho Student.
+- BR-03: Staff chỉ được truy cập dữ liệu và chức năng thuộc phạm vi trách nhiệm được cấp.
+- BR-04: Management chỉ được truy cập chức năng và dữ liệu theo quyền được cấp.
+- BR-05: Quyền truy cập phải được kiểm tra khi người dùng sử dụng chức năng và thao tác với dữ liệu.
+- BR-06: Management có thể xem thông tin người dùng, xác định Role và cập nhật Role theo quyền được cấp.
 
 **Alternative and Error Flows**
 
-- AF-01: Người dùng có thể đăng xuất khỏi hệ thống.
-- AF-02: Người dùng có thể đăng nhập lại sau khi phiên đăng nhập hết hạn.
-- EF-01: Nếu thông tin đăng nhập không hợp lệ, hệ thống từ chối đăng nhập.
-- EF-02: Nếu tài khoản không có Role hợp lệ, hệ thống không cấp quyền truy cập.
-- EF-03: Nếu người dùng cố truy cập chức năng ngoài quyền hạn, hệ thống từ chối thao tác.
-- EF-04: Nếu phiên đăng nhập hết hạn, hệ thống yêu cầu xác thực lại.
+- EF-01: Nếu người dùng không có Role hoặc quyền phù hợp, hệ thống từ chối truy cập chức năng tương ứng.
+- EF-02: Nếu người dùng cố truy cập chức năng ngoài quyền hạn, hệ thống từ chối thao tác.
 
 **Acceptance Criteria**
 
-- FR-SEC-01/AC-01: Người dùng phải đăng nhập thành công trước khi truy cập chức năng yêu cầu xác thực.
-- FR-SEC-01/AC-02: Hệ thống xác định Role của người dùng sau khi xác thực thành công.
-- FR-SEC-01/AC-03: Student không thể truy cập chức năng chỉ dành cho Staff hoặc Management.
-- FR-SEC-01/AC-04: Staff chỉ có thể thực hiện các thao tác thuộc phạm vi được cấp quyền.
-- FR-SEC-01/AC-05: Management chỉ có thể truy cập dữ liệu và chức năng theo quyền được cấp.
-- FR-SEC-01/AC-06: Hệ thống từ chối thao tác truy cập trái phép.
-- FR-SEC-01/AC-07: Hệ thống yêu cầu xác thực lại khi phiên đăng nhập hết hạn.
-- FR-SEC-01/AC-08: Management có thể xem thông tin người dùng và Role hiện tại theo quyền được cấp.
-- FR-SEC-01/AC-09: Management có thể cập nhật Role của người dùng theo quyền được cấp.
+- FR-SEC-01/AC-01: Student chỉ có thể truy cập chức năng và dữ liệu dành cho Student.
+- FR-SEC-01/AC-02: Staff chỉ có thể truy cập chức năng và dữ liệu thuộc phạm vi trách nhiệm được cấp.
+- FR-SEC-01/AC-03: Management chỉ có thể truy cập chức năng quản lý theo quyền được cấp.
+- FR-SEC-01/AC-04: Hệ thống từ chối thao tác truy cập ngoài quyền hạn của người dùng.
+- FR-SEC-01/AC-05: Management có thể xem thông tin người dùng và Role hiện tại theo quyền được cấp.
+- FR-SEC-01/AC-06: Management có thể cập nhật Role của người dùng theo quyền được cấp.
 
 **Edge Cases**
 
-- Người dùng đăng nhập bằng tài khoản không tồn tại.
 - Người dùng cố truy cập chức năng bằng đường dẫn trực tiếp.
 - Role của người dùng thay đổi trong quá trình sử dụng hệ thống.
-- Người dùng cố tiếp tục thao tác sau khi đăng xuất.
 
 **Related**
 
@@ -706,45 +681,27 @@ Hệ thống ghi nhận các hoạt động quan trọng liên quan đến Reque
 2. Hệ thống kiểm tra quyền truy cập của người dùng.
 3. Hệ thống thực hiện thao tác nếu người dùng có quyền.
 4. Hệ thống ghi nhận hoạt động cần thiết.
-5. Hệ thống lưu thông tin về người thực hiện, thời điểm và loại hoạt động.
-6. Người có quyền phù hợp có thể truy cập thông tin lịch sử để kiểm tra.
+5. Hệ thống lưu thông tin về người thực hiện, thao tác, thời điểm và các thay đổi liên quan đến Request.
 
 **Business Rules**
 
 - BR-01: Các hoạt động quan trọng liên quan đến Request phải được ghi nhận.
 - BR-02: Các thay đổi về Status, Priority, Assignment và thông tin xử lý phải có lịch sử.
 - BR-03: Quyền truy cập dữ liệu sinh viên phải được giới hạn theo Role.
-- BR-04: Tài liệu đính kèm phải được bảo vệ theo quyền truy cập của Request tương ứng.
-- BR-05: Thông tin lịch sử truy cập và thay đổi chỉ được xem bởi người có thẩm quyền.
-- BR-06: Dữ liệu phải được quản lý theo thời gian lưu trữ được quy định.
-- BR-07: Prototype và testing sử dụng dữ liệu mô phỏng thay cho dữ liệu cá nhân thực tế.
 
 **Alternative and Error Flows**
 
-- AF-01: Người có quyền phù hợp có thể xem lịch sử hoạt động của Request.
-- AF-02: Hệ thống có thể hiển thị thông tin lịch sử theo từng loại hoạt động.
-- EF-01: Nếu người dùng không có quyền truy cập tài liệu đính kèm, hệ thống từ chối truy cập.
-- EF-02: Nếu người dùng không có quyền xem Audit Log, hệ thống từ chối thao tác.
-- EF-03: Nếu hoạt động không thể được ghi nhận, hệ thống xử lý theo chính sách kiểm soát lỗi và bảo đảm không xác nhận một thao tác quan trọng là hoàn tất khi chưa đáp ứng yêu cầu ghi nhận.
 
 **Acceptance Criteria**
 
 - FR-SEC-02/AC-01: Hệ thống ghi nhận các thay đổi quan trọng về Status của Request.
 - FR-SEC-02/AC-02: Hệ thống ghi nhận các thay đổi về Priority và Assignment.
 - FR-SEC-02/AC-03: Hệ thống ghi nhận người thực hiện, thao tác được thực hiện, thời điểm thực hiện và các thay đổi liên quan đến Request.
-- FR-SEC-02/AC-04: Student không thể truy cập tài liệu đính kèm thuộc Request của người dùng khác.
-- FR-SEC-02/AC-05: Staff chỉ được truy cập tài liệu thuộc phạm vi được phân công.
-- FR-SEC-02/AC-06: Chỉ người dùng có quyền phù hợp mới được xem Audit Log.
-- FR-SEC-02/AC-07: Dữ liệu được quản lý theo chính sách lưu trữ đã cấu hình.
-- FR-SEC-02/AC-08: Prototype và testing sử dụng dữ liệu mô phỏng thay cho dữ liệu cá nhân thực tế.
 
 **Edge Cases**
 
-- Người dùng cố truy cập trực tiếp URL của tài liệu đính kèm.
 - Một Request được cập nhật nhiều lần liên tiếp.
 - Một hoạt động bị gián đoạn trong lúc hệ thống đang ghi nhận lịch sử.
-- Người dùng không còn quyền truy cập nhưng vẫn giữ đường dẫn đến Audit Log.
-- Dữ liệu mô phỏng chứa thông tin có hình thức giống dữ liệu cá nhân thực tế.
 
 **Related**
 
@@ -760,14 +717,14 @@ Hệ thống ghi nhận các hoạt động quan trọng liên quan đến Reque
 | Module | Requirement ID | Functional Requirement | Priority |
 |---|---|---|---|
 | M01 | FR-STU-01 | Request Submission | High |
-| M01 | FR-STU-02 | Request Tracking and Notifications | High |
-| M01 | FR-STU-03 | Additional Information and Feedback | High |
+| M01 | FR-STU-02 | Request Tracking and Notifications | Medium |
+| M01 | FR-STU-03 | Additional Information and Feedback | Medium |
 | M02 | FR-STA-01 | Request Classification and Assignment | High |
 | M02 | FR-STA-02 | Queue Management | High |
 | M02 | FR-STA-03 | Request Processing, Transfer and Resolution | High |
-| M03 | FR-MGT-01 | Request Monitoring and Overdue Alerts | High |
-| M03 | FR-MGT-02 | Performance and Management Reporting | High |
-| M04 | FR-SEC-01 | User Authentication and Role-Based Access Control | High |
+| M03 | FR-MGT-01 | Request Monitoring and Overdue Alerts | Medium |
+| M03 | FR-MGT-02 | Performance and Management Reporting | Medium |
+| M04 | FR-SEC-01 | Role-Based Access Control and User Management | High |
 | M04 | FR-SEC-02 | Audit Logging and Data Access Protection | High |
 
 ## 6. Requirement Traceability
@@ -782,10 +739,10 @@ Các Functional Requirements được liên kết với Module và Workflow tư�
 | FR-STA-01 | WF-02, WF-05 |
 | FR-STA-02 | WF-02, WF-03 |
 | FR-STA-03 | WF-03, WF-04, WF-05, WF-06 |
-| FR-MGT-01 | Management Monitoring |
-| FR-MGT-02 | Management Reporting, WF-07 |
-| FR-SEC-01 | Security and Access Control |
-| FR-SEC-02 | Security, Audit Logging and Data Protection |
+| FR-MGT-01 | Không có Workflow riêng; tham chiếu M03 PRD |
+| FR-MGT-02 | Không có Workflow báo cáo riêng; WF-07 cung cấp dữ liệu Feedback |
+| FR-SEC-01 | Không có Workflow riêng; áp dụng xuyên suốt các Module theo M04 PRD |
+| FR-SEC-02 | Không có Workflow riêng; áp dụng xuyên suốt các Module theo M04 PRD và Business Rules |
 
 Các mã Acceptance Criteria được sử dụng làm cơ sở xây dựng Test Scenarios trong tài liệu `06-acceptance/test-scenarios.md` và Traceability Matrix trong `06-acceptance/traceability-matrix.md`.
 
