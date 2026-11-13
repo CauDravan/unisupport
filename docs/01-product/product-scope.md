@@ -125,6 +125,8 @@ Các chức năng và yêu cầu bao gồm:
 - Bảo vệ thông tin và tài liệu đính kèm của yêu cầu.
 - Ghi nhận các hoạt động và thay đổi quan trọng thông qua Activity Logging.
 - Xem xét thời gian lưu trữ dữ liệu và cách xử lý thông tin nhạy cảm.
+- Cho phép Management xem thông tin người dùng và Role hiện tại theo quyền được cấp.
+- Cho phép Management cập nhật Role của người dùng theo quyền được cấp.
 
 **Primary Actors:** Student, Staff và Management.
 
