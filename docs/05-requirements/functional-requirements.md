@@ -593,9 +593,8 @@ Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Man
 
 **Actor**
 
-- Primary Actor: Student
-- Primary Actor: Staff
-- Primary Actor: Management
+- Primary Actor: Student, Staff, Management
+- Supporting Actor: System
 
 **Priority**
 
@@ -611,10 +610,11 @@ Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Man
 1. Người dùng truy cập chức năng tương ứng với vai trò của mình.
 2. Hệ thống xác định Role và kiểm tra quyền truy cập của người dùng.
 3. Hệ thống cho phép người dùng sử dụng các chức năng thuộc phạm vi quyền được cấp.
-4. Management truy cập chức năng quản lý người dùng và vai trò theo quyền được cấp.
-5. Hệ thống hiển thị thông tin người dùng và Role hiện tại.
-6. Management cập nhật Role khi cần thiết.
-7. Hệ thống lưu thay đổi và ghi nhận hoạt động liên quan.
+4. Management truy cập chức năng quản lý người dùng theo quyền được cấp.
+5. Hệ thống hiển thị danh sách người dùng và Role hiện tại.
+6. Management chọn người dùng và cập nhật Role phù hợp.
+7. Hệ thống kiểm tra quyền thực hiện thao tác cập nhật.
+8. Nếu hợp lệ, hệ thống lưu Role mới và ghi nhận hoạt động thay đổi.
 
 **Business Rules**
 
@@ -623,12 +623,14 @@ Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Man
 - BR-03: Staff chỉ được truy cập dữ liệu và chức năng thuộc phạm vi trách nhiệm được cấp.
 - BR-04: Management chỉ được truy cập chức năng và dữ liệu theo quyền được cấp.
 - BR-05: Quyền truy cập phải được kiểm tra khi người dùng sử dụng chức năng và thao tác với dữ liệu.
-- BR-06: Management có thể xem thông tin người dùng, xác định Role và cập nhật Role theo quyền được cấp.
+- BR-06: Management chỉ được xem thông tin người dùng và cập nhật Role trong phạm vi quyền quản lý được cấp.
 
 **Alternative and Error Flows**
 
 - EF-01: Nếu người dùng không có Role hoặc quyền phù hợp, hệ thống từ chối truy cập chức năng tương ứng.
 - EF-02: Nếu người dùng cố truy cập chức năng ngoài quyền hạn, hệ thống từ chối thao tác.
+- EF-03: Nếu người dùng truy cập chức năng bằng đường dẫn trực tiếp nhưng không có quyền phù hợp, hệ thống từ chối truy cập.
+- EF-04: Nếu Role của người dùng thay đổi trong quá trình sử dụng hệ thống, hệ thống áp dụng quyền mới cho các thao tác tiếp theo.
 
 **Acceptance Criteria**
 
@@ -680,23 +682,30 @@ Hệ thống ghi nhận các hoạt động quan trọng liên quan đến Reque
 1. Người dùng thực hiện thao tác liên quan đến Request hoặc dữ liệu.
 2. Hệ thống kiểm tra quyền truy cập của người dùng.
 3. Hệ thống thực hiện thao tác nếu người dùng có quyền.
-4. Hệ thống ghi nhận hoạt động cần thiết.
-5. Hệ thống lưu thông tin về người thực hiện, thao tác, thời điểm và các thay đổi liên quan đến Request.
+4. Hệ thống ghi nhận hoạt động quan trọng phát sinh từ thao tác.
+5. Hệ thống lưu thông tin về người thực hiện, hành động, thời điểm và đối tượng dữ liệu liên quan.
+6. Người có quyền truy cập Audit Log có thể sử dụng thông tin được ghi nhận để kiểm tra hoạt động khi cần thiết.
 
 **Business Rules**
 
 - BR-01: Các hoạt động quan trọng liên quan đến Request phải được ghi nhận.
 - BR-02: Các thay đổi về Status, Priority, Assignment và thông tin xử lý phải có lịch sử.
 - BR-03: Quyền truy cập dữ liệu sinh viên phải được giới hạn theo Role.
+- BR-04: Audit Log phải ghi nhận được người thực hiện, hành động, thời điểm và đối tượng dữ liệu liên quan.
+- BR-05: Chỉ người dùng có quyền phù hợp mới được truy cập thông tin Audit Log.
 
 **Alternative and Error Flows**
 
+- EF-01: Nếu người dùng không có quyền truy cập dữ liệu, hệ thống từ chối thao tác và không cho phép truy cập dữ liệu bị hạn chế.
+- EF-02: Nếu hệ thống không thể ghi nhận Audit Log, hệ thống xử lý lỗi và thông báo hoặc ghi nhận sự cố theo cơ chế phù hợp.
+- EF-03: Nếu một thao tác bị gián đoạn trong lúc ghi nhận lịch sử, hệ thống không được tạo bản ghi lịch sử sai lệch so với thay đổi dữ liệu thực tế.
 
 **Acceptance Criteria**
 
 - FR-SEC-02/AC-01: Hệ thống ghi nhận các thay đổi quan trọng về Status của Request.
 - FR-SEC-02/AC-02: Hệ thống ghi nhận các thay đổi về Priority và Assignment.
 - FR-SEC-02/AC-03: Hệ thống ghi nhận người thực hiện, thao tác được thực hiện, thời điểm thực hiện và các thay đổi liên quan đến Request.
+- FR-SEC-02/AC-04: Chỉ người dùng có quyền phù hợp mới có thể truy cập thông tin Audit Log.
 
 **Edge Cases**
 
