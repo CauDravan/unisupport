@@ -133,8 +133,8 @@ Request được chuyển đến **Department hoặc Staff phù hợp**, đồng
 * [FR-STA-01 – Request Classification and Assignment](../05-requirements/functional-requirements.md#fr-sta-01--request-classification-and-assignment)
 * [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
 
-* [AC-04 — Staff phân công Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-04)
-* [AC-08 — Staff chuyển giao Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-08)
+* [AC-04 — Staff phân công Request](../06-acceptance/acceptance-criteria.md#ac-04)
+* [AC-08 — Staff chuyển giao Request](../06-acceptance/acceptance-criteria.md#ac-08)
 
 ## 12. Next Workflow
 

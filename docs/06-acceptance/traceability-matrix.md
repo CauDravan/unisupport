@@ -55,7 +55,7 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 | AC-06 – Staff yêu cầu Student bổ sung thông tin | FR-STA-03, FR-STU-02 | FR-STA-03/AC-04–AC-05; FR-STU-02/AC-05 | TS-011, TS-034–TS-035 | Kiểm tra yêu cầu bổ sung, cập nhật trạng thái chờ và thông báo cho Student. |
 | AC-07 – Student cung cấp thông tin bổ sung | FR-STU-03, FR-STA-03 | FR-STU-03/AC-01–AC-02; FR-STA-03/AC-11 | TS-013–TS-014, TS-040 | TS-040 kiểm tra Request có thể tiếp tục xử lý sau khi nhận đủ thông tin. |
 | AC-08 – Staff chuyển giao Request | FR-STA-03 | AC-06–AC-07 | TS-036–TS-037 | Kiểm tra Transfer và bảo toàn thông tin/lịch sử. |
-| AC-09 – Staff hoàn tất và đóng Request | FR-STA-03 | AC-09 | TS-038 | TS-038 kiểm tra điều kiện không cho đóng Request khi chưa đáp ứng điều kiện giải quyết. Luồng đóng thành công được kiểm tra riêng tại TS-063 theo WF-06; TS-063 không phải kiểm thử trực tiếp cho AC-09. |
+| AC-09 – Staff hoàn tất và đóng Request | FR-STA-03 | AC-09 | TS-063 | TS-063 kiểm tra luồng thành công theo WF-06: In Progress → Resolved → Closed, bao gồm lưu Resolution, Closed Date và Request History. TS-038 là Negative Test bổ trợ, kiểm tra hệ thống chặn đóng Request khi chưa đủ điều kiện. |
 | AC-10 – Student kiểm tra Request | FR-STU-02 | AC-01–AC-03 | TS-007–TS-009 | Kiểm tra danh sách Request, Status hiện tại và Request History. |
 | AC-11 – Management mở Management Dashboard | FR-MGT-01 | AC-01–AC-06 | TS-041–TS-046 | Kiểm tra các số liệu tổng quan và thông tin Request trên Dashboard. |
 | AC-12 – User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | FR-SEC-01, FR-SEC-02 | FR-SEC-01/AC-01–AC-04; FR-SEC-02/AC-01–AC-04 | TS-053–TS-056, TS-059–TS-062 | Mapping bao phủ xác thực, Role/permission và bảo vệ dữ liệu/truy cập. |
@@ -65,7 +65,7 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 **Mapping notes:**
 
 - Đây là mapping ở cấp tổng quát, được xây dựng từ cột `Related Requirements`, nội dung Scenario/Expected Result của Generic AC và Test Scenarios hiện có. Các Test Scenario có thể hỗ trợ nhiều Generic AC.
-- Với AC-05, TS-063 bổ sung kiểm tra luồng cập nhật Status thành công `In Progress → Resolved → Closed` theo WF-06. Với AC-09, TS-038 là Negative Test trực tiếp để xác minh hệ thống chặn đóng Request khi chưa đủ điều kiện. TS-063 kiểm tra luồng workflow thành công, không thay thế TS-038 và không được xem là kiểm thử trực tiếp cho AC-09.
+- Với AC-05, TS-063 bổ sung kiểm tra luồng cập nhật Status thành công `In Progress → Resolved → Closed` theo WF-06. Với AC-09, TS-063 là Test Scenario trực tiếp cho luồng đóng thành công; TS-038 là Negative Test bổ trợ để xác minh hệ thống chặn đóng Request khi chưa đủ điều kiện.
 - Với AC-14, điều kiện gửi Feedback phải tuân theo WF-07: Request ở trạng thái `Closed`. TS-016 kiểm tra trường hợp Request chưa Closed và không được xem là bằng chứng cho luồng gửi Feedback thành công.
 - Mapping này không thay thế các liên kết chi tiết theo FR trong mục 2.1.
 

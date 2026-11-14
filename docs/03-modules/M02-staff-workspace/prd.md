@@ -76,7 +76,7 @@ Staff thực hiện:
 
 System thực hiện:
 
-- Cập nhật Request sang trạng thái Waiting for Additional Information.
+- Cập nhật Request sang trạng thái Awaiting Information.
 - Thông báo cho Student về yêu cầu bổ sung.
 - Lưu yêu cầu và thông tin bổ sung vào Request History.
 - Cập nhật Request về trạng thái In Progress sau khi Student cung cấp đủ thông tin theo quy trình.

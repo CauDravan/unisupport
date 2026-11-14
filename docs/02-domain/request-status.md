@@ -8,7 +8,7 @@ Mỗi request có một trạng thái thể hiện giai đoạn hiện tại c�
 | --------------------- | -------------------------------------------------------------------------------------------- |
 | Received              | Yêu cầu đã được Student gửi thành công và được hệ thống tiếp nhận.                           |
 | In Progress           | Yêu cầu đã được phân công cho Staff xử lý và đang được xử lý.                                |
-| Awaiting Information  | Yêu cầu cần Student cung cấp thêm thông tin hoặc tài liệu trước khi có thể tiếp tục xử lý.   |
+| Awaiting Information  | Yêu cầu đang chờ Student cung cấp thêm thông tin hoặc tài liệu trước khi Staff có thể tiếp tục xử lý.   |
 | Resolved              | Yêu cầu đã được Staff xử lý và giải quyết.                                                   |
 | Closed                | Yêu cầu đã hoàn tất quá trình xử lý và được đóng chính thức.                                 |
 
@@ -18,7 +18,7 @@ Quy trình xử lý request thông thường:
 
 **Đã tiếp nhận → Đang xử lý → Chờ bổ sung thông tin → Đang xử lý → Đã hoàn thành → Đã đóng**
 
-Request có thể chuyển từ **Chờ bổ sung thông tin** trở lại **Đang xử lý** sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
+Request có thể chuyển từ **Awaiting Information (Chờ bổ sung thông tin)** trở lại **In Progress (Đang xử lý)** sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
 
 ## Priority
 

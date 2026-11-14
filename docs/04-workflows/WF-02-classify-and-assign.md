@@ -68,7 +68,7 @@ Nếu thông tin trong request chưa đủ để xác định cách xử lý:
 
 1. Staff kiểm tra phần thông tin còn thiếu.
 2. Staff có thể chuyển sang workflow **WF-04 — Request Additional Information**.
-3. Request được chuyển sang trạng thái **Waiting for Additional Information**.
+3. Request được chuyển sang trạng thái **Awaiting Information**.
 
 ### A2 — Request Assigned to Wrong Department
 
@@ -111,9 +111,9 @@ Sau khi hoàn thành workflow, request được **phân loại và assign đúng
 * [FR-STA-01 – Request Classification and Assignment](../05-requirements/functional-requirements.md#fr-sta-01--request-classification-and-assignment)
 * [FR-STA-02 – Queue Management](../05-requirements/functional-requirements.md#fr-sta-02--queue-management)
 
-* [AC-03 — Staff nhận Request mới](../08-testing-and-acceptance/acceptance-criteria.md#ac-03)
-* [AC-04 — Staff phân công Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-04)
-* [AC-08 — Staff chuyển giao Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-08)
+* [AC-03 — Staff nhận Request mới](../06-acceptance/acceptance-criteria.md#ac-03)
+* [AC-04 — Staff phân công Request](../06-acceptance/acceptance-criteria.md#ac-04)
+* [AC-08 — Staff chuyển giao Request](../06-acceptance/acceptance-criteria.md#ac-08)
 
 ## 12. Next Workflow
 

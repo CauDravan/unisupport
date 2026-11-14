@@ -44,7 +44,7 @@ Staff gửi yêu cầu bổ sung thông tin cho Student.
 
 System ghi nhận yêu cầu và cập nhật request sang trạng thái:
 
-**Chờ bổ sung thông tin (Waiting for Additional Information)**
+**Chờ bổ sung thông tin (Awaiting Information)**
 
 ### Step 3 — Notify Student
 
@@ -88,7 +88,7 @@ System lưu lại:
 
 Nếu Student chưa cung cấp thông tin:
 
-1. Request vẫn ở trạng thái **Waiting for Additional Information**.
+1. Request vẫn ở trạng thái **Awaiting Information**.
 2. Staff chưa thể tiếp tục xử lý phần việc phụ thuộc vào thông tin còn thiếu.
 3. Request tiếp tục được theo dõi cho đến khi Student cung cấp thông tin.
 
@@ -99,7 +99,7 @@ Nếu thông tin Student cung cấp vẫn chưa đủ:
 1. Staff kiểm tra thông tin mới.
 2. Staff xác định phần thông tin còn thiếu.
 3. Staff gửi yêu cầu bổ sung thêm thông tin.
-4. Request tiếp tục ở trạng thái **Waiting for Additional Information**.
+4. Request tiếp tục ở trạng thái **Awaiting Information**.
 
 ### A3 — Student Provides Sufficient Information
 
@@ -121,13 +121,13 @@ Nếu thông tin Student cung cấp đã đầy đủ:
 
 ### Not Completed
 
-* Request vẫn ở trạng thái **Waiting for Additional Information**.
+* Request vẫn ở trạng thái **Awaiting Information**.
 * Staff chưa thể hoàn thành phần xử lý phụ thuộc vào thông tin còn thiếu.
 
 ## 9. Business Rules
 
 * Staff phải xác định rõ thông tin cần Student bổ sung.
-* Khi yêu cầu bổ sung thông tin được tạo, request phải chuyển sang **Waiting for Additional Information**.
+* Khi yêu cầu bổ sung thông tin được tạo, request phải chuyển sang **Awaiting Information**.
 * Student phải được thông báo khi request cần bổ sung thông tin.
 * Thông tin Student cung cấp phải được lưu cùng request tương ứng.
 * Sau khi Student cung cấp đủ thông tin, request có thể quay lại **In Progress**.
@@ -135,15 +135,15 @@ Nếu thông tin Student cung cấp đã đầy đủ:
 
 ## 10. Expected Outcome
 
-Student cung cấp đủ thông tin cần thiết để Staff tiếp tục xử lý request. Request chuyển từ **Waiting for Additional Information** về **In Progress**, đồng thời toàn bộ quá trình bổ sung thông tin được lưu lại trong request history.
+Student cung cấp đủ thông tin cần thiết để Staff tiếp tục xử lý request. Request chuyển từ **Awaiting Information** về **In Progress**, đồng thời toàn bộ quá trình bổ sung thông tin được lưu lại trong request history.
 
 ## 11. Related Requirements
 
 * [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
 * [FR-STU-03 – Additional Information and Feedback](../05-requirements/functional-requirements.md#fr-stu-03--additional-information-and-feedback)
 
-* [AC-06 — Staff yêu cầu Student bổ sung thông tin](../08-testing-and-acceptance/acceptance-criteria.md#ac-06)
-* [AC-07 — Student cung cấp thông tin bổ sung](../08-testing-and-acceptance/acceptance-criteria.md#ac-07)
+* [AC-06 — Staff yêu cầu Student bổ sung thông tin](../06-acceptance/acceptance-criteria.md#ac-06)
+* [AC-07 — Student cung cấp thông tin bổ sung](../06-acceptance/acceptance-criteria.md#ac-07)
 
 ## 12. Next Workflow
 

@@ -148,9 +148,9 @@ Student gửi thành công một request và nhận được **Request ID** đ�
 * [FR-STU-01 – Request Submission](../05-requirements/functional-requirements.md#fr-stu-01--request-submission)
 * [FR-STU-02 – Request Tracking and Notifications](../05-requirements/functional-requirements.md#fr-stu-02--request-tracking-and-notifications)
 
-* [AC-01 — Student gửi yêu cầu đầy đủ](../08-testing-and-acceptance/acceptance-criteria.md#ac-01)
-* [AC-02 — Student gửi thông tin chưa đầy đủ](../08-testing-and-acceptance/acceptance-criteria.md#ac-02)
-* [AC-10 — Student kiểm tra yêu cầu](../08-testing-and-acceptance/acceptance-criteria.md#ac-10)
+* [AC-01 — Student gửi yêu cầu đầy đủ](../06-acceptance/acceptance-criteria.md#ac-01)
+* [AC-02 — Student gửi thông tin chưa đầy đủ](../06-acceptance/acceptance-criteria.md#ac-02)
+* [AC-10 — Student kiểm tra yêu cầu](../06-acceptance/acceptance-criteria.md#ac-10)
 
 ## 12. Next Workflow
 

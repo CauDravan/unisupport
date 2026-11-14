@@ -89,7 +89,7 @@ Nếu Staff cần thêm thông tin từ Student:
 
 1. Staff xác định thông tin cần bổ sung.
 2. Request được chuyển sang **WF-04 — Request Additional Information**.
-3. Request chuyển sang trạng thái **Waiting for Additional Information**.
+3. Request chuyển sang trạng thái **Awaiting Information**.
 4. Sau khi Student cung cấp thông tin, Staff tiếp tục xử lý request.
 
 ### A2 — Request Cannot Be Resolved by Current Staff
@@ -128,7 +128,7 @@ Nếu Staff chưa thể hoàn thành request:
 * Chỉ Staff được assign cho request hoặc Staff có quyền phù hợp mới được xử lý request.
 * Staff phải cập nhật trạng thái khi request thay đổi trong quá trình xử lý.
 * Các thông tin cập nhật và thay đổi trạng thái phải được lưu vào request history.
-* Khi cần thêm thông tin từ Student, request phải chuyển sang trạng thái **Waiting for Additional Information**.
+* Khi cần thêm thông tin từ Student, request phải chuyển sang trạng thái **Awaiting Information**.
 * Sau khi Student cung cấp thông tin cần thiết, Staff có thể tiếp tục xử lý request.
 * Request chỉ được chuyển sang **Resolved** khi Staff đã hoàn thành việc xử lý.
 
@@ -140,11 +140,11 @@ Request được Staff xử lý và cập nhật đầy đủ tiến độ. Khi 
 
 * [FR-STA-02 – Queue Management](../05-requirements/functional-requirements.md#fr-sta-02--queue-management)
 * [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
-* [AC-05 — Staff thay đổi Request Status](../08-testing-and-acceptance/acceptance-criteria.md#ac-05)
 
-* [AC-06 — Staff yêu cầu Student bổ sung thông tin](../08-testing-and-acceptance/acceptance-criteria.md#ac-06)
-* [AC-07 — Student cung cấp thông tin bổ sung](../08-testing-and-acceptance/acceptance-criteria.md#ac-07)
-* [AC-08 — Staff chuyển giao Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-08)
+* [AC-05 — Staff thay đổi Request Status](../06-acceptance/acceptance-criteria.md#ac-05)
+* [AC-06 — Staff yêu cầu Student bổ sung thông tin](../06-acceptance/acceptance-criteria.md#ac-06)
+* [AC-07 — Student cung cấp thông tin bổ sung](../06-acceptance/acceptance-criteria.md#ac-07)
+* [AC-08 — Staff chuyển giao Request](../06-acceptance/acceptance-criteria.md#ac-08)
 
 ## 12. Next Workflow
 

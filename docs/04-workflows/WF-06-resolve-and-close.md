@@ -91,7 +91,7 @@ Nếu Staff nhận thấy vẫn cần thông tin từ Student:
 
 1. Staff không đóng request.
 2. Request được chuyển sang **WF-04 — Request Additional Information**.
-3. Request chuyển sang trạng thái **Waiting for Additional Information**.
+3. Request chuyển sang trạng thái **Awaiting Information**.
 4. Sau khi có đủ thông tin, Staff tiếp tục xử lý request.
 
 ### A3 — Request Requires Transfer
@@ -137,9 +137,9 @@ Request được giải quyết và đóng thành công. System lưu lại **Res
 * [FR-STA-03 – Request Processing, Transfer and Resolution](../05-requirements/functional-requirements.md#fr-sta-03--request-processing-transfer-and-resolution)
 * [FR-STU-02 – Request Tracking and Notifications](../05-requirements/functional-requirements.md#fr-stu-02--request-tracking-and-notifications)
 
-* [AC-05 — Staff thay đổi Request Status](../08-testing-and-acceptance/acceptance-criteria.md#ac-05)
-* [AC-09 — Staff hoàn tất và đóng Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-09)
-* [AC-10 — Student kiểm tra Request](../08-testing-and-acceptance/acceptance-criteria.md#ac-10)
+* [AC-05 — Staff thay đổi Request Status](../06-acceptance/acceptance-criteria.md#ac-05)
+* [AC-09 — Staff hoàn tất và đóng Request](../06-acceptance/acceptance-criteria.md#ac-09)
+* [AC-10 — Student kiểm tra Request](../06-acceptance/acceptance-criteria.md#ac-10)
 
 ## 12. Next Workflow
 

@@ -45,7 +45,7 @@ Student có thể theo dõi các Request đã gửi thông qua tài khoản củ
 
 Student có thể cung cấp thêm thông tin khi Staff yêu cầu để tiếp tục xử lý Request.
 
-- Nhận thông báo khi Request chuyển sang trạng thái Waiting for Additional Information.
+- Nhận thông báo khi Request chuyển sang trạng thái Awaiting Information.
 - Xem nội dung và lý do Staff yêu cầu bổ sung.
 - Cung cấp thông tin hoặc tài liệu bổ sung nếu cần.
 - Gửi thông tin bổ sung để Staff tiếp tục xử lý.
