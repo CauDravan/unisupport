@@ -20,7 +20,7 @@ Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu 
 
 ## 3. Functional Test Scenarios
 
-Các kịch bản dưới đây bao phủ toàn bộ AC đang có trong `functional-requirements.md`. Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu.
+Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md` và bổ sung một kịch bản kiểm tra luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` là kịch bản kiểm tra workflow, không được xem là Test Scenario ánh xạ trực tiếp cho `FR-STA-03/AC-09`.
 
 | Mã | Kiểm AC / NFR | Tiền điều kiện | Các bước | Kết quả mong đợi | Regression |
 |---|---|---|---|---|---|
@@ -140,11 +140,11 @@ Khi thực hiện kiểm thử, nhóm cần ghi nhận tối thiểu các thông
 ## 6. Coverage Notes and Open Decisions
 
 - Các Test Scenario `TS-001` đến `TS-006` được giữ lại từ bản hiện tại; các kịch bản tiếp theo được đánh số nối tiếp.
-- Bộ Functional Test Scenarios gồm `TS-001` đến `TS-063`, bao phủ các AC hiện có trong `functional-requirements.md`; `TS-063` kiểm tra luồng thành công Resolve and Close theo WF-06. `FR-STA-03/AC-08` không xuất hiện trong tài liệu nguồn nên không được tự tạo.
+- Bộ Functional Test Scenarios gồm `TS-001` đến `TS-063`. `TS-001` đến `TS-062` ánh xạ đến các AC chi tiết hiện có trong `functional-requirements.md`; `TS-063` là kịch bản bổ sung kiểm tra luồng thành công Resolve and Close theo WF-06, không ánh xạ trực tiếp đến một AC riêng. `FR-STA-03/AC-08` không xuất hiện trong tài liệu nguồn nên không được tự tạo.
 - Bộ Non-Functional Test Scenarios gồm `TS-064` đến `TS-082`, bao phủ 19 NFR hiện có.
 - Các ngưỡng `Proposed baseline` của NFR-PERF-01, NFR-PERF-02, NFR-USE-01, NFR-USE-02 và NFR-COMP-01 cần được xác nhận trước khi dùng làm điều kiện nghiệm thu chính thức.
 - NFR-SEC-06 phụ thuộc chính sách lưu trữ và xử lý dữ liệu do Aurora University/Sponsor phê duyệt. Nếu chưa có chính sách, ghi nhận `Blocked` hoặc `Needs Confirmation`, không tự đặt thời hạn lưu trữ.
-- `acceptance-criteria.md` hiện có bộ AC tổng quát `AC-01` đến `AC-14`, trong khi `functional-requirements.md` có AC riêng theo từng FR. Hai hệ mã này không được coi là cùng một mã. Việc liên kết AC tổng quát với Test Scenario cần được thể hiện trong Traceability Matrix sau khi nhóm thống nhất mapping.
+- `acceptance-criteria.md` có bộ AC tổng quát `AC-01` đến `AC-14`, trong khi `functional-requirements.md` có AC riêng theo từng FR. Hai hệ mã này không được coi là cùng một mã; mapping giữa chúng được trình bày tại mục 2.2 của `traceability-matrix.md` và cần được nhóm rà soát khi có thay đổi.
 - Test Scenario mô tả cách kiểm tra; kết quả Pass/Fail chỉ được điền sau khi prototype thực sự được kiểm thử. Việc có Test Scenario không đồng nghĩa chức năng đã được triển khai hoặc đã Pass.
 
 ## 7. Related Documents

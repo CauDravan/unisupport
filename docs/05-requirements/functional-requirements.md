@@ -150,7 +150,7 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 
 **Description**
 
-Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và gửi Feedback sau khi Request được giải quyết.
+Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và gửi Feedback sau khi Request đã được xử lý và đóng (Closed), theo quy trình WF-07.
 
 **Actor**
 
@@ -181,7 +181,7 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 
 - BR-01: Student chỉ được bổ sung thông tin cho Request thuộc tài khoản của mình.
 - BR-02: Thông tin bổ sung phải được liên kết với Request tương ứng.
-- BR-03: Feedback chỉ được gửi sau khi Request đã được giải quyết theo quy trình.
+- BR-03: Feedback chỉ được gửi sau khi Request đã được xử lý và đóng (Closed), theo quy trình WF-07.
 - BR-04: Nội dung bổ sung và Feedback phải được lưu lại để phục vụ việc theo dõi.
 - BR-05: Sau khi Student cung cấp đầy đủ thông tin được yêu cầu, Request có thể chuyển từ trạng thái "Chờ bổ sung thông tin" trở lại "Đang xử lý" theo quy trình.
 
@@ -197,8 +197,8 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 
 - FR-STU-03/AC-01: Student có thể cung cấp thông tin bổ sung khi Request được yêu cầu bổ sung thông tin.
 - FR-STU-03/AC-02: Hệ thống lưu thông tin bổ sung vào đúng Request.
-- FR-STU-03/AC-03: Student có thể gửi Feedback sau khi Request được giải quyết.
-- FR-STU-03/AC-04: Hệ thống không cho phép gửi Feedback khi Request chưa đạt điều kiện theo quy trình.
+- FR-STU-03/AC-03: Student có thể gửi Feedback sau khi Request đã được xử lý và đóng (Closed), theo WF-07.
+- FR-STU-03/AC-04: Hệ thống không cho phép gửi Feedback khi Request chưa ở trạng thái Closed theo điều kiện của WF-07.
 - FR-STU-03/AC-05: Hệ thống ghi nhận nội dung và thời điểm gửi Feedback.
 - FR-STU-03/AC-06: Hệ thống từ chối thao tác trên Request không thuộc tài khoản của Student.
 
