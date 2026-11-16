@@ -4,7 +4,9 @@
 
 RACI Matrix được sử dụng để xác định trách nhiệm của từng vai trò trong các hoạt động chính của dự án UniSupport. Tài liệu giúp nhóm hiểu rõ ai trực tiếp thực hiện công việc, ai chịu trách nhiệm cuối cùng, ai cần được tham khảo ý kiến và ai cần được thông báo.
 
-RACI Matrix áp dụng cho 4 roles đã được xác định trong Project Proposal:
+RACI Matrix áp dụng cho 4 vai trò giả định của delivery team trong
+Project Proposal. Đây là cơ cấu mô phỏng phục vụ lập kế hoạch; tên người
+đảm nhiệm và phân công thực tế cần được nhóm xác nhận:
 
 - Project Manager (PM)
 - Business Analyst (BA)
@@ -40,7 +42,7 @@ RACI Matrix áp dụng cho 4 roles đã được xác định trong Project Prop
 | Back-end Development & Infrastructure Setup | I | C | C | A/R |
 | Test Planning & Acceptance Validation | C | A/R | R | R |
 | System Integration & Defect Resolution | I | C | R | A/R |
-| Project Monitoring, Risk & Change Management | A/R | C | I | I |
+| Project Monitoring, Risk & Change Assessment | A/R | C | I | I |
 | Final Documentation, Presentation & Handover | A | R | C | R |
 
 ## 4. Role Responsibilities
@@ -61,12 +63,32 @@ Front-end Developer chịu trách nhiệm phát triển giao diện và trải n
 
 Back-end Developer chịu trách nhiệm xây dựng logic hệ thống và xử lý dữ liệu. Vai trò này bao gồm thiết kế API, database, authentication, role-based access control, thiết lập development environment và hỗ trợ deployment.
 
-## 5. RACI Application & Notes
+## 5. External Approval Authority (Outside Delivery Team)
+
+Project Sponsor / Simulated Client là vai trò bên ngoài delivery team,
+không phải thành viên thứ năm và không được tính vào bốn cột vai trò
+PM, BA, FE, BE trong ma trận thực hiện công việc. Theo Project
+Governance, vai trò này xem xét và phê duyệt các Change Request làm thay
+đổi Project Baseline.
+
+| Activity | Project Sponsor / Simulated Client | Delivery Team Responsibility |
+|---|:---:|---|
+| Assess impact and prepare CR recommendation | C | PM coordinates (A); BA, FE, BE provide impact input (R/C according to affected work). |
+| Approve / reject a baseline Change Request | A | PM submits recommendation and records the decision (R); BA, FE, BE are consulted as relevant. |
+| Decide an internal issue that does not change the baseline | I | PM is A/R after seeking input from relevant team roles. |
+
+Sponsor approval authority applies only to baseline changes and does not
+make the Sponsor responsible for day-to-day delivery tasks. PM cannot
+self-approve a baseline CR.
+
+## 6. RACI Application & Notes
 
 - RACI Matrix xác định trách nhiệm ở cấp độ hoạt động chính của dự án, không thay thế việc phân công từng công việc cụ thể.
 - Các công việc chi tiết, người được giao thực hiện và trạng thái tiến độ sẽ được theo dõi thông qua GitHub Issues.
 - Các chuyên môn như DevOps, UI/UX và Testing được phân bổ cho 4 roles hiện có, không được xem là các vị trí độc lập trong cơ cấu nhóm.
 - Front-end Developer và Back-end Developer phối hợp trong quá trình System Integration & Defect Resolution.
 - Business Analyst chịu trách nhiệm lập kế hoạch kiểm thử và xác nhận acceptance criteria; Front-end Developer và Back-end Developer hỗ trợ thực hiện kiểm thử kỹ thuật và xử lý lỗi.
+- Với mỗi hoạt động, chỉ có một vai trò Accountable (A). Nếu một dòng gộp nhiều công việc độc lập cần các A khác nhau, nhóm phải tách thành các dòng riêng.
+- Quyền phê duyệt baseline của Project Sponsor / Simulated Client được mô tả riêng tại Section 5; Sponsor không phải delivery-team role.
 
 RACI Matrix có thể được điều chỉnh nếu có thay đổi được thống nhất về cơ cấu vai trò hoặc phạm vi công việc của dự án.

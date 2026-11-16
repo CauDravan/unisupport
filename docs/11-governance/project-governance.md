@@ -135,8 +135,9 @@ Các điểm sau chưa được nguồn dự án xác nhận đầy đủ; nhóm
 1. **Reporting cadence:** Team Charter yêu cầu cập nhật khi trạng thái thay đổi và trước các buổi họp/mốc đánh giá nhưng chưa chốt ngày họp định kỳ. Nhóm cần xác nhận lịch review (ví dụ theo tuần) và người ghi biên bản.
 2. **Escalation response time:** Chưa có thời hạn phản hồi/escalation cố định. Nhóm có thể thống nhất quy tắc nội bộ, nhưng không nên mô tả như SLA của Aurora University.
 3. **Named approver:** Vai trò phê duyệt CR được xác định ở mức Project Sponsor / Simulated Client (Director of Student Services trong giả định dự án); tên cá nhân và xác nhận thực tế chưa có.
-4. **Team decision deadlock:** Team Charter hiện yêu cầu nhóm thảo luận và PM ghi nhận các lựa chọn khi chưa thống nhất, nhưng chưa quy định rõ quyền quyết định cuối cùng cho mọi bất đồng nội bộ không làm thay đổi baseline. Nhóm cần xác nhận và cập nhật Team Charter.
-5. **Actual team assignment:** Cơ cấu kế hoạch có 4 roles (PM, BA, FE, BE); tên người đảm nhiệm và khả năng tham gia thực tế cần được nhóm xác nhận, đồng bộ với Resources sheet và GitHub assignees.
+4. **Actual team assignment:** Cơ cấu kế hoạch có 4 roles (PM, BA, FE, BE); tên người đảm nhiệm và khả năng tham gia thực tế cần được nhóm xác nhận, đồng bộ với Resources sheet và GitHub assignees.
+
+Quy tắc xử lý bất đồng nội bộ đã được quy định trong Team Charter: nhóm ưu tiên đồng thuận; nếu không đạt đồng thuận về vấn đề không ảnh hưởng baseline, PM quyết định cuối cùng và ghi decision record. Thay đổi baseline vẫn thuộc thẩm quyền phê duyệt của Project Sponsor / Simulated Client.
 
 ## 9. Related Documents
 

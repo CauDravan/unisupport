@@ -21,17 +21,17 @@ nhóm cần rà soát và thống nhất lại tài liệu quản lý dự án t
 Nhóm sử dụng các giới hạn trong Project Proposal làm cơ sở lập kế hoạch:
 
 -   **Project duration:** 15 tuần.
--   **Team size for planning:** 4 thành viên theo cơ cấu của Project
-    Proposal.
+-   **Delivery team for planning:** 4 vai trò giả định gồm Project
+    Manager (PM), Business Analyst (BA), Front-end Developer (FE) và
+    Back-end Developer (BE). Đây là cơ cấu mô phỏng để lập kế hoạch dự
+    án, không phải xác nhận về nhân sự thực tế của một tổ chức.
 -   **Effort limit:** Tổng công sức dự kiến không vượt quá 320
     person-hours.
--   **Intermediate Review:** Dự kiến tại tuần 7.
--   **Final Presentation & Handover:** Dự kiến tại tuần 15.
 
-Các mốc trên là cơ sở lập kế hoạch, không phải cam kết rằng mọi thay đổi
-đều có thể được hoàn thành trong cùng nguồn lực. Nếu thành viên thực tế
-hoặc yêu cầu của môn học khác với các giả định này, Project Manager cần
-ghi nhận sự khác biệt và trao đổi với nhóm để cập nhật kế hoạch phù hợp.
+Các giới hạn trên là cơ sở lập kế hoạch, không phải cam kết rằng mọi
+thay đổi đều có thể được hoàn thành trong cùng nguồn lực. Tên người đảm
+nhiệm từng vai trò và khả năng tham gia thực tế cần được nhóm xác nhận,
+sau đó cập nhật đồng bộ trong Resources sheet và GitHub assignees.
 
 ## 3. Team Structure & Roles
 
@@ -125,9 +125,24 @@ ngại hoặc chuẩn bị các mốc đánh giá. Sau mỗi buổi họp, cần
 quyết định quan trọng, đầu việc tiếp theo, người phụ trách và thời hạn
 dự kiến.
 
-Nếu không thể tham gia cuộc họp, thành viên nên thông báo sớm khi có thể
-và cập nhật phần việc của mình. Trường hợp khẩn cấp hoặc bất khả kháng
-sẽ được nhóm xem xét linh hoạt.
+Đối với quyết định nội bộ không làm thay đổi Project Baseline, nhóm ưu
+tiên đạt đồng thuận sau khi các vai trò liên quan đã nêu ý kiến và tác
+động. Nếu vẫn còn bất đồng sau khi đã thảo luận, Project Manager (PM)
+đưa ra quyết định cuối cùng để công việc tiếp tục; PM phải ghi lại vấn
+đề, các phương án, ý kiến chính, lý do chọn phương án và hành động tiếp
+theo. Quyền quyết định này không cho phép PM tự phê duyệt thay đổi
+baseline hoặc thay mặt Project Sponsor / Simulated Client.
+
+Các thay đổi ảnh hưởng đến Project Scope, baseline schedule, giới hạn
+effort/resources hoặc deliverables đã cam kết phải đi theo Change
+Control tại Section 7.1 và Project Governance; Project Sponsor /
+Simulated Client là vai trò xem xét, phê duyệt thay đổi baseline.
+
+Nếu không thể tham gia cuộc họp, thành viên cần thông báo sớm khi có thể
+và cập nhật trạng thái, tài liệu, blocker cùng các quyết định đang chờ
+xử lý cho PM. Trường hợp khẩn cấp hoặc bất khả kháng được xem xét linh
+hoạt, nhưng việc bàn giao phần việc đang phụ trách vẫn cần được thực
+hiện trong khả năng có thể.
 
 ## 6. Communication Protocol
 
@@ -140,7 +155,9 @@ sẽ được nhóm xem xét linh hoạt.
 -   Các quyết định quan trọng về phạm vi, tiến độ, phân công và yêu cầu
     cần được ghi lại trong tài liệu hoặc công cụ quản lý công việc.
 -   Thành viên trao đổi với nhau một cách tôn trọng; bất đồng cần được
-    giải quyết dựa trên yêu cầu của dự án và thỏa thuận chung.
+    giải quyết theo quy tắc tại Section 5.3. Nếu bất đồng liên quan đến
+    baseline, PM ghi nhận và trình Project Sponsor / Simulated Client
+    theo Change Control.
 
 ## 7. Change Management & Risk Escalation
 
@@ -154,11 +171,18 @@ triển khai, người đề xuất cần mô tả:
 -   Ảnh hưởng dự kiến đến phạm vi, tiến độ và công sức.
 -   Mức độ ưu tiên so với các công việc hiện có.
 
-Project Manager phối hợp với các thành viên liên quan để đánh giá thay
-đổi. Nhóm chỉ cập nhật kế hoạch hoặc tài liệu chính thức sau khi đã
-thống nhất. Các thay đổi làm vượt phạm vi, thời gian 15 tuần hoặc giới
-hạn 320 person-hours cần được xem xét lại thay vì tự động đưa vào kế
-hoạch.
+Project Manager phối hợp với BA, FE, BE và task owner liên quan để
+đánh giá tác động, tổng hợp khuyến nghị Accept / Reject / Defer và ghi
+nhận CR. Với thay đổi nội bộ không ảnh hưởng Project Baseline, PM có thể
+quyết định theo quy tắc tại Section 5.3 và phải ghi lại quyết định.
+
+Với thay đổi ảnh hưởng Product Scope, baseline schedule, deliverables,
+phân bổ resources hoặc giới hạn 320 person-hours, Project Sponsor /
+Simulated Client là vai trò xem xét và phê duyệt trước khi nhóm cập nhật
+baseline hoặc triển khai thay đổi. PM điều phối và trình khuyến nghị,
+không tự phê duyệt CR thuộc nhóm này. Các thay đổi làm vượt phạm vi,
+thời gian 15 tuần hoặc giới hạn 320 person-hours không được tự động đưa
+vào kế hoạch.
 
 ### 7.2 Risk and Issue Escalation
 
@@ -171,7 +195,83 @@ Nhóm ưu tiên giải quyết vấn đề sớm bằng trao đổi và điều 
 việc. Nếu chưa thống nhất được, Project Manager ghi nhận các lựa chọn và
 tác động để nhóm cùng quyết định. Các rủi ro quan trọng cần được ghi nhận và cập nhật trong 'risk-register.md'. Project Manager chịu trách nhiệm theo dõi Risk Register và phối hợp với Risk Owner để đánh giá tình trạng cũng như biện pháp ứng phó.
 
-## 8. Quality Standards & Definition of Done
+## 8. Development Workflow: Branch, Pull Request & Review
+
+Quy trình dưới đây áp dụng cho thay đổi mã nguồn trong repository. Tài
+liệu hoặc thay đổi không cần sửa code vẫn được theo dõi qua GitHub Issue
+hoặc cập nhật tài liệu phù hợp.
+
+### 8.1 Issue and Branch
+
+1. Tạo hoặc sử dụng GitHub Issue mô tả mục tiêu, kết quả cần bàn giao,
+   owner, deadline và liên kết FR / workflow / milestone liên quan khi
+   có.
+2. Mỗi task hoặc bug nên được thực hiện trên một branch riêng, tạo từ
+   nhánh chính của repository.
+3. Đặt tên branch theo mẫu `type/issue-<id>-short-description`, ví dụ
+   `feature/issue-12-request-tracking` hoặc
+   `bugfix/issue-18-status-validation`. Dùng `docs/` cho thay đổi chỉ
+   liên quan tài liệu.
+4. Commit cần có nội dung mô tả ngắn gọn, phản ánh thay đổi đã thực hiện.
+
+### 8.2 Pull Request and Review
+
+1. Khi hoàn tất, mở Pull Request (PR) từ branch công việc vào nhánh
+   chính; PR phải liên kết Issue bằng cú pháp `Closes #<issue-number>`
+   hoặc `Fixes #<issue-number>`.
+2. PR mô tả mục đích, thay đổi chính, cách kiểm tra, kết quả kiểm tra,
+   ảnh hưởng đến tài liệu và các điểm còn tồn tại (nếu có).
+3. Tác giả PR không tự review và tự phê duyệt PR của chính mình. Cần ít
+   nhất một thành viên khác review trước khi merge. Reviewer kiểm tra
+   tính đúng đắn, khả năng đọc hiểu, ảnh hưởng liên quan và sự phù hợp
+   với Issue/Acceptance Criteria.
+4. Với thay đổi nghiệp vụ, BA kiểm tra tính nhất quán với yêu cầu và
+   Acceptance Criteria khi phù hợp. Với thay đổi FE/BE, thành viên có
+   liên quan về kỹ thuật kiểm tra phần giao diện, API, logic hoặc dữ liệu
+   tương ứng. Các vai trò này là hướng dẫn review, không tạo thêm vị trí
+   nhân sự ngoài bốn vai trò mô phỏng.
+5. Tác giả xử lý hoặc phản hồi các review comments. Chỉ merge khi đã có
+   ít nhất một review chấp thuận, các kiểm tra phù hợp với thay đổi đã
+   chạy và không còn comment bắt buộc chưa xử lý. Nếu repository chưa
+   cấu hình automated checks, người thực hiện ghi rõ kiểm tra thủ công
+   đã thực hiện thay vì tuyên bố check tự động đã pass.
+6. Sau khi merge, cập nhật Issue và tài liệu liên quan; đóng Issue khi
+   kết quả bàn giao và Acceptance Criteria đã được xác nhận.
+
+Không merge trực tiếp thay đổi công việc vào nhánh chính khi chưa qua PR
+và review, trừ trường hợp nhóm ghi nhận rõ lý do ngoại lệ và được PM
+đồng ý. Ngoại lệ không được dùng để bỏ qua yêu cầu phê duyệt CR hoặc
+Project Baseline.
+
+## 9. Conflict, Absence & Handover
+
+### 9.1 Conflict Resolution
+
+Khi phát sinh bất đồng, các bên cần mô tả vấn đề, dẫn chứng liên quan
+(Issue, yêu cầu, Acceptance Criteria, kết quả kiểm tra hoặc tác động
+đến kế hoạch) và đề xuất phương án. Nhóm ưu tiên trao đổi trực tiếp và
+đạt đồng thuận. Nếu không đạt đồng thuận đối với quyết định nội bộ
+không ảnh hưởng baseline, PM quyết định cuối cùng theo Section 5.3 và
+lưu decision record. Nếu vấn đề làm thay đổi baseline, PM không tự
+quyết định thay Sponsor mà phải trình Project Sponsor / Simulated Client
+theo Change Control.
+
+### 9.2 Absence and Handover
+
+Khi biết trước mình không thể tham gia hoặc có nguy cơ không hoàn thành
+task, thành viên cần thông báo PM sớm nhất có thể. Người phụ trách cập
+nhật GitHub Issue với trạng thái hiện tại, phần đã hoàn thành, phần còn
+lại, branch/PR liên quan, hướng dẫn chạy hoặc kiểm tra, blocker và tài
+liệu cần thiết.
+
+PM rà soát mức độ ảnh hưởng và phối hợp nhóm chỉ định người hỗ trợ hoặc
+nhận bàn giao. Người tiếp nhận xác nhận phạm vi được bàn giao và cập
+nhật owner trên Issue khi phù hợp. Nếu tình huống khẩn cấp khiến thành
+viên không thể tự bàn giao, PM cùng thành viên liên quan sử dụng các
+thông tin sẵn có trong repository để tiếp tục công việc; các giả định
+hoặc phần chưa rõ phải được ghi nhận, không tự coi là đã hoàn thành.
+
+## 10. Quality Standards & Definition of Done
 
 Một đầu việc chỉ được xem là hoàn thành khi đáp ứng các điều kiện phù
 hợp với loại công việc:
@@ -193,7 +293,7 @@ chính thức trên toàn trường.
 
 Đối với các chức năng chính, việc xác nhận hoàn thành cần dựa trên Acceptance Criteria đã được thống nhất. Business Analyst phối hợp với Front-end Developer và Back-end Developer để kiểm tra kết quả trước khi đánh dấu công việc là hoàn thành.
 
-## 9. Commitment & Review
+## 11. Commitment & Review
 
 Các thành viên thống nhất sử dụng Team Charter này làm hướng dẫn phối
 hợp trong suốt dự án. Nhóm có thể cập nhật tài liệu khi cách làm việc
@@ -206,12 +306,13 @@ quán với Project Proposal, Project Plan, PRD và các tài liệu liên quan.
 
 ------------------------------------------------------------------------
 
-**Document Location:** `docs/01-project-management/team-charter.md`
+**Document Location:** `docs/08-project/team-charter.md`
 
 **Related Documents:**
-- `project-proposal.docx`
-- `project-schedule.md`
-- `raci-matrix.md`
-- `risk-register.md`
-- `../02-product-management/product-scope.md`
-- Product Requirements Document (PRD)
+- [Project Proposal](project_proposal.docx)
+- [Master Plan](master-plan.md)
+- [RACI Matrix](raci-matrix.md)
+- [Risk Register](risk-register.md)
+- [Product Scope](../01-product/product-scope.md)
+- [Functional Requirements](../05-requirements/functional-requirements.md)
+- [Project Governance](../11-governance/project-governance.md)
