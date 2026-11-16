@@ -13,7 +13,7 @@ Các nhóm người dùng:
 - **Staff:** tiếp nhận, phân loại, phân công và xử lý Request trong phạm vi quyền được cấp.
 - **Management:** theo dõi hoạt động và xem Dashboard/báo cáo theo quyền được cấp.
 
-Role hiện được mô tả ở mức ba nhóm Student, Staff và Management. FR-SEC-01 có đề cập Management xem thông tin người dùng và Role hiện tại, cập nhật Role theo quyền được cấp; phạm vi triển khai chức năng quản lý Role cần được xác nhận với Project Scope, Master Plan và WBS trước khi cam kết bàn giao.
+Role được mô tả ở mức ba nhóm Student, Staff và Management. Hệ thống sử dụng Role đã được gán cho User để xác định và áp dụng quyền truy cập. Chức năng Management trực tiếp xem danh sách User và cập nhật Role (Role Administration) không thuộc phạm vi bàn giao hiện tại; có thể được xem xét trong Future Enhancement nếu được Project Sponsor phê duyệt.
 
 ## 3. Department and Request Type Data
 
@@ -123,7 +123,7 @@ Vì vậy, Notification được ghi nhận là **data/design item cần xác nh
 | DR-OD-08 | Notification có cần lưu thành entity riêng, kênh gửi và trạng thái gửi. | FR-STU-02; WF-04, WF-06. |
 | DR-OD-09 | Cấu hình thời gian xử lý mục tiêu/Due Date và quy tắc tính overdue. | Request Model; FR-MGT-01; M03 PRD. |
 | DR-OD-10 | Thời hạn lưu trữ, archive/deletion và phân loại dữ liệu nhạy cảm. | NFR-SEC-06; Project Scope. |
-| DR-OD-11 | Phạm vi chính thức của User and Role Management trong prototype/bàn giao. | FR-SEC-01; M04 PRD; Project Scope, Master Plan và WBS. |
+| DR-OD-11 | Cách thức khởi tạo User và gán Role trước khi người dùng truy cập hệ thống; quy trình cấp tài khoản cụ thể chưa được đặc tả. | FR-SEC-01; Users and Roles; M04 PRD. |
 | DR-OD-12 | Quy tắc lưu Request ở Department khi chưa xác định Assigned Staff; điều kiện được xem là đã phân công hoàn tất. | WF-02 và FR-STA-01 đang mô tả chưa thống nhất. |
 | DR-OD-13 | Workflow chịu trách nhiệm chuyển Request sang Resolved và ghi nhận sự kiện tương ứng. | WF-03 và WF-06 đang có bước Resolved trùng nhau. |
 

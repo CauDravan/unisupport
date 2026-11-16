@@ -120,7 +120,7 @@ Prototype và test chỉ sử dụng dữ liệu giả lập. Quy tắc retentio
 | AR-OD-02 | Request History và Audit Log dùng chung hay tách riêng ở mức lưu trữ? | Phân biệt về mục đích; thiết kế vật lý TBD. |
 | AR-OD-03 | Notification được hiển thị/gửi qua kênh nào? | Nguồn chỉ yêu cầu thông báo; kênh và cơ chế TBD. |
 | AR-OD-04 | Attachment lưu nội dung tệp ở đâu, giới hạn định dạng/kích thước thế nào? | Chưa có yêu cầu kỹ thuật cụ thể; TBD. |
-| AR-OD-05 | Quy tắc tạo và quản lý tài khoản, xác thực, cấp Role và cập nhật Role? | FR-SEC-01 có đề cập; phạm vi User/Role Management cần đối chiếu Project Scope, Master Plan và WBS trước khi cam kết. |
+| AR-OD-05 | Quy tắc khởi tạo tài khoản, xác thực và gán Role trước khi truy cập? | RBAC và việc áp dụng Role đã gán thuộc phạm vi. Quy trình khởi tạo/cấp tài khoản cụ thể chưa được đặc tả; Management không có giao diện Role Administration trong phạm vi hiện tại. |
 | AR-OD-06 | Quy tắc Department, thời gian xử lý mục tiêu và cách tính overdue? | Cần dữ liệu cấu hình/định nghĩa được nhóm và Sponsor xác nhận; hệ thống không tự đặt SLA. |
 | AR-OD-07 | Quy tắc lưu trữ và xử lý dữ liệu nhạy cảm? | TBD – theo chính sách được Aurora University phê duyệt. |
 | AR-OD-08 | Request có thể nằm ở Department mà chưa có Assigned Staff hay phải có Staff trước khi hoàn tất Assignment? | WF-02 cho phép chờ Staff; FR-STA-01 yêu cầu người chịu trách nhiệm cụ thể. Cần thống nhất. |

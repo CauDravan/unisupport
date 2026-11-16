@@ -104,7 +104,7 @@ Xác định các Role chính của UniSupport và phạm vi chức năng, dữ 
 **Evidence**
 `docs/02-domain/users-and-roles.md`, M04 PRD và Role Permission Matrix.
 **Scope note**
-Không tự đưa chức năng Management tự quản lý/thay đổi Role vào scope đã chốt nếu FR-SEC-01/AC-05–AC-06 chưa được Sponsor xác nhận.
+FR-SEC-01/AC-05–AC-06 thuộc phạm vi Authentication & Access Control: hệ thống xác định Role đã gán cho User và áp dụng quyền tương ứng. Role Administration qua giao diện Management không thuộc phạm vi hiện tại; chỉ xem xét như Future Enhancement nếu được Project Sponsor phê duyệt.
 
 ## Issue #6 – Requirements Baseline
 **FR ID:** FR-STU-01, FR-STU-02, FR-STU-03, FR-STA-01, FR-STA-02, FR-STA-03, FR-MGT-01, FR-MGT-02, FR-SEC-01, FR-SEC-02  
@@ -331,7 +331,7 @@ Triển khai cơ chế xác thực người dùng và áp dụng quyền truy c�
 **Evidence**
 Authentication flow, role test accounts và permission test results.
 **Scope note**
-Issue này không mặc định bao gồm chức năng Management tạo tài khoản hoặc thay đổi Role; FR-SEC-01/AC-05–AC-06 đang cần xác nhận scope.
+Issue này không bao gồm chức năng Management tạo tài khoản hoặc thay đổi Role. FR-SEC-01/AC-05–AC-06 chỉ kiểm tra việc hệ thống xác định Role đã gán và áp dụng quyền tương ứng; Role Administration là Future Enhancement ngoài phạm vi hiện tại.
 
 ## Issue #18 – Request Submission
 **FR ID:** FR-STU-01  
@@ -723,7 +723,7 @@ Usability test records, KPI measurement sheet và evaluation summary.
 - Current Issue #21 and #22 titles overlap on Additional Information. The WBS places Student Notification & Additional Information in MS-02 (WBS 4.4), while Transfer is in MS-03 (WBS 5.1). The proposed title/scope above separates them without deleting either issue.
 - Current Traceability Matrix maps FR-STU-03/AC-01–AC-02 to MS-02 and FR-STU-03/AC-03–AC-06 to MS-03. Keep that split in schedule/test planning even though Issue #21 now includes the first two ACs.
 - Current Traceability Matrix maps FR-STU-02/AC-04–AC-05 to MS-02; Issue #19 (MS-01) should only claim Tracking AC-01–AC-03 and AC-06. Notification behavior belongs with MS-02.
-- FR-SEC-01/AC-05–AC-06 (Management user/Role management) are marked as requiring scope confirmation in Traceability Matrix. Do not include them as committed acceptance criteria unless approved.
+- FR-SEC-01/AC-05–AC-06 cover identification of the User's assigned Role and enforcement of the corresponding permissions under Authentication & Access Control (WBS 3.2, MS-01). Management Role Administration is outside the current delivery scope and may be considered only as a Future Enhancement subject to Project Sponsor approval.
 - NFR-SEC-06 (Data Retention/Data Handling Policy) is awaiting Sponsor confirmation. Do not invent retention periods or mark this requirement passed without an approved policy.
 - `docs/10-product-management/success-metrics.md` is empty in the supplied ZIP. Issue #35 must define/confirm KPIs before targets can be treated as approved.
 - The generic project-level AC-01–AC-14 in `acceptance-criteria.md` and the FR-specific AC IDs are different ID systems. Keep the source distinction in Issues #15, #27, #30 and the Traceability Matrix.

@@ -77,7 +77,7 @@ Staff ghi nhận kết quả xử lý vào request.
 
 System cập nhật request sang trạng thái:
 
-**Đã hoàn thành (Resolved)**
+**Đã giải quyết (Resolved)**
 
 Thông tin thay đổi trạng thái được lưu vào request history.
 
@@ -115,7 +115,7 @@ Nếu Staff chưa thể hoàn thành request:
 
 * Request đã được Staff xử lý.
 * Kết quả xử lý được ghi nhận.
-* Request chuyển sang trạng thái **Đã hoàn thành (Resolved)**.
+* Request chuyển sang trạng thái **Đã giải quyết (Resolved)**.
 * Các cập nhật trong quá trình xử lý được lưu vào request history.
 
 ### Not Completed

@@ -16,7 +16,7 @@ Mỗi request có một trạng thái thể hiện giai đoạn hiện tại c�
 
 Quy trình xử lý request thông thường:
 
-**Đã tiếp nhận → Đang xử lý → Chờ bổ sung thông tin → Đang xử lý → Đã hoàn thành → Đã đóng**
+**Đã tiếp nhận → Đang xử lý → Chờ bổ sung thông tin → Đang xử lý → Đã giải quyết → Đã đóng**
 
 Request có thể chuyển từ **Awaiting Information (Chờ bổ sung thông tin)** trở lại **In Progress (Đang xử lý)** sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
 

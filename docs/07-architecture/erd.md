@@ -92,7 +92,7 @@ erDiagram
 | Entity | Ý nghĩa và dữ liệu được hỗ trợ bởi nguồn |
 |---|---|
 | **User** | Đại diện cho người dùng thuộc một trong các nhóm Student, Staff hoặc Management. Dữ liệu người dùng được dùng để xác định người thực hiện và kiểm soát quyền truy cập. Các thuộc tính hồ sơ cụ thể chưa được đặc tả. |
-| **Role** | Vai trò truy cập của User: Student, Staff hoặc Management. FR-SEC-01 có đề cập xem/cập nhật Role; phạm vi quản lý Role cần được xác nhận trước khi cam kết bàn giao. |
+| **Role** | Vai trò truy cập của User: Student, Staff hoặc Management. Entity Role được giữ để biểu diễn Role đã gán cho User và hỗ trợ RBAC. Giao diện Management để xem danh sách User hoặc cập nhật Role (Role Administration) không thuộc phạm vi bàn giao hiện tại. |
 | **Department** | Bộ phận chịu trách nhiệm xử lý Request hiện tại; dùng để phân công, chuyển giao và tổng hợp workload. Danh mục và thuộc tính Department chưa được đặc tả. |
 | **Request Type** | Danh mục loại yêu cầu; mỗi Request thuộc một loại để phân loại và thống kê vấn đề phổ biến. Các giá trị cụ thể chưa được cung cấp trong domain model. |
 | **Request** | Đối tượng trung tâm, gồm Request ID, Student ID, Request Type, Subject, Description, Attachments, Priority, Department, Assigned Staff, Status, Created Date, Updated Date, Due Date, Resolution và Closed Date. |

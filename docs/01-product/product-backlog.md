@@ -86,14 +86,14 @@ Product Backlog hiện tại bao gồm 13 hạng mục, được chia theo bốn
 
 | ID | Product Backlog Item | Description | Expected Value | Priority | Related Requirements |
 |---|---|---|---|---|---|
-| PBI-12 | Role-based Access Control | Kiểm soát quyền truy cập dựa trên vai trò Student, Staff và Management; hỗ trợ Management xem thông tin người dùng và quản lý vai trò theo quyền được cấp. | Bảo đảm người dùng chỉ truy cập các chức năng và dữ liệu phù hợp với quyền hạn của mình. | High | FR-SEC-01, AC-12 |
+| PBI-12 | Role-based Access Control | Kiểm soát quyền truy cập dựa trên Role Student, Staff và Management; hệ thống xác định Role đã được gán cho User và áp dụng đúng quyền tương ứng. Role Administration thông qua giao diện Management không thuộc phạm vi bàn giao hiện tại. | Bảo đảm người dùng chỉ truy cập các chức năng và dữ liệu phù hợp với quyền hạn của mình. | High | FR-SEC-01, AC-12 |
 | PBI-13 | Audit Logging & Data Access Protection | Ghi nhận các hoạt động quan trọng, người thực hiện, thời điểm và những thay đổi liên quan đến Request; hỗ trợ kiểm tra lịch sử xử lý và bảo vệ dữ liệu theo quyền truy cập. | Tăng khả năng theo dõi, kiểm tra hoạt động và bảo vệ thông tin sinh viên. | High | FR-SEC-02, AC-13 |
 
 ### 4.5. Product Backlog Notes
 
 - PBI-01 User Authentication là chức năng hỗ trợ việc xác thực người dùng. Chi tiết về phương thức đăng nhập và cơ chế xác thực cần được đối chiếu với FR-SEC-01.
 - PBI-03 Request Tracking có Priority Medium theo mức ưu tiên hiện tại của FR-STU-02. Tuy nhiên, đây vẫn là chức năng thuộc Mandatory Project Scope và phải được xem xét trong phạm vi sản phẩm.
-- PBI-12 Role-based Access Control giữ nội dung kiểm soát quyền theo ba vai trò. Phần Management xem thông tin người dùng và cập nhật Role cần được xác nhận về phạm vi và Acceptance Criteria trước khi chốt triển khai.
+- PBI-12 Role-based Access Control giữ nội dung kiểm soát quyền theo ba vai trò. Chức năng Management trực tiếp xem danh sách User và cập nhật Role (Role Administration) không thuộc phạm vi bàn giao hiện tại; có thể được xem xét như Future Enhancement theo phê duyệt của Project Sponsor.
 - PBI-13 Audit Logging & Data Access Protection phải được xem xét cùng các yêu cầu về Security, Privacy và Data Protection.
 - Các PBI không thay thế Functional Requirements hoặc Acceptance Criteria. Chi tiết về điều kiện thực hiện và kết quả mong đợi được mô tả trong các tài liệu tương ứng.
 

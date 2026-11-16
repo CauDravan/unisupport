@@ -46,7 +46,7 @@ Thông tin này cho biết request đã được giải quyết như thế nào.
 
 System cập nhật request sang trạng thái:
 
-**Đã hoàn thành (Resolved)**
+**Đã giải quyết (Resolved)**
 
 Thay đổi trạng thái và kết quả xử lý được lưu vào request history.
 
