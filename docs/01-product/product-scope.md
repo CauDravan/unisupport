@@ -126,7 +126,10 @@ Các chức năng và yêu cầu bao gồm:
 - Ghi nhận các hoạt động và thay đổi quan trọng thông qua Activity Logging.
 - Xem xét thời gian lưu trữ dữ liệu và cách xử lý thông tin nhạy cảm.
 - Cho phép Management xem thông tin người dùng và Role hiện tại theo quyền được cấp.
-- Cho phép Management cập nhật Role của người dùng theo quyền được cấp.
+- Hệ thống quản lý thông tin User và Role ở mức cơ bản.
+- Hệ thống xác định Role của User và áp dụng quyền truy cập tương ứng.
+- Management sử dụng Dashboard và các chức năng quản lý theo quyền được cấp.
+- Chức năng Management trực tiếp xem danh sách User và cập nhật Role không thuộc phạm vi bàn giao hiện tại.
 
 **Primary Actors:** Student, Staff và Management.
 

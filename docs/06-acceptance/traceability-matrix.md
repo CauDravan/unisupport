@@ -32,13 +32,13 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-MGT-02 / AC-01–AC-06 | TS-047–TS-052 | 6.1, 6.3 | MS-04 | Q-03 |
 | FR-SEC-01 / AC-01, AC-04 | TS-053, TS-056 | 3.2 | MS-01 | Q-04 |
 | FR-SEC-01 / AC-02–AC-03 | TS-054–TS-055 | 6.2 | MS-04 | Q-04 |
-| FR-SEC-01 / AC-05–AC-06 | TS-057–TS-058 | TBD | TBD | TBD |
+| FR-SEC-01 / AC-05–AC-06 | TS-057–TS-058 | 3.2 | MS-01 | Q-04 |
 | FR-SEC-02 / AC-01–AC-04 | TS-059–TS-062 | 6.2 | MS-04 | Q-04 |
 
 **Notes:**
 
 - FR-STA-03 hiện không có AC-08 trong tài liệu Functional Requirements. Vì vậy, bảng không tự tạo AC-08 hoặc Test Scenario tương ứng.
-- FR-SEC-01 / AC-05 và AC-06 liên quan đến việc Management quản lý Roles. Master Plan hiện ghi nhận nội dung này là chưa nằm trong kế hoạch đã chốt và cần xác nhận. Do đó, Parent task, Milestone và Quotation được để là `TBD`.
+- FR-SEC-01 / AC-05 và AC-06 kiểm tra việc hệ thống xác định Role của User và áp dụng quyền truy cập tương ứng. Hai Acceptance Criteria này thuộc phạm vi Authentication & Access Control trong WBS 3.2, MS-01. Chức năng Management trực tiếp xem danh sách User và cập nhật Role (Role Administration) không thuộc phạm vi nghiệm thu chính thức của giai đoạn hiện tại.
 - FR-STU-02 được chia thành hai phần vì các Acceptance Criteria về thông báo và yêu cầu bổ sung thông tin được thực hiện ở MS-02, trong khi các chức năng theo dõi Request thuộc MS-01.
 
 ### 2.2 Generic Acceptance Criteria Traceability
@@ -123,7 +123,6 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 
 | Item | Current status | Required action |
 |---|---|---|
-| FR-SEC-01 / AC-05–AC-06 | Chưa được xác nhận trong Master Plan | Nhóm và Sponsor xác nhận có đưa chức năng Management quản lý Roles vào scope hay không |
 | NFR-SEC-06 | Chưa xác định WBS và Milestone | Xác nhận Data Retention/Data Handling Policy với Sponsor |
 | Quotation Q-01–Q-08 | Chưa đối chiếu được với báo giá gốc | Kiểm tra và đồng bộ với `quotation.xlsx` |
 | GitHub Parent Issue IDs | Chưa được cung cấp trong Master Plan | Bổ sung ID sau khi các Parent Issues được tạo |

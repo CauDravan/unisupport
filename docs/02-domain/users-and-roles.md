@@ -41,5 +41,8 @@ UniSupport phục vụ ba nhóm người dùng chính:
 - **Management:** Được truy cập chức năng giám sát và báo cáo theo quyền được cấp.
 - Mỗi Role chỉ được thực hiện các chức năng và truy cập dữ liệu phù hợp với quyền hạn của mình.
 - Hệ thống phải từ chối các thao tác truy cập hoặc sử dụng chức năng vượt quá quyền được cấp.
+- Role của mỗi User được xác định và gán trước khi người dùng truy cập hệ thống.
+- Hệ thống sử dụng Role đã được gán để kiểm soát quyền truy cập.
+- Management không trực tiếp thay đổi Role của User thông qua giao diện trong phạm vi bàn giao hiện tại.
 
 Các Role được xác định ở mức high-level cho prototype. Quyền truy cập chi tiết được mô tả trong Functional Requirements và Security Requirements.

@@ -2,8 +2,6 @@
 
 ## Purpose
 
-## Purpose
-
 Module hỗ trợ kiểm soát quyền truy cập và bảo vệ dữ liệu trong hệ thống UniSupport dựa trên vai trò của người sử dụng. Module đảm bảo Student, Staff và Management chỉ có thể truy cập các chức năng và dữ liệu thuộc phạm vi quyền được cấp.
 
 Ngoài ra, Module hỗ trợ ghi nhận các hoạt động quan trọng, bảo vệ thông tin sinh viên và tài liệu đính kèm, đồng thời xem xét yêu cầu về thời gian lưu trữ và xử lý dữ liệu nhạy cảm.
@@ -25,7 +23,7 @@ Module được áp dụng xuyên suốt các module khác thay vì hoạt độ
 ### 3. Management
 - Truy cập Dashboard và báo cáo theo quyền được cấp.
 - Theo dõi hoạt động và thông tin quản lý phù hợp với quyền hạn.
-- Các thao tác quản lý người dùng và Role cần tuân theo phạm vi được xác nhận trong dự án.
+- Không trực tiếp thay đổi Role của người dùng thông qua giao diện Management trong phạm vi bàn giao hiện tại.
 
 ## Main capabilities
 
@@ -90,20 +88,26 @@ Lịch sử ghi nhận phải phản ánh đúng các thao tác đã được th
 
 ### 4. User and Role Management
 
-Hệ thống hỗ trợ các chức năng quản lý thông tin người dùng và Role theo quyền được cấp.
+Hệ thống quản lý thông tin User và Role ở mức cơ bản để hỗ trợ Authentication và Role-Based Access Control.
 
-Phạm vi chức năng được mô tả trong Functional Requirements:
+Phạm vi chức năng bao gồm:
 
-- Management xem thông tin người dùng và Role hiện tại.
-- Management cập nhật Role của người dùng theo quyền được cấp.
+- Hệ thống nhận diện User thông qua tài khoản đã được cấp.
+- Mỗi User được gán Role phù hợp.
+- Hệ thống xác định Role của User khi truy cập.
+- Hệ thống áp dụng quyền truy cập tương ứng với Role.
+- Hệ thống từ chối thao tác nằm ngoài quyền được cấp.
 
 **Scope Note:**
 
-Việc triển khai và nghiệm thu các chức năng xem thông tin người dùng, cập nhật Role cần được xác nhận với Project Scope, Master Plan và WBS trước khi đưa vào phạm vi bàn giao chính thức.
+Chức năng Management trực tiếp xem danh sách User và cập nhật Role (Role Administration) chưa thuộc phạm vi bàn giao chính thức của giai đoạn hiện tại. Chức năng này có thể được xem xét trong Future Enhancement nếu được Project Sponsor phê duyệt và có kế hoạch bổ sung về Scope, Schedule, Effort và Cost.
 
 **Related Requirements:**
-- FR-SEC-01/AC-05
-- FR-SEC-01/AC-06
+- FR-SEC-01/AC-01–AC-06
+- NFR-SEC-01
+- NFR-SEC-02
+- NFR-SEC-03
+- NFR-SEC-04
 
 ### 5. Data Protection and Privacy
 

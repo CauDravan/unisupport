@@ -589,7 +589,9 @@ Management có thể xem các báo cáo và số liệu tổng hợp để đán
 
 **Description**
 
-Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Management quản lý thông tin người dùng, vai trò theo quyền được cấp.
+Hệ thống quản lý thông tin User và Role ở mức cơ bản, đồng thời kiểm soát quyền truy cập dựa trên Role được gán cho từng người dùng. Hệ thống đảm bảo Student, Staff và Management chỉ có thể truy cập các chức năng và dữ liệu thuộc phạm vi quyền được cấp.
+
+Việc Management trực tiếp xem danh sách người dùng và thay đổi Role không thuộc phạm vi bàn giao chính thức của giai đoạn hiện tại.
 
 **Actor**
 
@@ -607,14 +609,12 @@ Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Man
 
 **Main Flow**
 
-1. Người dùng truy cập chức năng tương ứng với vai trò của mình.
-2. Hệ thống xác định Role và kiểm tra quyền truy cập của người dùng.
-3. Hệ thống cho phép người dùng sử dụng các chức năng thuộc phạm vi quyền được cấp.
-4. Management truy cập chức năng quản lý người dùng theo quyền được cấp.
-5. Hệ thống hiển thị danh sách người dùng và Role hiện tại.
-6. Management chọn người dùng và cập nhật Role phù hợp.
-7. Hệ thống kiểm tra quyền thực hiện thao tác cập nhật.
-8. Nếu hợp lệ, hệ thống lưu Role mới và ghi nhận hoạt động thay đổi.
+1. Người dùng truy cập hệ thống bằng tài khoản đã được cấp.
+2. Hệ thống xác định User và Role tương ứng.
+3. Hệ thống kiểm tra quyền truy cập của người dùng đối với chức năng hoặc dữ liệu được yêu cầu.
+4. Nếu người dùng có quyền phù hợp, hệ thống cho phép tiếp tục thao tác.
+5. Nếu người dùng không có quyền phù hợp, hệ thống từ chối truy cập.
+6. Hệ thống áp dụng quyền tương ứng với Role trong suốt quá trình sử dụng.
 
 **Business Rules**
 
@@ -623,7 +623,7 @@ Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Man
 - BR-03: Staff chỉ được truy cập dữ liệu và chức năng thuộc phạm vi trách nhiệm được cấp.
 - BR-04: Management chỉ được truy cập chức năng và dữ liệu theo quyền được cấp.
 - BR-05: Quyền truy cập phải được kiểm tra khi người dùng sử dụng chức năng và thao tác với dữ liệu.
-- BR-06: Management chỉ được xem thông tin người dùng và cập nhật Role trong phạm vi quyền quản lý được cấp.
+- BR-06: Role của người dùng phải được xác định trước khi người dùng truy cập các chức năng yêu cầu phân quyền. Việc thay đổi Role phải được thực hiện thông qua quy trình quản trị được cho phép, không thuộc chức năng Management tự cập nhật Role trong phạm vi bàn giao hiện tại.
 
 **Alternative and Error Flows**
 
@@ -638,8 +638,8 @@ Hệ thống kiểm soát quyền truy cập dựa trên Role và hỗ trợ Man
 - FR-SEC-01/AC-02: Staff chỉ có thể truy cập chức năng và dữ liệu thuộc phạm vi trách nhiệm được cấp.
 - FR-SEC-01/AC-03: Management chỉ có thể truy cập chức năng quản lý theo quyền được cấp.
 - FR-SEC-01/AC-04: Hệ thống từ chối thao tác truy cập ngoài quyền hạn của người dùng.
-- FR-SEC-01/AC-05: Management có thể xem thông tin người dùng và Role hiện tại theo quyền được cấp.
-- FR-SEC-01/AC-06: Management có thể cập nhật Role của người dùng theo quyền được cấp.
+- FR-SEC-01/AC-05: Hệ thống xác định đúng Role đã được gán cho User khi người dùng truy cập hệ thống.
+- FR-SEC-01/AC-06: Hệ thống áp dụng đúng quyền truy cập tương ứng với Role của User.
 
 **Edge Cases**
 
