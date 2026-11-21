@@ -18,7 +18,7 @@ Quy trình bắt đầu khi một request mới đã được hệ thống tiế
 * Request đã được tạo thành công.
 * Request có **Request ID**.
 * Staff có quyền truy cập và xử lý request.
-* Request chưa được assign cho Staff xử lý.
+* Request chưa hoàn thành classification và assignment trong WF-02.
 
 ## 5. Input
 
@@ -54,7 +54,9 @@ System lưu thông tin assignment, bao gồm Department và Staff được assig
 
 ### Step 6 — Update Request Status
 
-System cập nhật request sang trạng thái phù hợp để tiếp tục quá trình xử lý.
+System updates the Request Status to In Progress when the request has been assigned to Staff for processing.
+
+If no suitable Staff is available, the request remains in the appropriate Department queue until assignment is completed.
 
 ### Step 7 — Record Request History
 
@@ -82,9 +84,10 @@ Nếu Staff xác định request không thuộc Department hiện tại:
 
 Nếu chưa có Staff phù hợp để xử lý:
 
-1. Request vẫn được giữ trong Department phù hợp.
-2. Việc assignment được thực hiện khi Staff phù hợp được xác định.
-3. Request tiếp tục được theo dõi cho đến khi được assign.
+1. Request được giữ trong Department phù hợp để chờ assignment.
+2. Request chưa được xem là hoàn tất assignment cho đến khi Staff chịu trách nhiệm được xác định.
+3. Việc assignment được thực hiện khi Staff phù hợp được xác định.
+4. Request tiếp tục được theo dõi trong quá trình chờ assignment.
 
 ## 8. Postconditions
 
