@@ -111,7 +111,7 @@ Các tài liệu Architecture mô tả thiết kế ở mức logic phục vụ 
 
 | File | Nội dung |
 |---|---|
-| [project_proposal.docx](./08-project/project_proposal.docx) | Project Proposal trình bày vấn đề, phạm vi, kế hoạch, chi phí và rủi ro của dự án. |
+| [project_proposal.md](./08-project/project_proposal.md) | Project Proposal trình bày vấn đề, phạm vi, kế hoạch, chi phí và rủi ro của dự án. |
 | [master-plan.md](./08-project/master-plan.md) | Giải thích cấu trúc và nguyên tắc quản lý Master Plan. |
 | [master-plan.xlsx](./08-project/master-plan.xlsx) | Nguồn dữ liệu chính thức cho Milestones, WBS, Resources, Gantt và Change Log theo Master Plan. |
 | [wbs.md](./08-project/wbs.md) | Work Breakdown Structure, phân rã công việc và thông tin effort liên quan. |

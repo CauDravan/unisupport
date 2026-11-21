@@ -84,4 +84,4 @@ Các tài liệu liên quan đến Master Plan:
 - [Risk Register](risk-register.md)
 - [RACI Matrix](raci-matrix.md)
 - [Team Charter](team-charter.md)
-- [Project Proposal](project_proposal.docx)
+- [Project Proposal](project_proposal.md)

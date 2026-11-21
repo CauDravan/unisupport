@@ -309,7 +309,7 @@ quán với Project Proposal, Project Plan, PRD và các tài liệu liên quan.
 **Document Location:** `docs/08-project/team-charter.md`
 
 **Related Documents:**
-- [Project Proposal](project_proposal.docx)
+- [Project Proposal](project_proposal.md)
 - [Master Plan](master-plan.md)
 - [RACI Matrix](raci-matrix.md)
 - [Risk Register](risk-register.md)
