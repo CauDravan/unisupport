@@ -136,6 +136,19 @@ Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype và c�
 
 Các nội dung trên không phải trọng tâm của phạm vi hiện tại và không được làm ảnh hưởng đến tính khả thi của các chức năng chính.
 
+#### 4.2 Deliverables & Acceptance Criteria
+
+Dự án dự kiến bàn giao prototype có thể chạy và dùng thử theo từng Product Increment Milestone, kèm tài liệu liên quan. Client (Mô phỏng) review các phần bàn giao bằng tài khoản mô phỏng và dữ liệu giả lập, dựa trên Acceptance Criteria đã liên kết với Functional Requirements (FR), Security Requirements và Non-functional Requirements trong tài liệu yêu cầu và Master Plan.
+
+| Milestone | Deliverable | Client Review & Acceptance |
+|---|---|---|
+| MS-01 — Student Request Submission & Tracking | Prototype cho phép sinh viên gửi yêu cầu, nhận Request ID, xem danh sách, trạng thái và lịch sử cập nhật, với kiểm soát truy cập theo tài khoản. | Client dùng tài khoản Student mô phỏng để kiểm tra gửi yêu cầu hợp lệ/không hợp lệ và theo dõi trạng thái. Acceptance dựa trên các AC được tham chiếu trong sheet Milestones của `master-plan.xlsx`; không có lỗi nghiêm trọng làm gián đoạn luồng gửi và theo dõi. |
+| MS-02 — Staff Request Classification & Processing | Prototype hỗ trợ Staff tiếp nhận, phân loại, phân công, cập nhật trạng thái, ghi nhận xử lý và yêu cầu bổ sung thông tin. | Client thử luồng Student–Staff, yêu cầu bổ sung thông tin và xử lý tiếp; các AC được tham chiếu trong sheet Milestones của `master-plan.xlsx` đạt, đồng thời regression MS-01 vẫn đạt. |
+| MS-03 — Request Transfer, Resolution & Feedback | Prototype hỗ trợ chuyển yêu cầu, ghi nhận kết quả xử lý, giải quyết, đóng yêu cầu và feedback của sinh viên. | Client kiểm tra luồng xử lý hoàn chỉnh, gồm ca chuyển giao giữa phòng ban, resolution, closure và feedback; các AC được tham chiếu trong sheet Milestones của `master-plan.xlsx` đạt, đồng thời regression MS-01 và MS-02 vẫn đạt. |
+| MS-04 — Management Dashboard, Security & Handover | Prototype dashboard và báo cáo quản lý, kiểm soát truy cập, audit log, các yêu cầu tương thích đã xác định và gói bàn giao. | Client kiểm tra dashboard bằng dữ liệu giả lập, các kịch bản truy cập trái quyền, regression toàn bộ và hướng dẫn bàn giao; các AC được tham chiếu trong sheet Milestones của `master-plan.xlsx` đạt. |
+
+Acceptance Criteria chi tiết, mã FR/AC, kịch bản kiểm tra và các điều kiện regression được duy trì tại nguồn yêu cầu và sheet Milestones trong `master-plan.xlsx`. Proposal chỉ tóm tắt điều kiện nghiệm thu ở cấp milestone để tránh tạo một bộ Acceptance Criteria thứ hai. Việc nghiệm thu được ghi nhận trong review/feedback records (Mô phỏng).
+
 ### 5. Project Plan & Timeline (proposed planning baseline).
 
 #### 5.1 Project Duration
