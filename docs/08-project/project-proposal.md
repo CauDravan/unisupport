@@ -6,7 +6,7 @@
 **Project Name:** UniSupport – Student Support Management System Project  
 **Project Client:** Aurora University (Simulated Client)  
 **Project Sponsor:** Director of Student Services (Simulated Project Sponsor)  
-**Project Duration:** 15 Weeks  
+**Project Duration:** 15 Weeks (proposed planning baseline).
 **Maximum Project Effort:** 320 Person-Hours
 
 UniSupport là dự án lập kế hoạch và thiết kế một giải pháp quản lý tập trung các yêu cầu hỗ trợ sinh viên tại Aurora University.
@@ -136,7 +136,7 @@ Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype và c�
 
 Các nội dung trên không phải trọng tâm của phạm vi hiện tại và không được làm ảnh hưởng đến tính khả thi của các chức năng chính.
 
-### 5. Project Plan & Timeline
+### 5. Project Plan & Timeline (proposed planning baseline).
 
 #### 5.1 Project Duration
 
@@ -179,7 +179,7 @@ Dự án dành thêm 16 person-hours làm Contingency Reserve để xử lý cá
 |---|---:|
 | Planned Effort | 304 person-hours |
 | Contingency Reserve | 16 person-hours |
-| **Maximum Project Effort** | **320 person-hours** |
+| **Maximum Project Effort** | **320 person-hours** (304 planned effort + 16-hour contingency reserve).|
 
 Tổng effort bao gồm cả phần dự phòng không được vượt quá giới hạn 320 person-hours.
 

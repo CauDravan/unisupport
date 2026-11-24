@@ -4,7 +4,7 @@
 
 Master Plan xác định kế hoạch tổng thể cho dự án UniSupport, bao gồm phạm vi công việc, lịch trình, nguồn lực, các mốc bàn giao và việc quản lý thay đổi.
 
-Tài liệu này cung cấp cái nhìn tổng quan về cách nhóm tổ chức và kiểm soát dự án trong suốt 15 tuần thực hiện.
+Tài liệu này cung cấp cái nhìn tổng quan về cách nhóm tổ chức và kiểm soát dự án theo proposed planning baseline hiện tại, với thời gian dự kiến 15 tuần.
 
 File `master-plan.xlsx` là tài liệu quản lý kế hoạch chi tiết và là nguồn dữ liệu chính thức (Single Source of Truth) cho lịch trình, Work Breakdown Structure (WBS), Milestones, Resources và Change Log.
 
@@ -17,10 +17,10 @@ Dự án UniSupport được lập kế hoạch với các thông tin chính sau
 | Project Name | UniSupport – Student Support Management System |
 | Project Client | Aurora University (Simulated Client) |
 | Project Sponsor | Director of Student Services |
-| Project Duration | 15 weeks |
-| Planned Start Date | 16/11/2026 (Tentative) |
-| Planned End Date | 26/02/2027 |
-| Maximum Planned Effort | 320 person-hours |
+| Project Duration | 15 weeks (proposed planning baseline) |
+| Planned Start Date | 16/11/2026 (Tentative; subject to team confirmation) |
+| Planned End Date | 19/02/2027 (Proposed target; subject to schedule alignment) |
+| Maximum Planned Effort | 320 person-hours (304 planned effort + 16-hour contingency reserve) |
 | Project Team | 4 members |
 
 Ngày bắt đầu hiện là giả định tạm thời và cần được nhóm xác nhận trước khi chốt Project Baseline.

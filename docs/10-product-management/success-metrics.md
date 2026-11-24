@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-Tài liệu này xác định cách đánh giá UniSupport có đáp ứng các mục tiêu sản phẩm và Required Project Outcomes trong đề bài hay không. Các chỉ số được kiểm chứng bằng Prototype Demonstration, Test Scenarios, Usability Testing và Simulated Data.
+Tài liệu này xác định cách đánh giá UniSupport có đáp ứng các mục tiêu sản phẩm và các outcomes được xác định trong bộ tài liệu planning hiện tại hay không.
 
 Các kết quả đo trên prototype chỉ phản ánh khả năng minh họa và kiểm thử trong môi trường mô phỏng. Không được diễn giải thành số liệu cải thiện thực tế của Aurora University khi chưa có dữ liệu vận hành thực tế và phương pháp đo được Client xác nhận.
 
@@ -13,7 +13,7 @@ Các kết quả đo trên prototype chỉ phản ánh khả năng minh họa v�
 - Ghi rõ thời điểm đo, phiên bản prototype, bộ dữ liệu, số lượng Request và kịch bản kiểm thử.
 - Không báo cáo một mục tiêu là đạt nếu chưa thực hiện phép đo hoặc chưa có bằng chứng.
 - Nếu thiếu baseline hoặc dữ liệu phù hợp, ghi nhận là **Not Measured / Requires Baseline**, không tự ước lượng kết quả.
-- Các mục tiêu định lượng dưới đây được lấy từ Required Project Outcomes trong đề bài; cách kiểm chứng được diễn giải cho phạm vi prototype.
+- Các mục tiêu định lượng hiện được sử dụng làm planning targets cho prototype; phương pháp kiểm chứng được xác định trong Test Scenarios và các tài liệu kiểm thử liên quan.
 
 ## 3. Product Success Metrics
 
@@ -25,7 +25,7 @@ Các kết quả đo trên prototype chỉ phản ánh khả năng minh họa v�
 | VM-04 | Overdue Request Visibility | Management can identify overdue Requests. | Kiểm tra Management Dashboard có hiển thị Request được xác định quá hạn theo thời gian xử lý mục tiêu đã cấu hình. Không tự đặt SLA hoặc ngưỡng quá hạn mới. | Dashboard demonstration, cấu hình thời gian xử lý mục tiêu và test data. |
 | VM-05 | Common Issue Identification | Management can identify common student issues. | Kiểm tra báo cáo tổng hợp Request theo Request Type, số lượng và tỷ lệ; đối chiếu với dữ liệu nguồn. | Management reports và Simulated Request dataset. |
 | VM-06 | Authorized Data Access | Data is accessible only to authorized users. | Thực hiện kiểm thử Role Permission Matrix cho Student, Staff và Management; các trường hợp truy cập trái quyền phải bị từ chối. | Access-control Test Scenarios, test accounts và kết quả kiểm thử. |
-| VM-07 | Student Satisfaction Monitoring | Management can review Student Feedback and satisfaction information. | Gửi Feedback giả lập gắn với Request đã xử lý; kiểm tra Rating/Comment được lưu và hiển thị trong phần báo cáo phù hợp. Không đặt mục tiêu tỷ lệ hài lòng khi chưa có target được xác nhận. | Feedback records, WF-07 và Management Dashboard/report. |
+| VM-07 | Student Satisfaction Monitoring | Management can review Student Feedback and satisfaction information. | Các chỉ số không có target số cụ thể trong planning baseline được đánh giá theo khả năng chức năng và bằng chứng kiểm thử; không tự bổ sung ngưỡng phần trăm. | Feedback records, WF-07 và Management Dashboard/report. |
 
 ## 4. Measurement Procedure
 

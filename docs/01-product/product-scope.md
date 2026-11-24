@@ -6,7 +6,7 @@ UniSupport là hệ thống quản lý yêu cầu hỗ trợ sinh viên dành ch
 
 Trong giai đoạn hiện tại, UniSupport tập trung vào việc xây dựng prototype nhằm minh họa các chức năng và quy trình nghiệp vụ chính. Hệ thống phục vụ ba nhóm người dùng chính: Student, Staff và Management.
 
-Product Scope được xác định dựa trên Project Goal, nhu cầu của các nhóm người dùng và phạm vi nghiệp vụ bắt buộc trong đề bài.
+Product Scope được xác định dựa trên Project Goal, các nhu cầu nghiệp vụ của Student, Staff và Management, cùng các yêu cầu và phạm vi đã được xác định trong bộ tài liệu planning của dự án.
 
 ## 2. In Scope
 
@@ -178,10 +178,10 @@ Phạm vi tập trung vào prototype để minh họa chức năng, quy trình n
 
 Các ràng buộc về kế hoạch và sản phẩm hiện được đề xuất được tóm tắt dưới đây. Thông tin chi tiết về tiến độ, khối lượng công việc, các cột mốc quan trọng và quản lý ràng buộc được lưu giữ trong Kế hoạch Tổng thể Dự án (Project Master Plan) và tệp constraints.md.
 
-- **Project Duration:** Kế hoạch cơ sở hiện tại dự kiến ​​kéo dài 15 tuần, như đã được ghi lại trong Kế hoạch Tổng thể.
+- **Project Duration:** Kế hoạch cơ sở hiện tại dự kiến ​​kéo dài 15 tuần, như đã được ghi lại trong Master Plan.
 - **Effort Limit:** Giới hạn kế hoạch hiện tại là 320 giờ công, bao gồm 304 giờ công dự kiến ​​và 16 giờ công dự phòng.
 - **User Groups:** Sinh viên, Nhân viên và Ban quản lý nằm trong phạm vi sản phẩm hiện tại.
-- **Supported Devices:** Nguyên mẫu (prototype) được thiết kế để đánh giá và kiểm thử khả năng sử dụng trên cả thiết bị máy tính để bàn và thiết bị di động, tuân theo các yêu cầu đã xác định.
+- **Supported Devices:** Prototype được thiết kế để đánh giá và kiểm thử khả năng sử dụng trên cả thiết bị máy tính để bàn và thiết bị di động, tuân theo các yêu cầu đã xác định.
 - **Localization:** Phạm vi của nguyên mẫu bao gồm việc hỗ trợ tiếng Việt và tiếng Anh, tùy thuộc vào kết quả xác thực yêu cầu.
 - **Test Data:** Các hoạt động xây dựng nguyên mẫu và kiểm thử sử dụng dữ liệu mô phỏng thay vì dữ liệu thực tế của sinh viên.
 - **Usability:** Giao diện và quy trình làm việc được thiết kế để phù hợp với người dùng có trình độ công nghệ khác nhau.

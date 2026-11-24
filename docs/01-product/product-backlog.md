@@ -180,7 +180,7 @@ Thẩm quyền quyết định cuối cùng đối với các thay đổi sau b�
 
 Value Metrics được sử dụng để đánh giá mức độ UniSupport đáp ứng các mục tiêu và mang lại giá trị cho các nhóm người dùng.
 
-Các chỉ số dưới đây được xây dựng dựa trên Required Project Outcomes trong đề bài.
+Các chỉ số dưới đây được xây dựng dựa trên Project Goals và các outcomes được xác định trong bộ tài liệu planning hiện tại.
 
 | ID | Value Metric | Target | Measurement Method |
 |---|---|---|---|

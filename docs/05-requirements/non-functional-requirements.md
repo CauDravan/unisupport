@@ -2,7 +2,7 @@
 
 Tài liệu này xác định các tiêu chí chất lượng mà UniSupport cần đáp ứng trong phạm vi prototype. Mỗi yêu cầu có mã định danh, ngưỡng đánh giá và phương pháp kiểm thử để nhóm có thể xác minh bằng dữ liệu mô phỏng.
 
-> **Lưu ý về ngưỡng đo:** Đề bài chưa quy định các con số về thời gian phản hồi, tải đồng thời và usability. Vì vậy, các ngưỡng có ghi **Proposed baseline** là mức đề xuất để kiểm thử prototype, không phải cam kết production hoặc số liệu đã được Aurora University phê duyệt. Nhóm cần xác nhận các ngưỡng này với Project Sponsor trước khi chốt baseline nghiệm thu. Những nội dung chưa có chính sách nguồn được ghi rõ là cần xác nhận, không tự đặt giá trị.
+Các ngưỡng về thời gian phản hồi, tải đồng thời và usability trong tài liệu này là Proposed baseline được nhóm đề xuất để kiểm thử prototype, không phải cam kết production hoặc số liệu đã được Aurora University phê duyệt. Nhóm cần xem xét và xác nhận các ngưỡng này với Project Sponsor trước khi chốt acceptance baseline. Những nội dung chưa có nguồn chính sách được ghi rõ là cần xác nhận, không tự đặt giá trị.
 
 ## 1. Performance
 
@@ -25,7 +25,7 @@ Tài liệu này xác định các tiêu chí chất lượng mà UniSupport c�
 | ID | Yêu cầu | Ngưỡng đo | Cách đo | Áp dụng cho |
 | --- | --- | --- | --- | --- |
 | `NFR-COMP-01` | Giao diện phải sử dụng được trên máy tính và thiết bị di động. | Các màn hình thuộc các workflow chính phải hiển thị và cho phép hoàn thành thao tác trên viewport desktop 1366 × 768 và mobile 360 × 800. Không có thành phần chức năng chính bị che khuất hoặc tràn ngang làm cản trở thao tác. Các viewport là Proposed baseline. | M01, M02, M03, M04 |
-| `NFR-COMP-02` | Hệ thống phải xem xét hỗ trợ tiếng Việt và tiếng Anh theo ràng buộc kỹ thuật của đề bài. | Các màn hình chính trong phạm vi prototype phải có khả năng hiển thị nội dung tiếng Việt và tiếng Anh theo phạm vi ngôn ngữ được nhóm thống nhất. | Chuyển lần lượt hai ngôn ngữ; đối chiếu danh sách màn hình và kiểm tra nội dung không bị thiếu, cắt hoặc tràn giao diện. | M01, M02, M03, M04 |
+| `NFR-COMP-02` | Hệ thống phải xem xét hỗ trợ tiếng Việt và tiếng Anh theo phạm vi localization được đề xuất cho prototype và được xác định trong requirements baseline. | Các màn hình chính trong phạm vi prototype phải có khả năng hiển thị nội dung tiếng Việt và tiếng Anh theo phạm vi ngôn ngữ được nhóm thống nhất. | Chuyển lần lượt hai ngôn ngữ; đối chiếu danh sách màn hình và kiểm tra nội dung không bị thiếu, cắt hoặc tràn giao diện. | M01, M02, M03, M04 |
 
 ## 4. Security and Privacy
 
