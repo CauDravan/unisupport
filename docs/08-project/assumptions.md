@@ -11,8 +11,8 @@ Tài liệu này ghi nhận các giả định được sử dụng để lập 
 | AS-01 | Nhóm đại diện gồm sinh viên và nhân viên sẽ tham gia đánh giá prototype và usability testing. | Kế hoạch review và kiểm thử trong Project Proposal; cần xác nhận khả năng tham gia khi lập lịch. | To Confirm |
 | AS-02 | Các chính sách và quy trình hiện hành của trường liên quan đến dịch vụ sinh viên, bảo vệ dữ liệu và quản lý hồ sơ tiếp tục được áp dụng làm bối cảnh tham khảo. | Project Proposal; các chính sách thực tế chưa được cung cấp để xác minh trong dự án mô phỏng. | To Confirm |
 | AS-03 | Stakeholders sẽ tham gia các buổi review định kỳ và cung cấp phản hồi trong thời gian dự án. | Project Proposal và kế hoạch review theo milestone. | To Confirm |
-| AS-04 | Prototype và testing sử dụng dữ liệu giả lập, đại diện cho quy mô khoảng 3.000 sinh viên; không sử dụng dữ liệu sinh viên thật. | Đề bài và Project Proposal; quy mô là dữ liệu mô phỏng phục vụ lập kế hoạch và kiểm thử. | Confirmed for planning |
-| AS-05 | Aurora University và Director of Student Services được sử dụng làm Client và Project Sponsor trong bối cảnh mô phỏng của bài tập. | Đề bài và feedback yêu cầu làm rõ bối cảnh simulated client. | Confirmed for planning |
+| AS-04 | Prototype và testing sử dụng dữ liệu giả lập, đại diện cho quy mô khoảng 3.000 sinh viên; không sử dụng dữ liệu sinh viên thật. | Team planning assumption về dữ liệu và quy mô mô phỏng phục vụ thiết kế prototype và kiểm thử; không dựa trên dữ liệu sinh viên thực tế. | Confirmed for planning |
+| AS-05 | Aurora University và Director of Student Services được sử dụng làm Client và Project Sponsor trong bối cảnh mô phỏng của dự án UniSupport. | Simulated client context được sử dụng để xác định stakeholder, trách nhiệm, review và acceptance approach trong project planning. | Confirmed for planning |
 
 ## 3. Pricing Assumption (A-01)
 

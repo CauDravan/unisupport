@@ -295,14 +295,9 @@ chính thức trên toàn trường.
 
 ## 11. Commitment & Review
 
-Các thành viên thống nhất sử dụng Team Charter này làm hướng dẫn phối
-hợp trong suốt dự án. Nhóm có thể cập nhật tài liệu khi cách làm việc
-không còn phù hợp, nhưng các thay đổi cần được trao đổi và thống nhất
-giữa các thành viên.
+Các thành viên thống nhất sử dụng Team Charter này làm hướng dẫn phối hợp trong suốt dự án. Nhóm có thể cập nhật tài liệu khi cách làm việc không còn phù hợp, nhưng các thay đổi cần được trao đổi và thống nhất giữa các thành viên.
 
-Team Charter cần được rà soát khi có thay đổi đáng kể về cơ cấu nhóm,
-phạm vi, kế hoạch hoặc yêu cầu của môn học. Các cập nhật phải giữ nhất
-quán với Project Proposal, Project Plan, PRD và các tài liệu liên quan.
+Team Charter cần được rà soát khi có thay đổi đáng kể về cơ cấu nhóm, phạm vi, kế hoạch hoặc cách thức phối hợp và quản lý dự án. Các cập nhật phải giữ nhất quán với Project Proposal, Project Plan, PRD và các tài liệu liên quan.
 
 ------------------------------------------------------------------------
 

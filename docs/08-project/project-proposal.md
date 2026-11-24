@@ -151,9 +151,7 @@ Dự án được lập kế hoạch trong 15 tuần. Việc phát triển và b
 | MS-03 | 12 February 2027 |
 | MS-04 | 26 February 2027 |
 
-Mỗi Milestone đại diện cho một mốc bàn giao Product Increment theo Product Roadmap và Master Plan.
-
-Các buổi đánh giá học phần như Intermediate Project Review hoặc Final Presentation không được sử dụng thay thế cho Product Increment Milestones.
+Mỗi Milestone đại diện cho một mốc bàn giao Product Increment theo Product Roadmap và Master Plan. Các Product Increment Milestones được sử dụng để theo dõi tiến độ, review deliverables và đánh giá mức độ hoàn thành các mục tiêu dự án.
 
 #### 5.3 Project Resources
 
