@@ -4,7 +4,7 @@
 
 Tài liệu này mô tả các kịch bản kiểm thử dùng để xác minh từng Acceptance Criteria (AC) trong `functional-requirements.md` và các Non-Functional Requirements (NFR) trong `non-functional-requirements.md` của hệ thống UniSupport.
 
-Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu giả lập và tuân theo các quy trình nghiệp vụ đã được xác định trong Workflows và tài liệu domain. Bộ hiện tại gồm 63 Functional Test Scenarios (`TS-001` đến `TS-063`) và 19 Non-Functional Test Scenarios (`TS-064` đến `TS-082`). Các AC/NFR được tham chiếu trực tiếp để hỗ trợ kiểm thử và Traceability.
+Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu giả lập và tuân theo các quy trình nghiệp vụ đã được xác định trong Workflows và tài liệu domain. Bộ hiện tại gồm các Functional Test Scenarios có ID từ `TS-001` đến `TS-063`, cùng các scenario bổ sung `TS-083` đến `TS-090`; và 19 Non-Functional Test Scenarios (`TS-064` đến `TS-082`). Các AC/NFR được tham chiếu trực tiếp để hỗ trợ kiểm thử và Traceability.
 
 ## 2. Test Conditions
 
@@ -20,7 +20,7 @@ Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu 
 
 ## 3. Functional Test Scenarios
 
-Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md` và bổ sung một kịch bản kiểm tra luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` là kịch bản kiểm tra workflow, không được xem là Test Scenario ánh xạ trực tiếp cho `FR-STA-03/AC-09`.
+Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, bổ sung luồng Request Reopening (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` là kịch bản kiểm tra workflow, không được xem là Test Scenario ánh xạ trực tiếp cho `FR-STA-03/AC-09`.
 
 | Mã | Kiểm AC / NFR | Tiền điều kiện | Các bước | Kết quả mong đợi | Regression |
 |---|---|---|---|---|---|
@@ -42,10 +42,10 @@ Các kịch bản dưới đây bao phủ các AC đang có trong `functional-re
 | `TS-016` | `FR-STU-03/AC-04` | Request thuộc Student đang đăng nhập nhưng chưa ở trạng thái `Closed` (ví dụ: `In Progress` hoặc `Resolved`). | Student mở Request; thử truy cập chức năng Feedback và gửi Rating. | Hệ thống không cho phép gửi Feedback; không tạo bản ghi Feedback mới và Request giữ nguyên Status hiện tại. | Có |
 | `TS-017` | `FR-STU-03/AC-05` | Student đã gửi Feedback hợp lệ. | Mở dữ liệu Feedback hoặc Request liên quan; kiểm tra nội dung và thời điểm. | Hệ thống ghi nhận nội dung Feedback và thời điểm gửi. | Có |
 | `TS-018` | `FR-STU-03/AC-06` | Có Request thuộc một Student khác. | Đăng nhập Student hiện tại và thử gửi thông tin hoặc Feedback trên Request đó. | Hệ thống từ chối thao tác trên Request không thuộc tài khoản Student đang đăng nhập. | Có |
-| `TS-059` | `FR-STU-03/AC-07` | Request thuộc Student đang đăng nhập và đã ở trạng thái `Closed`. | Student mở Request đã đóng, chọn chức năng Request Reopening và gửi yêu cầu xem xét lại. | Hệ thống cho phép Student gửi yêu cầu Reopening đối với Request đã Closed khi không hài lòng với kết quả xử lý. | Có |
-| `TS-060` | `FR-STU-03/AC-08` | Student đã gửi yêu cầu Reopening cho một Request. | Mở Request liên quan và kiểm tra thông tin yêu cầu Reopening đã được ghi nhận. | Hệ thống lưu yêu cầu Reopening và liên kết với đúng Request để Staff xem xét. | Có |
-| `TS-061` | `FR-STU-03/AC-09` | Staff có yêu cầu Reopening đang chờ xem xét. | Staff mở yêu cầu Reopening; thực hiện chấp nhận hoặc từ chối; kiểm tra quyết định đã được ghi nhận. | Staff có thể xem xét yêu cầu Reopening và hệ thống ghi nhận quyết định chấp nhận hoặc từ chối. | Có |
-| `TS-062` | `FR-STU-03/AC-10` | Yêu cầu Reopening đã được Staff chấp nhận. | Mở Request được chấp nhận Reopening; kiểm tra Status và lịch sử xử lý. | Request được tiếp tục xử lý theo quy trình đã thống nhất và thông tin về quyết định Reopening được lưu lại. | Có |
+| `TS-083` | `FR-STU-03/AC-07` | Request thuộc Student đang đăng nhập và đã ở trạng thái `Closed`. | Student mở Request đã đóng, chọn chức năng Request Reopening và gửi yêu cầu xem xét lại. | Hệ thống cho phép Student gửi yêu cầu Reopening đối với Request đã Closed khi không hài lòng với kết quả xử lý. | Có |
+| `TS-084` | `FR-STU-03/AC-08` | Student đã gửi yêu cầu Reopening cho một Request. | Mở Request liên quan và kiểm tra thông tin yêu cầu Reopening đã được ghi nhận. | Hệ thống lưu yêu cầu Reopening và liên kết với đúng Request để Staff xem xét. | Có |
+| `TS-085` | `FR-STU-03/AC-09` | Staff có yêu cầu Reopening đang chờ xem xét. | Staff mở yêu cầu Reopening; thực hiện chấp nhận hoặc từ chối; kiểm tra quyết định đã được ghi nhận. | Staff có thể xem xét yêu cầu Reopening và hệ thống ghi nhận quyết định chấp nhận hoặc từ chối. | Có |
+| `TS-086` | `FR-STU-03/AC-10` | Yêu cầu Reopening đã được Staff chấp nhận. | Mở Request được chấp nhận Reopening; kiểm tra Status và lịch sử xử lý. | Request được tiếp tục xử lý theo quy trình đã thống nhất và thông tin về quyết định Reopening được lưu lại. | Có |
 | `TS-019` | `FR-STA-01/AC-01` | Có Request mới chưa được phân loại; Staff có quyền xử lý queue. | Đăng nhập Staff và mở danh sách Request cần phân loại. | Staff có thể xem các Request đang cần phân loại. | Có |
 | `TS-020` | `FR-STA-01/AC-02` | Staff mở một Request chưa được phân loại. | Kiểm tra nội dung; chọn Request Type và Priority phù hợp; lưu. | Staff có thể xác định và lưu Request Type cùng Priority cho Request. | Có |
 | `TS-021` | `FR-STA-01/AC-03` | Request đã có thông tin cần thiết để phân loại. | Chọn Department phù hợp và xác nhận phân công. | Request được phân công đến Department được chọn. | Có |
@@ -90,6 +90,10 @@ Các kịch bản dưới đây bao phủ các AC đang có trong `functional-re
 | `TS-060` | `FR-SEC-02/AC-02` | Có Request và quyền thay đổi Priority/Assignment. | Thay đổi Priority và Assignment; kiểm tra Audit Log. | Các thay đổi Priority và Assignment được ghi nhận trong Audit Log. | Có |
 | `TS-061` | `FR-SEC-02/AC-03` | Có tài khoản thực hiện thao tác và Request thử nghiệm. | Thực hiện thao tác quan trọng; kiểm tra actor, action, timestamp và thông tin đối tượng/thay đổi. | Bản ghi Audit Log có người thực hiện, thao tác, thời điểm và thông tin liên quan đến Request. | Có |
 | `TS-062` | `FR-SEC-02/AC-04` | Có Audit Log và tài khoản không được cấp quyền truy cập. | Đăng nhập tài khoản không có quyền; thử mở Audit Log qua giao diện và đường dẫn trực tiếp nếu có. | Người dùng không đủ quyền không thể truy cập thông tin Audit Log. | Có |
+| `TS-087` | `FR-SEC-03/AC-01` | Người dùng có tài khoản hợp lệ. | Nhập thông tin đăng nhập hợp lệ và submit. | Hệ thống xác thực và cho phép đăng nhập thành công. | Có |
+| `TS-088` | `FR-SEC-03/AC-02` | Người dùng đang ở màn hình Login. | Nhập thông tin đăng nhập không hợp lệ và submit. | Hệ thống từ chối đăng nhập và thông báo lỗi. | Có |
+| `TS-089` | `FR-SEC-03/AC-03` | Người dùng đang ở màn hình Login. | Để trống một hoặc nhiều trường bắt buộc và submit. | Hệ thống yêu cầu nhập đủ thông tin; không xác thực người dùng. | Có |
+| `TS-090` | `FR-SEC-03/AC-04` | Người dùng đăng nhập thành công với Role đã gán. | Truy cập chức năng tương ứng Role và thử chức năng ngoài Role. | Người dùng được phép truy cập chức năng phù hợp Role và bị từ chối ngoài quyền. | Có |
 | `TS-063` | `FR-STA-03` (WF-06 positive flow) | Request đang ở `In Progress`; Staff được phân công và có quyền xử lý; không còn thông tin cần Student bổ sung. | Staff hoàn tất xử lý; nhập Resolution; chuyển Request sang `Resolved`; kiểm tra lại kết quả; thực hiện Close Request; mở lại Request Detail và Request History. | Hệ thống chuyển Request từ `In Progress` sang `Resolved`, sau đó sang `Closed`; Resolution và Closed Date được lưu; Status và các thay đổi liên quan xuất hiện trong Request History. | Có |
 
 ## 4. Non-Functional Test Scenarios
@@ -166,3 +170,4 @@ Khi thực hiện kiểm thử, nhóm cần ghi nhận tối thiểu các thông
 - [WF-05 – Transfer Request](../04-workflows/WF-05-transfer-request.md)
 - [WF-06 – Resolve and Close Request](../04-workflows/WF-06-resolve-and-close.md)
 - [WF-07 – Feedback](../04-workflows/WF-07-feedback.md)
+- [WF-08 – Request Reopening (Proposed)](../04-workflows/WF-08-request-reopening.md)

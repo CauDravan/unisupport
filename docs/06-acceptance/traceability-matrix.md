@@ -21,7 +21,7 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-STU-02 / AC-04–AC-05 | TS-010–TS-011 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-01–AC-02 | TS-013–TS-014 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-03–AC-06 | TS-015–TS-018 | 5.2, 5.4 | MS-03 | Q-01 |
-| FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 |
+| FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 (scope confirmation required) |
 | FR-STA-01 / AC-01–AC-06 | TS-019–TS-024 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-02 / AC-01–AC-06 | TS-025–TS-030 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-01–AC-05 | TS-031–TS-035 | 4.2, 4.3 | MS-02 | Q-02 |
@@ -35,6 +35,7 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-SEC-01 / AC-02–AC-03 | TS-054–TS-055 | 6.2 | MS-04 | Q-04 |
 | FR-SEC-01 / AC-05–AC-06 | TS-057–TS-058 | 3.2 | MS-01 | Q-04 |
 | FR-SEC-02 / AC-01–AC-04 | TS-059–TS-062 | 6.2 | MS-04 | Q-04 |
+| FR-SEC-03 / AC-01–AC-04 | TS-087–TS-090 | 3.2 | MS-01 | Q-04 |
 
 **Notes:**
 
@@ -59,7 +60,7 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 | AC-09 – Staff hoàn tất và đóng Request | FR-STA-03 | AC-09 | TS-063 | TS-063 kiểm tra luồng thành công theo WF-06: In Progress → Resolved → Closed, bao gồm lưu Resolution, Closed Date và Request History. TS-038 là Negative Test bổ trợ, kiểm tra hệ thống chặn đóng Request khi chưa đủ điều kiện. |
 | AC-10 – Student kiểm tra Request | FR-STU-02 | AC-01–AC-03 | TS-007–TS-009 | Kiểm tra danh sách Request, Status hiện tại và Request History. |
 | AC-11 – Management mở Management Dashboard | FR-MGT-01 | AC-01–AC-06 | TS-041–TS-046 | Kiểm tra các số liệu tổng quan và thông tin Request trên Dashboard. |
-| AC-12 – User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | FR-SEC-01, FR-SEC-02 | FR-SEC-01/AC-01–AC-04; FR-SEC-02/AC-01–AC-04 | TS-053–TS-056, TS-059–TS-062 | Mapping bao phủ xác thực, Role/permission và bảo vệ dữ liệu/truy cập. |
+| AC-12 – User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | FR-SEC-01, FR-SEC-02, FR-SEC-03 | FR-SEC-01/AC-01–AC-04; FR-SEC-02/AC-01–AC-04; FR-SEC-03/AC-02, AC-04 | TS-053–TS-056, TS-059–TS-062, TS-088, TS-090 | Mapping bao phủ xác thực, Role/permission và bảo vệ dữ liệu/truy cập. |
 | AC-13 – User thực hiện hành động cần được ghi nhận | FR-STA-03, FR-SEC-02 | FR-STA-03/AC-03, AC-10; FR-SEC-02/AC-01–AC-04 | TS-033, TS-039, TS-060–TS-062, TS-076 | TS-076 là NFR test về Audit Log; các TS khác kiểm tra Activity/Request History và ghi nhận thao tác. |
 | AC-14 – Student gửi Feedback sau khi Request được xử lý | FR-STU-03, FR-MGT-02 | FR-STU-03/AC-03–AC-06; FR-MGT-02/AC-01–AC-06 | TS-015–TS-018, TS-047–TS-052, TS-082 | TS-015/017 kiểm tra gửi và lưu Feedback; TS-016/018 kiểm tra điều kiện/quyền; TS-047–052 kiểm tra báo cáo; TS-082 kiểm tra liên kết Feedback với Request. |
 

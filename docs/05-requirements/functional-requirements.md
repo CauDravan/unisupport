@@ -449,6 +449,8 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - Workflow: [WF-04 – Request Additional Information](../04-workflows/WF-04-request-additional-information.md)
 - Workflow: [WF-05 – Transfer Request](../04-workflows/WF-05-transfer-request.md)
 - Workflow: [WF-06 – Resolve and Close](../04-workflows/WF-06-resolve-and-close.md)
+- Workflow: [WF-07 – Feedback](../04-workflows/WF-07-feedback.md)
+- Workflow: [WF-08 – Request Reopening (Proposed)](../04-workflows/WF-08-request-reopening.md)
 
 ---
 
