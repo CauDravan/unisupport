@@ -176,16 +176,16 @@ Phạm vi tập trung vào prototype để minh họa chức năng, quy trình n
 
 ## 4. Scope Boundaries and Constraints
 
-Việc thiết kế và phát triển UniSupport cần tuân thủ các giới hạn sau:
+Các ràng buộc về kế hoạch và sản phẩm hiện được đề xuất được tóm tắt dưới đây. Thông tin chi tiết về tiến độ, khối lượng công việc, các cột mốc quan trọng và quản lý ràng buộc được lưu giữ trong Kế hoạch Tổng thể Dự án (Project Master Plan) và tệp constraints.md.
 
-- **Project Duration:** Kế hoạch dự án có tổng thời gian 15 tuần.
-- **Effort Limit:** Tổng ngân sách lao động tối đa là 320 person-hours.
-- **User Groups:** Phải xem xét ít nhất ba vai trò Student, Staff và Management trong phạm vi các chức năng tương ứng.
-- **Supported Devices:** Giải pháp phải xem xét khả năng sử dụng trên máy tính và thiết bị di động.
-- **Localization:** Giải pháp phải xem xét hỗ trợ tiếng Việt và tiếng Anh.
-- **Test Data:** Prototype và testing sử dụng dữ liệu giả lập.
-- **Usability:** Giao diện và quy trình cần phù hợp với người dùng có mức độ thành thạo công nghệ khác nhau.
-- **Security:** Quyền truy cập và dữ liệu sinh viên phải được bảo vệ theo vai trò và quyền được cấp.
+- **Project Duration:** Kế hoạch cơ sở hiện tại dự kiến ​​kéo dài 15 tuần, như đã được ghi lại trong Kế hoạch Tổng thể.
+- **Effort Limit:** Giới hạn kế hoạch hiện tại là 320 giờ công, bao gồm 304 giờ công dự kiến ​​và 16 giờ công dự phòng.
+- **User Groups:** Sinh viên, Nhân viên và Ban quản lý nằm trong phạm vi sản phẩm hiện tại.
+- **Supported Devices:** Nguyên mẫu (prototype) được thiết kế để đánh giá và kiểm thử khả năng sử dụng trên cả thiết bị máy tính để bàn và thiết bị di động, tuân theo các yêu cầu đã xác định.
+- **Localization:** Phạm vi của nguyên mẫu bao gồm việc hỗ trợ tiếng Việt và tiếng Anh, tùy thuộc vào kết quả xác thực yêu cầu.
+- **Test Data:** Các hoạt động xây dựng nguyên mẫu và kiểm thử sử dụng dữ liệu mô phỏng thay vì dữ liệu thực tế của sinh viên.
+- **Usability:** Giao diện và quy trình làm việc được thiết kế để phù hợp với người dùng có trình độ công nghệ khác nhau.
+- **Security:** Việc kiểm soát truy cập và bảo vệ dữ liệu sinh viên được thực hiện dựa trên các vai trò và yêu cầu truy cập đã được xác định.
 
 Các chi tiết về Functional Requirements, Non-Functional Requirements, Business Rules và Acceptance Criteria được mô tả trong những tài liệu liên quan.
 
