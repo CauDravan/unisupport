@@ -21,6 +21,7 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-STU-02 / AC-04–AC-05 | TS-010–TS-011 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-01–AC-02 | TS-013–TS-014 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-03–AC-06 | TS-015–TS-018 | 5.2, 5.4 | MS-03 | Q-01 |
+| FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 |
 | FR-STA-01 / AC-01–AC-06 | TS-019–TS-024 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-02 / AC-01–AC-06 | TS-025–TS-030 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-01–AC-05 | TS-031–TS-035 | 4.2, 4.3 | MS-02 | Q-02 |

@@ -184,6 +184,10 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - BR-03: Feedback chỉ được gửi sau khi Request đã được xử lý và đóng (Closed), theo quy trình WF-07.
 - BR-04: Nội dung bổ sung và Feedback phải được lưu lại để phục vụ việc theo dõi.
 - BR-05: Sau khi Student cung cấp đầy đủ thông tin được yêu cầu, Request có thể chuyển từ trạng thái "Chờ bổ sung thông tin" trở lại "Đang xử lý" theo quy trình.
+- BR-06: Student có thể yêu cầu xem xét lại (Request Reopening) một Request đã đóng (Closed) nếu không hài lòng với kết quả xử lý.
+- BR-07: Student chỉ được yêu cầu mở lại Request thuộc tài khoản của mình.
+- BR-08: Yêu cầu mở lại Request phải được Staff có trách nhiệm xem xét trước khi Request được tiếp tục xử lý.
+- BR-09: Quyết định xem xét lại Request phải được ghi nhận để phục vụ việc theo dõi và kiểm tra lịch sử xử lý.
 
 **Alternative and Error Flows**
 
@@ -201,6 +205,10 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - FR-STU-03/AC-04: Hệ thống không cho phép gửi Feedback khi Request chưa ở trạng thái Closed theo điều kiện của WF-07.
 - FR-STU-03/AC-05: Hệ thống ghi nhận nội dung và thời điểm gửi Feedback.
 - FR-STU-03/AC-06: Hệ thống từ chối thao tác trên Request không thuộc tài khoản của Student.
+- FR-STU-03/AC-07: Student có thể gửi yêu cầu xem xét lại (Request Reopening) đối với Request đã ở trạng thái Closed khi không hài lòng với kết quả xử lý.
+- FR-STU-03/AC-08: Hệ thống ghi nhận yêu cầu xem xét lại và liên kết với Request tương ứng để Staff có thể kiểm tra.
+- FR-STU-03/AC-09: Staff có thể xem xét yêu cầu Reopening và ghi nhận quyết định chấp nhận hoặc từ chối.
+- FR-STU-03/AC-10: Khi yêu cầu Reopening được chấp nhận, Request được tiếp tục xử lý theo quy trình đã thống nhất và thông tin về quyết định được lưu lại.
 
 **Edge Cases**
 
@@ -711,6 +719,65 @@ Hệ thống ghi nhận các hoạt động quan trọng liên quan đến Reque
 
 - Một Request được cập nhật nhiều lần liên tiếp.
 - Một hoạt động bị gián đoạn trong lúc hệ thống đang ghi nhận lịch sử.
+
+**Related**
+
+- Module: [M04 – Security and Access](../03-modules/M04-security-and-access/prd.md)
+- Module: [M01 – Student Portal](../03-modules/M01-student-portal/prd.md)
+- Module: [M02 – Staff Workspace](../03-modules/M02-staff-workspace/prd.md)
+- Module: [M03 – Management Dashboard](../03-modules/M03-management-dashboard/prd.md)
+
+### FR-SEC-03 – User Authentication
+
+**Description**
+
+Hệ thống cho phép người dùng đăng nhập bằng tài khoản được cấp để truy cập các chức năng tương ứng với Role của mình. Hệ thống kiểm tra thông tin đăng nhập và chỉ cho phép người dùng có thông tin xác thực hợp lệ truy cập hệ thống.
+
+**Actor**
+
+- Primary Actor: Student, Staff, Management
+- Supporting Actor: System
+
+**Priority**
+
+- High – Đảm bảo người dùng được xác thực trước khi truy cập các chức năng của hệ thống.
+
+**Preconditions**
+
+- Người dùng có tài khoản hợp lệ trong hệ thống.
+
+**Main Flow**
+
+1. Người dùng truy cập chức năng Login.
+2. Hệ thống hiển thị màn hình đăng nhập.
+3. Người dùng nhập thông tin đăng nhập.
+4. Hệ thống kiểm tra thông tin đăng nhập.
+5. Nếu thông tin hợp lệ, hệ thống xác thực người dùng.
+6. Hệ thống cho phép người dùng truy cập các chức năng phù hợp với Role được gán.
+
+**Business Rules**
+
+- BR-01: Người dùng phải cung cấp thông tin đăng nhập hợp lệ để truy cập hệ thống.
+- BR-02: Hệ thống không cho phép truy cập khi thông tin đăng nhập không hợp lệ.
+- BR-03: Người dùng chỉ được truy cập các chức năng phù hợp với Role đã được gán.
+
+**Alternative and Error Flows**
+
+- EF-01: Nếu thông tin đăng nhập không hợp lệ, hệ thống thông báo lỗi và không cho phép truy cập.
+- EF-02: Nếu thông tin đăng nhập bị thiếu, hệ thống yêu cầu người dùng nhập đầy đủ thông tin cần thiết.
+
+**Acceptance Criteria**
+
+- FR-SEC-03/AC-01: Người dùng có thể đăng nhập khi cung cấp thông tin đăng nhập hợp lệ.
+- FR-SEC-03/AC-02: Hệ thống từ chối đăng nhập khi thông tin đăng nhập không hợp lệ.
+- FR-SEC-03/AC-03: Hệ thống yêu cầu người dùng cung cấp đầy đủ thông tin đăng nhập bắt buộc.
+- FR-SEC-03/AC-04: Sau khi đăng nhập thành công, người dùng được truy cập các chức năng phù hợp với Role được gán.
+
+**Edge Cases**
+
+- Người dùng nhập thông tin đăng nhập không đầy đủ.
+- Người dùng nhập thông tin đăng nhập không hợp lệ.
+- Người dùng cố truy cập chức năng khi chưa đăng nhập.
 
 **Related**
 
