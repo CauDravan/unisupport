@@ -64,7 +64,7 @@ Các kết quả đo trên prototype chỉ phản ánh khả năng minh họa v�
 - Các tỷ lệ từ Simulated Data không đại diện cho kết quả vận hành tại Aurora University.
 - Mục tiêu giảm 30% số lần liên hệ hỏi tiến độ chỉ có thể được xác minh thực tế khi có baseline và dữ liệu sau triển khai phù hợp.
 - Prototype demonstration chứng minh chức năng có thể thực hiện; không tự chứng minh mức cải thiện quy mô toàn trường.
-- Các chỉ số không có target số cụ thể trong đề bài được đánh giá theo khả năng chức năng, không tự bổ sung ngưỡng phần trăm.
+- Các chỉ số không có target số cụ thể trong Project Requirements hoặc được Client xác nhận sẽ được đánh giá theo khả năng chức năng và bằng chứng kiểm thử; không tự bổ sung ngưỡng phần trăm.
 
 ## 8. Related Documents
 
