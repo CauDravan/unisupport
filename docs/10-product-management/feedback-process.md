@@ -46,13 +46,13 @@ Nhóm xem xét từng Feedback theo các tiêu chí:
 
 - **User Impact:** Mức độ ảnh hưởng đến Student, Staff hoặc Management.
 - **Goal and Scope Alignment:** Mức độ đóng góp cho Product Goals và sự phù hợp với Product Scope.
-- **Severity / Risk:** Mức độ ảnh hưởng đến dữ liệu, quyền truy cập, tính đúng đắn hoặc khả năng hoàn thành workflow.
+- **Severity:** Mức ảnh hưởng của Bug theo thang Critical/High/Medium/Low trong [Quality Plan](../09-quality/quality-plan.md). Severity không đồng nghĩa với Product Priority.
 - **Dependencies:** Các chức năng, Workflow, FR hoặc module phụ thuộc.
 - **Effort and Feasibility:** Effort dự kiến và khả năng thực hiện trong giới hạn 15 tuần, tối đa 320 person-hours.
 
-Priority sử dụng định nghĩa High, Medium và Low trong [Product Backlog](../01-product/product-backlog.md). Nhóm không tự đặt trọng số hoặc công thức chấm điểm khi chưa có cơ sở được thống nhất.
+Product Priority sử dụng định nghĩa High, Medium và Low trong [Product Backlog](../01-product/product-backlog.md), độc lập với Severity. Bug Severity áp dụng thang Critical/High/Medium/Low và targets trong [Quality Plan](../09-quality/quality-plan.md).
 
-| Priority | Handling |
+| Product Priority | Handling |
 |---|---|
 | High | Xem xét trước vì ảnh hưởng đến chức năng cốt lõi, bảo mật, dữ liệu hoặc điều kiện nghiệm thu. |
 | Medium | Xếp vào Product Backlog để cân nhắc theo giá trị, phụ thuộc và nguồn lực. |
@@ -70,7 +70,7 @@ Priority sử dụng định nghĩa High, Medium và Low trong [Product Backlog]
 4. **Implementation:** Chỉ đưa hạng mục đã được lựa chọn vào công việc thực hiện; liên kết GitHub Issue với PBI, FR, MS-xx và Test Scenario có liên quan khi áp dụng.
 5. **Verification and Closure:** Kiểm tra kết quả theo Acceptance Criteria hoặc điều kiện đã thống nhất; cập nhật trạng thái Issue và đóng bản ghi khi có bằng chứng hoàn thành.
 
-Project Manager điều phối việc ghi nhận và theo dõi. Project team thực hiện phân tích và đề xuất ưu tiên. Thẩm quyền Product Owner lâu dài sau bàn giao chưa được xác định trong nguồn dự án và cần Client xác nhận; không mặc định nhóm sinh viên có quyền quyết định thay Aurora University.
+Project Manager điều phối việc ghi nhận và theo dõi. Project team thực hiện phân tích và đề xuất ưu tiên. **Giả định cho handover mô phỏng:** Project Sponsor/Director of Student Services hoặc delegate được chỉ định sẽ là Product Decision Owner, quyết định ưu tiên Product Feedback và CR sau handover; BA duy trì backlog và evidence, PM điều phối quy trình. Đây là giả định planning, chưa phải sự ủy quyền thực tế của Aurora University; mã giả định và câu hỏi mở được ghi tại `assumptions.md` và `open-questions.md`.
 
 ## 7. Change Control Boundary
 
@@ -90,7 +90,7 @@ Mỗi Feedback record nên có tối thiểu các trường sau:
 | Type | Bug, Product Feedback, Change Request hoặc Question / Clarification. |
 | Description | Nội dung cụ thể và bối cảnh. |
 | Related Module / Workflow / FR | Phạm vi bị ảnh hưởng. |
-| Priority / Severity | Mức độ ưu tiên hoặc ảnh hưởng sau khi đánh giá. |
+| Product Priority / Severity | Product Priority dùng cho backlog; Severity dùng riêng cho Bug theo Quality Plan. |
 | Decision and Rationale | Quyết định và lý do; ghi rõ nếu còn chờ xác nhận. |
 | Owner / Status | Người theo dõi và trạng thái xử lý. |
 | Verification Evidence | Test Scenario, kết quả kiểm tra hoặc liên kết PR khi có. |

@@ -13,6 +13,7 @@ Tài liệu này ghi nhận các giả định được sử dụng để lập 
 | AS-03 | Stakeholders sẽ tham gia các buổi review định kỳ và cung cấp phản hồi trong thời gian dự án. | Project Proposal và kế hoạch review theo milestone. | To Confirm |
 | AS-04 | Prototype và testing sử dụng dữ liệu giả lập, đại diện cho quy mô khoảng 3.000 sinh viên; không sử dụng dữ liệu sinh viên thật. | Team planning assumption về dữ liệu và quy mô mô phỏng phục vụ thiết kế prototype và kiểm thử; không dựa trên dữ liệu sinh viên thực tế. | Confirmed for planning |
 | AS-05 | Aurora University và Director of Student Services được sử dụng làm Client và Project Sponsor trong bối cảnh mô phỏng của dự án UniSupport. | Simulated client context được sử dụng để xác định stakeholder, trách nhiệm, review và acceptance approach trong project planning. | Confirmed for planning |
+| AS-06 | Trong kịch bản handover mô phỏng, Project Sponsor/Director of Student Services hoặc delegate được chỉ định được giả định là Product Decision Owner; BA duy trì backlog và metric evidence, các metric được đề xuất review hằng tháng. | Cần một vai trò nhận feedback, quyết định ưu tiên và xem xét Value Metrics sau handover. Đây là giả định lập kế hoạch, không phải sự ủy quyền thực tế từ Aurora University. | Proposed assumption — subject to simulated client confirmation |
 
 ## 3. Pricing Assumption (A-01)
 

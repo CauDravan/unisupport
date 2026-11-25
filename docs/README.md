@@ -111,10 +111,10 @@ Các tài liệu Architecture mô tả thiết kế ở mức logic phục vụ 
 
 | File | Nội dung |
 |---|---|
-| [project-proposal.md](./08-project/project-proposal.md) | Project Proposal trình bày vấn đề, phạm vi, kế hoạch, chi phí và rủi ro của dự án. |
+| [project-proposal.md](./08-project/project-proposal.md) | Source Markdown của Project Proposal. Bản Word làm việc: [project-proposal.docx](./08-project/project-proposal.docx); PDF review: [project-proposal.pdf](./08-project/project-proposal.pdf). Các bản này chưa được ghi nhận là đã gửi client. |
 | [master-plan.md](./08-project/master-plan.md) | Giải thích cấu trúc và nguyên tắc quản lý Master Plan. |
 | [master-plan.xlsx](./08-project/master-plan.xlsx) | Nguồn dữ liệu chính thức cho Milestones, WBS, Resources, Gantt và Change Log theo Master Plan. |
-| [wbs.md](./08-project/wbs.md) | Work Breakdown Structure, phân rã công việc và thông tin effort liên quan. |
+| [wbs.md](./08-project/wbs.md) | Giải thích cấu trúc và nguyên tắc quản lý WBS; bảng WBS, effort, dates và dependencies chỉ nằm trong Master Plan Excel. |
 | [quotation.xlsx](./08-project/quotation.xlsx) | Bảng Quotation, các hạng mục chi phí, effort, rates và cách tính tổng theo dữ liệu trong bảng. |
 | [raci-matrix.md](./08-project/raci-matrix.md) | Phân định Responsible, Accountable, Consulted và Informed cho các công việc/deliverables. |
 | [team-charter.md](./08-project/team-charter.md) | Nguyên tắc làm việc, vai trò thành viên, ra quyết định, phối hợp và xử lý vấn đề trong nhóm. |
@@ -184,3 +184,8 @@ Khi có nội dung không thống nhất, cần xác định tài liệu nguồn
 ---
 
 **Start here:** Nếu đây là lần đầu tìm hiểu UniSupport, hãy bắt đầu từ [Product Overview](./01-product/README.md), sau đó đọc lần lượt theo mục [Recommended Reading Order](#2-recommended-reading-order).
+
+
+### Bug reporting template
+
+- [Bug Report template](../.github/ISSUE_TEMPLATE/2-bug.md) — dùng Severity Critical/High/Medium/Low theo Quality Plan, kèm owner, target date và verification evidence.

@@ -1,32 +1,46 @@
-# Bug Report
+---
+name: Bug Report
+about: Record a defect in the UniSupport prototype or project deliverable
+title: "[BUG] "
+labels: bug
+---
 
-## Bug Description
-<!-- Describe the bug clearly and briefly. -->
+## Summary
+Describe the defect.
 
-## Related Module / Workflow
-<!-- Identify the affected module, workflow, or feature. -->
+## Severity (required)
+Select one level using `docs/09-quality/quality-plan.md`:
+- [ ] Critical
+- [ ] High
+- [ ] Medium
+- [ ] Low
 
-## Environment
-<!-- Browser, device, or environment where the bug occurred. -->
+## Environment / Prototype version
+- Version/commit:
+- Milestone:
 
-## Steps to Reproduce
-<!-- Provide clear steps to reproduce the bug. -->
+## Related WBS / FR / AC / TS
+- WBS ID:
+- FR/AC/TS:
 
+## Steps to reproduce
 1.
 2.
-3.
 
-## Expected Result
-<!-- Describe what should happen according to the agreed requirements. -->
+## Expected result
 
-## Actual Result
-<!-- Describe what actually happens. -->
+## Actual result
 
-## Severity / Impact
-<!-- Describe how the bug affects the system or user. Severity will be assessed by the project team based on the Quality Plan. -->
+## Impact / workaround
 
-## Evidence
-<!-- Attach screenshots, logs, or other evidence if available. -->
+## Owner and dates
+- Assignee:
+- Target date:
 
-## Related FR / AC / Test Scenario
-<!-- Link the related Functional Requirement, Acceptance Criteria, or Test Scenario if applicable. -->
+## Verification after fix
+- [ ] Retest performed
+- [ ] Evidence linked
+- [ ] Related regression scenario(s) checked
+
+## Links
+- Related issue/PR:

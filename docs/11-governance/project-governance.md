@@ -75,6 +75,24 @@ Không tự kết luận một Milestone đạt tiến độ hoặc được ngh
 
 ## 5. Monitoring Indicators and Escalation Triggers
 
+### 5.1 Monitoring Indicators
+
+PM xem xét các chỉ số này theo chu kỳ báo cáo hàng tuần, sử dụng GitHub Issues và tệp Excel Master Plan. Dữ liệu trên GitHub phải luôn được cập nhật; nếu thiếu dữ liệu cần thiết, hãy ghi nhận chỉ số đó là "chưa hoàn thiện" thay vì tự suy đoán.
+
+| Indicator | Formula / interpretation | Source fields | Owner | Review cycle |
+|---|---|---|---|---|
+| Milestone issue completion | Closed mapped issues / total mapped issues for milestone × 100% | GitHub Milestone, Issue status, WBS mapping | PM | Weekly |
+| Overdue open issues | Count of issues with due date before report date and not closed | Issue due date, status, milestone | PM | Weekly |
+| Blocked issues | Count of open issues marked blocked | GitHub Issue label/status | PM | Weekly |
+| Open Critical/High defects | Count of open Bug issues Severity=Critical or High | Bug template Severity, issue status | PM and BA/QA | Weekly; before release gate |
+| Defect age | Report date − created date for open defect; report oldest/average by severity where dates exist | Issue created date, Severity, status | PM | Weekly |
+| Planned vs actual effort variance | Actual effort − planned effort (hours), only when actual effort is entered consistently | Master Plan Excel; agreed Issue effort fields if adopted | PM | Weekly |
+| Open change requests | Count of CR issues in Open/Review/Pending states | CR label/template status | PM | Weekly |
+
+**Required GitHub Issue fields/conventions:** WBS ID(s), Milestone, người phụ trách/người được giao, ngày đến hạn, trạng thái và nhãn loại vấn đề. Đối với các lỗi, cần bổ sung thêm: mức độ nghiêm trọng, ngày dự kiến ​​hoàn thành, các thành phần bị ảnh hưởng (AC/TS/FR), các bước tái hiện lỗi, quy trình xác minh và các liên kết liên quan. Người phụ trách nhiệm vụ có trách nhiệm cập nhật trạng thái và các yếu tố gây cản trở. Nỗ lực thực hiện (cả dự kiến ​​và thực tế) chỉ được báo cáo khi đã được ghi nhận tại nguồn dữ liệu thống nhất; các ước tính ban đầu không được coi là dữ liệu thực tế.
+
+### 5.2 Escalation Triggers
+
 Các điều kiện dưới đây được dùng để nhận biết tình huống cần PM xem xét. Đây là **escalation triggers theo kế hoạch dự án**, không phải SLA vận hành của UniSupport.
 
 | Trigger | Required Action | Escalation Path |
@@ -83,11 +101,11 @@ Các điều kiện dưới đây được dùng để nhận biết tình huố
 | Có nguy cơ ảnh hưởng ngày hoàn thành MS-01, MS-02, MS-03 hoặc MS-04 | PM đánh giá tác động đến WBS/Gantt, deliverables, dependencies và nguồn lực; đề xuất phương án cho nhóm. | PM → nhóm dự án; nếu cần thay đổi baseline thì trình Project Sponsor / Simulated Client. |
 | Effort dự kiến vượt giới hạn tối đa 320 person-hours hoặc cần thay đổi nguồn lực | PM cùng task owner rà soát actual/remaining effort và phương án ưu tiên hoặc điều chỉnh; không tự tăng giới hạn. | PM → nhóm → Project Sponsor / Simulated Client nếu thay đổi baseline/cam kết. |
 | Đề xuất làm thay đổi Product Scope, yêu cầu đã thống nhất hoặc deliverable | Ghi nhận CR, phân tích tác động và chờ quyết định trước khi triển khai thay đổi. | PM điều phối → Project Sponsor / Simulated Client xem xét phê duyệt. |
-| Phát hiện lỗi nghiêm trọng liên quan đến dữ liệu, quyền truy cập hoặc luồng nghiệp vụ cốt lõi | Ghi nhận Bug, đánh giá Severity theo Quality Plan, tạm dừng việc đánh dấu chức năng liên quan là hoàn thành cho đến khi có kết quả xử lý/đánh giá. | Người phát hiện → PM và BA → FE/BE liên quan; báo Project Sponsor / Simulated Client nếu ảnh hưởng nghiệm thu hoặc baseline. |
+| Phát hiện lỗi nghiêm trọng liên quan đến dữ liệu, quyền truy cập hoặc luồng nghiệp vụ cốt lõi | Ghi nhận Bug, đánh giá Severity (Critical/High/Medium/Low) theo Quality Plan, tạm dừng việc đánh dấu chức năng liên quan là hoàn thành cho đến khi có kết quả xử lý/đánh giá. | Người phát hiện → PM và BA → FE/BE liên quan; báo Project Sponsor / Simulated Client nếu ảnh hưởng nghiệm thu hoặc baseline. |
 | Thành viên không thể tiếp tục task hoặc vắng mặt ảnh hưởng đến bàn giao | Thành viên thông báo sớm khi có thể; PM rà soát trạng thái, tài liệu bàn giao và phân công hỗ trợ phù hợp. | Thành viên/Task Owner → PM → nhóm. |
 | Nhóm không thống nhất được quyết định hoặc phương án xử lý | PM ghi nhận các lựa chọn, tác động và điểm chưa thống nhất; đưa ra thảo luận theo Team Charter. | PM → nhóm; vấn đề liên quan baseline được trình Project Sponsor / Simulated Client. |
 
-### 5.1 Escalation Record
+### 5.3 Escalation Record
 
 Khi escalation, bản ghi cần có:
 

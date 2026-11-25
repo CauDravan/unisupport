@@ -45,4 +45,10 @@ Khi thay đổi scope, requirements, schedule, effort, dependencies hoặc resou
 5. Đồng bộ GitHub Issues và các tài liệu bị ảnh hưởng.
 6. Ghi nhận lịch sử trong Change Log.
 
-**Related documents:** `master-plan.xlsx`, `master-plan.md`, `raci-matrix.md`, `risk-register.md`, `team-charter.md`, `project-proposal.md`.
+**Related documents:**
+- [Master Plan Excel](./master-plan.xlsx)
+- [Master Plan guide](./master-plan.md)
+- [RACI Matrix](./raci-matrix.md)
+- [Risk Register](./risk-register.md)
+- [Team Charter](./team-charter.md)
+- [Project Proposal](./project-proposal.md).

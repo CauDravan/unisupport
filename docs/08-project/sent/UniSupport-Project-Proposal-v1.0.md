@@ -254,3 +254,5 @@ UniSupport hướng đến việc cải thiện hoạt động quản lý yêu c
 Với phạm vi gồm bốn Modules, kế hoạch triển khai theo bốn Product Increment Milestones và giới hạn tối đa 320 person-hours, dự án tập trung vào việc xây dựng một giải pháp khả thi, có thể kiểm chứng bằng prototype và có đầy đủ tài liệu phục vụ việc tiếp nhận, đánh giá và bàn giao.
 
 Dự án ưu tiên hoàn thành các chức năng nghiệp vụ cốt lõi trước khi xem xét các khả năng mở rộng trong tương lai.
+
+> **Document status:** Chỉ xem lại bản sao. Không có đường truyền nào đến máy khách mô phỏng được ghi lại kể từ ngày 25 tháng 11 năm 2026. Bản sao Markdown này không phải là bản ghi Word/PDF được gửi chính thức.

@@ -1,22 +1,11 @@
-# Client-Facing Proposal Record
+# Proposal Sent Record
 
-## Document
-- **Document:** UniSupport — Student Support Management System Project Proposal
-- **Version:** v1.0
-- **Prepared date:** 24 November 2026
-- **Status:** Draft for simulated client review
-- **Client:** Aurora University (Simulated Client)
-- **Sponsor:** Director of Student Services (Simulated Project Sponsor)
+## Status as of 25 November 2026
 
-## Purpose
-This folder stores the proposal copy prepared for simulated-client review. The copy is derived from `docs/08-project/project-proposal.md`.
+**Không áp dụng — Chưa có ghi nhận về việc gửi đề xuất cho khách hàng giả định trong kho lưu trữ này.**
 
-## Baseline and approval record
-This version is prepared for review and does **not** represent actual client approval or a signed agreement. Review/approval evidence should be recorded as simulated feedback or a project review record, rather than represented as real external approval.
+Tệp `UniSupport-Project-Proposal-v1.0.md` trong thư mục này chỉ là bản sao tham khảo để xem xét; đây không phải là bằng chứng cho thấy một gói tài liệu (định dạng Word/PDF) đã được gửi đi hoặc đã được khách hàng phê duyệt.
 
-## Version control
-- **v1.0 — 24 November 2026:** Proposal copy prepared for simulated-client review following PA-01 to PA-04 corrective updates.
-- If the proposal is subsequently changed after review, record the new version, date, change summary, reason and simulated review/approval evidence. Do not overwrite previous review copies.
+Khi một đề xuất được gửi đi chính thức trong khuôn khổ dự án giả định, hãy lưu các bản sao Word và PDF thực tế đã gửi vào đây. Tên tệp cần bao gồm thông tin về phiên bản và ngày gửi. Đồng thời, hãy cập nhật tệp `proposal-version-record.md` với các thông tin: ngày gửi, phiên bản, người nhận/vai trò và ghi chú xem xét. Tuyệt đối không tự ý bịa đặt ngày gửi hoặc thông tin phê duyệt.
 
-## Source
-`docs/08-project/project-proposal.md` is the maintained proposal source; this folder holds the review copy.
+Hiện tại, các tệp nguồn của đề xuất bao gồm một bản Word có thể chỉnh sửa và một bản PDF để xem xét, lần lượt nằm tại `../project-proposal.docx` và `../project-proposal.pdf`. Đây chỉ là các tệp phục vụ quá trình xem xét, không phải là các bản sao đã được gửi đi.

@@ -51,22 +51,36 @@ Các kết quả đo trên prototype chỉ phản ánh khả năng minh họa v�
 | Evidence | Liên kết test result, log, ảnh chụp hoặc file dữ liệu. |
 | Limitation / Note | Giới hạn và giả định ảnh hưởng đến kết quả. |
 
-## 6. Baseline and Open Decisions
+## 6. Metric Ownership and Review Cycle
+
+Đối với quá trình bàn giao mô phỏng, mô hình sở hữu tạm thời được đề xuất là:
+
+| Metrics | Interim tracking owner during project / handover preparation | Proposed post-handover owner (assumption, not confirmed by Aurora University) | Review cycle |
+|---|---|---|---|
+| VM-01, VM-02 | BA; PM tập hợp các bằng chứng | Product Owner mảng Dịch vụ Sinh viên hoặc người được ủy quyền | Hàng tháng |
+| VM-03 | BA; PM đảm bảo các thông số cơ sở/phương pháp luận được ghi lại bằng văn bản | Chủ sở hữu quy trình dịch vụ mảng Dịch vụ Sinh viên hoặc người được ủy quyền | Hàng tháng (chỉ áp dụng khi có dữ liệu tương đương) |
+| VM-04, VM-05 | BA (kèm bằng chứng kiểm thử bảng điều khiển/dashboard) | Product Owner thuộc Dịch vụ Sinh viên hoặc người được ủy quyền | Hàng tháng |
+| VM-06 | BE (với sự xác nhận từ BA) | Vai trò phụ trách CNTT/bảo mật do Nhà trường chỉ định | Hàng tháng hoặc sau khi có thay đổi về kiểm soát truy cập |
+| VM-07 | BA | Product Owner phản hồi/dịch vụ thuộc Dịch vụ Sinh viên hoặc người được ủy quyền | Hàng tháng |
+
+Trong suốt dự án, BA duy trì định nghĩa các chỉ số và bằng chứng; PM đảm bảo gói bàn giao ghi lại các chủ sở hữu được đề xuất và các xác nhận còn thiếu. Nhà tài trợ/Giám đốc Dịch vụ Sinh viên giả định sẽ đưa ra các quyết định ưu tiên sản phẩm cho đến khi một đại diện của trường đại học được chỉ định chính thức. Giả định này không khẳng định sự ủy quyền thực sự của trường đại học.
+
+## 7. Baseline and Open Decisions
 
 - **VM-03:** Cần baseline về số lần Student liên hệ hỏi tiến độ và cách ghi nhận thống nhất trước/sau. Đề bài không cung cấp dữ liệu vận hành thực tế; prototype chỉ có thể minh họa phép tính bằng dữ liệu giả lập.
 - **VM-04:** Cần thời gian xử lý mục tiêu hoặc quy tắc xác định quá hạn được cấu hình. Giá trị cụ thể chưa được nguồn dự án xác nhận; không tự đặt SLA.
 - **VM-01 và VM-02:** Cần thống nhất bộ Request dùng làm mẫu số, bao gồm cách xử lý Request bị hủy hoặc dữ liệu chưa hoàn chỉnh nếu các trường hợp này xuất hiện trong prototype.
 - **VM-07:** Chưa có mục tiêu định lượng về mức độ hài lòng được Client xác nhận; chỉ đánh giá khả năng thu thập và xem Feedback.
-- Việc sử dụng các metric sau khi bàn giao và người chịu trách nhiệm theo dõi lâu dài cần Aurora University / Project Sponsor xác nhận.
+- Các chủ sở hữu chỉ số được đề xuất và chu kỳ đánh giá hàng tháng là những giả định lập kế hoạch phục vụ cho quá trình bàn giao mô phỏng; Đại học Aurora cần xác nhận hoặc thay thế các thông tin này trước khi đưa vào sử dụng thực tế.
 
-## 7. Scope Limitations
+## 8. Scope Limitations
 
 - Các tỷ lệ từ Simulated Data không đại diện cho kết quả vận hành tại Aurora University.
 - Mục tiêu giảm 30% số lần liên hệ hỏi tiến độ chỉ có thể được xác minh thực tế khi có baseline và dữ liệu sau triển khai phù hợp.
 - Prototype demonstration chứng minh chức năng có thể thực hiện; không tự chứng minh mức cải thiện quy mô toàn trường.
 - Các chỉ số không có target số cụ thể trong Project Requirements hoặc được Client xác nhận sẽ được đánh giá theo khả năng chức năng và bằng chứng kiểm thử; không tự bổ sung ngưỡng phần trăm.
 
-## 8. Related Documents
+## 9. Related Documents
 
 - [Product Goals](../01-product/product-goals.md)
 - [Product Backlog](../01-product/product-backlog.md)

@@ -18,6 +18,7 @@ Tài liệu này ghi nhận các vấn đề và thông tin chưa được xác 
 | OQ-08 | Thời gian lưu trữ dữ liệu và quy tắc xử lý dữ liệu nhạy cảm sẽ được mô phỏng như thế nào? | Cần làm rõ các yêu cầu liên quan đến Security & Privacy trong prototype và tài liệu thiết kế. | Business Analyst / Back-end Developer | Medium | To Confirm |
 | OQ-09 | Chi phí domain name dự kiến có được chấp thuận sử dụng trong dự án không? | Cần xác nhận trước khi phát sinh chi phí dịch vụ trả phí. | Project Manager | Low | To Confirm |
 | OQ-10 | Những đại diện sinh viên và nhân viên nào có thể tham gia Prototype Review và Usability Testing? | Cần có người dùng đại diện để thu thập phản hồi và đánh giá khả năng sử dụng của prototype. | Project Manager / Business Analyst | Medium | To Confirm |
+| OQ-11 | Aurora University có xác nhận Project Sponsor/Director of Student Services hoặc delegate là Product Decision Owner sau handover mô phỏng, và xác nhận metric owners/review cycle đề xuất không? | AS-06 đề xuất quyền quyết định Product, owner cho VM-01 đến VM-07 và review hằng tháng; cần xác nhận hoặc thay thế trước khi vận hành thực tế. | Project Manager | High | To Confirm |
 
 ## 3. Open Question Management
 
