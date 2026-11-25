@@ -47,6 +47,20 @@ Mức độ Rủi ro Tổng thể được xác định bằng cách kết hợp
 | R06 | Prototype Quality Issues – Prototype không đáp ứng đầy đủ các yêu cầu chức năng hoặc acceptance criteria đã thống nhất. | Medium | High | High | BA  Open |
 | R07 | Incomplete Documentation and Handover – Tài liệu hoặc hướng dẫn bàn giao không đầy đủ, khiến nhóm tiếp nhận khó hiểu và tiếp tục phát triển hệ thống. | Medium | Medium | Medium | PM  Open |
 
+### 3.1 Risk ID Convention
+
+Mỗi rủi ro được gán một mã định danh duy nhất theo định dạng `R01`, `R02`, `R03`... Mã rủi ro được sử dụng thống nhất trong Risk Register để theo dõi, trao đổi, cập nhật và quản lý các rủi ro xuyên suốt dự án. Mã đã được gán không thay đổi nhằm đảm bảo khả năng truy vết.
+
+### 3.2 Risk Status
+
+Trạng thái được sử dụng để theo dõi tình hình quản lý từng rủi ro:
+
+- **Open:** Rủi ro đã được xác định và đang được theo dõi. Các biện pháp phòng ngừa hoặc ứng phó có thể chưa hoàn tất.
+- **Mitigated:** Các biện pháp giảm thiểu đã được thực hiện nhằm giảm khả năng xảy ra hoặc mức độ ảnh hưởng của rủi ro. Rủi ro vẫn được theo dõi khi cần thiết.
+- **Closed:** Rủi ro không còn cần tiếp tục theo dõi hoặc xử lý sau khi được xem xét và xác nhận.
+
+Project Manager phối hợp với Risk Owner cập nhật trạng thái khi có thay đổi liên quan hoặc trong quá trình review Risk Register.
+
 ## 4. Risk Response Strategy
 
 | ID | Mitigation / Preventive Actions | Contingency / Response |
