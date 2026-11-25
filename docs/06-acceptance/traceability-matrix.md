@@ -17,24 +17,33 @@ Tài liệu giúp nhóm kiểm tra:
 | Acceptance Criteria | Test Scenario | Parent task (WBS) | Milestone | Quotation |
 |---|---|---|---|---|
 | FR-STU-01 / AC-01–AC-06 | TS-001–TS-006 | 3.3, 3.4 | MS-01 | Q-01 |
+| FR-STU-01 / AC-07–AC-08 | TS-091–TS-092 | 3.3, 3.4 | MS-01 | Q-01 |
 | FR-STU-02 / AC-01–AC-03, AC-06 | TS-007–TS-009, TS-012 | 3.3, 3.4 | MS-01 | Q-01 |
+| FR-STU-02 / AC-07 | TS-093 | 3.3, 3.4 | MS-01 | Q-01 |
 | FR-STU-02 / AC-04–AC-05 | TS-010–TS-011 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-01–AC-02 | TS-013–TS-014 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-03–AC-06 | TS-015–TS-018 | 5.2, 5.4 | MS-03 | Q-01 |
+| FR-STU-03 / AC-11–AC-12 | TS-094–TS-095 | 5.2, 5.4 | MS-03 | Q-01 |
 | FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 (scope confirmation required) |
 | FR-STA-01 / AC-01–AC-06 | TS-019–TS-024 | 4.1, 4.3 | MS-02 | Q-02 |
+| FR-STA-01 / AC-07–AC-08 | TS-096–TS-097 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-02 / AC-01–AC-06 | TS-025–TS-030 | 4.1, 4.3 | MS-02 | Q-02 |
+| FR-STA-02 / AC-07–AC-08 | TS-098–TS-099 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-01–AC-05 | TS-031–TS-035 | 4.2, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-06–AC-07 | TS-036–TS-037 | 5.1, 5.3 | MS-03 | Q-02 |
 | FR-STA-03 / AC-09 | TS-038 | 5.3 | MS-03 | Q-02 |
 | FR-STA-03 / WF-06 positive flow (workflow coverage, no separate detailed AC) | TS-063 | 5.3 | MS-03 | Q-02 |
 | FR-STA-03 / AC-10–AC-11 | TS-039–TS-040 | 4.2, 4.3 | MS-02 | Q-02 |
+| FR-STA-03 / AC-12–AC-14 | TS-100–TS-102 | 4.2, 4.3 | MS-02 | Q-02 |
 | FR-MGT-01 / AC-01–AC-06 | TS-041–TS-046 | 6.1, 6.3 | MS-04 | Q-03 |
+| FR-MGT-01 / AC-07–AC-09 | TS-103–TS-105 | 6.1, 6.3 | MS-04 | Q-03 |
 | FR-MGT-02 / AC-01–AC-06 | TS-047–TS-052 | 6.1, 6.3 | MS-04 | Q-03 |
+| FR-MGT-02 / AC-07–AC-08 | TS-106–TS-107 | 6.1, 6.3 | MS-04 | Q-03 |
 | FR-SEC-01 / AC-01, AC-04 | TS-053, TS-056 | 3.2 | MS-01 | Q-04 |
 | FR-SEC-01 / AC-02–AC-03 | TS-054–TS-055 | 6.2 | MS-04 | Q-04 |
 | FR-SEC-01 / AC-05–AC-06 | TS-057–TS-058 | 3.2 | MS-01 | Q-04 |
 | FR-SEC-02 / AC-01–AC-04 | TS-059–TS-062 | 6.2 | MS-04 | Q-04 |
+| FR-SEC-02 / AC-05–AC-06 | TS-108–TS-109 | 6.2 | MS-04 | Q-04 |
 | FR-SEC-03 / AC-01–AC-04 | TS-087–TS-090 | 3.2 | MS-01 | Q-04 |
 
 **Notes:**
