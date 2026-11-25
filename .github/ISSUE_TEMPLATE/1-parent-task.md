@@ -1,5 +1,3 @@
-
-
 ### Delivery and Traceability
 - **Owner:**
 - **Due date:**
