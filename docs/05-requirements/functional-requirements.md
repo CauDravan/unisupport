@@ -64,6 +64,8 @@ Sinh viên có thể gửi yêu cầu hỗ trợ thông qua hệ thống bằng 
 - FR-STU-01/AC-04: Hệ thống cho phép gửi Request không có tệp đính kèm khi tài liệu không bắt buộc.
 - FR-STU-01/AC-05: Hệ thống thông báo khi tệp đính kèm không đáp ứng yêu cầu và không tiếp nhận tệp đó.
 - FR-STU-01/AC-06: Student nhận được thông báo xác nhận sau khi Request được tiếp nhận thành công.
+- FR-STU-01/AC-07: Hệ thống không tiếp nhận Request khi Request Type không thuộc danh sách loại yêu cầu được hỗ trợ và yêu cầu Student lựa chọn lại Request Type hợp lệ.
+- FR-STU-01/AC-08: Hệ thống không tạo Request khi Description chỉ chứa khoảng trắng và thông báo Student cần cung cấp nội dung hợp lệ.
 
 **Edge Cases**
 
@@ -129,6 +131,7 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 - FR-STU-02/AC-04: Hệ thống tạo thông báo khi Status của Request thay đổi.
 - FR-STU-02/AC-05: Hệ thống gửi thông báo cho Student khi Request chuyển sang trạng thái "Chờ bổ sung thông tin" theo yêu cầu của Staff.
 - FR-STU-02/AC-06: Student không thể truy cập Request thuộc tài khoản của người dùng khác.
+- FR-STU-02/AC-07: Khi không thể tải thông tin Request, hệ thống thông báo lỗi và cho phép Student thử lại thao tác tải thông tin.
 
 **Edge Cases**
 
@@ -209,6 +212,8 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - FR-STU-03/AC-08: Hệ thống ghi nhận yêu cầu xem xét lại và liên kết với Request tương ứng để Staff có thể kiểm tra.
 - FR-STU-03/AC-09: Staff có thể xem xét yêu cầu Reopening và ghi nhận quyết định chấp nhận hoặc từ chối.
 - FR-STU-03/AC-10: Khi yêu cầu Reopening được chấp nhận, Request được tiếp tục xử lý theo quy trình đã thống nhất và thông tin về quyết định được lưu lại.
+- FR-STU-03/AC-11: Hệ thống không tiếp nhận thao tác cung cấp Additional Information khi Request không ở trạng thái cho phép bổ sung thông tin và thông báo trạng thái hiện tại phù hợp.
+- FR-STU-03/AC-12: Hệ thống không lưu Additional Information khi nội dung bắt buộc bị thiếu và yêu cầu Student cung cấp nội dung cần thiết.
 
 **Edge Cases**
 
@@ -283,6 +288,8 @@ Staff có thể phân loại Request, xác định mức độ ưu tiên và chu
 - FR-STA-01/AC-04: Staff có thể chỉ định người chịu trách nhiệm cho Request.
 - FR-STA-01/AC-05: Hệ thống không xác nhận Assignment khi thiếu thông tin phân công bắt buộc.
 - FR-STA-01/AC-06: Hệ thống ghi nhận lịch sử thay đổi Classification và Assignment.
+- FR-STA-01/AC-07: Hệ thống không xác nhận Assignment khi chưa xác định được Department phù hợp và yêu cầu Staff hoàn thiện thông tin phân công.
+- FR-STA-01/AC-08: Hệ thống từ chối Assignment khi Assignee không thuộc phạm vi phân công hợp lệ và thông báo lỗi cho Staff.
 
 **Edge Cases**
 
@@ -351,6 +358,8 @@ Staff có thể xem và quản lý danh sách Request được phân công cho c
 - FR-STA-02/AC-04: Staff có thể lọc Request theo Priority.
 - FR-STA-02/AC-05: Hệ thống hiển thị thời gian chờ của Request.
 - FR-STA-02/AC-06: Staff không thể xem Request ngoài phạm vi quyền truy cập.
+- FR-STA-02/AC-07: Khi không thể tải Queue, hệ thống thông báo lỗi và cho phép Staff thử lại.
+- FR-STA-02/AC-08: Queue phản ánh các cập nhật Request mới nhất đã được hệ thống ghi nhận tại thời điểm hiển thị hoặc refresh.
 
 **Edge Cases**
 
@@ -434,6 +443,9 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - FR-STA-03/AC-09: Hệ thống không cho phép đóng Request khi chưa đáp ứng điều kiện giải quyết.
 - FR-STA-03/AC-10: Hệ thống ghi nhận thời điểm và người thực hiện các hoạt động xử lý.
 - FR-STA-03/AC-11: Hệ thống cho phép Request chuyển từ "Chờ bổ sung thông tin" sang "Đang xử lý" sau khi Student cung cấp đầy đủ thông tin được yêu cầu.
+- FR-STA-03/AC-12: Hệ thống từ chối thao tác xử lý Request khi Staff không có quyền xử lý Request đó.
+- FR-STA-03/AC-13: Hệ thống từ chối Status update không hợp lệ theo quy trình và giữ nguyên Status trước đó.
+- FR-STA-03/AC-14: Hệ thống không hoàn tất Transfer khi chưa xác định được Department tiếp nhận và thông báo cho Staff.
 
 **Edge Cases**
 
@@ -508,6 +520,9 @@ Management có thể theo dõi tình hình tiếp nhận và xử lý Request th
 - FR-MGT-01/AC-04: Hệ thống xác định Request quá hạn dựa trên thời gian xử lý mục tiêu được cấu hình.
 - FR-MGT-01/AC-05: Hệ thống hiển thị cảnh báo đối với Request quá hạn.
 - FR-MGT-01/AC-06: Management có thể truy cập thông tin chi tiết trong phạm vi được cấp quyền.
+- FR-MGT-01/AC-07: Khi chưa có Request để tổng hợp, Dashboard hiển thị các chỉ số bằng 0 hoặc thông báo trạng thái dữ liệu trống phù hợp.
+- FR-MGT-01/AC-08: Khi không thể tải dữ liệu Dashboard, hệ thống thông báo lỗi thay vì hiển thị dữ liệu không đầy đủ như thể đã tải thành công.
+- FR-MGT-01/AC-09: Hệ thống từ chối truy cập Management Dashboard khi người dùng không có quyền phù hợp.
 
 **Edge Cases**
 
@@ -577,6 +592,8 @@ Management có thể xem các báo cáo và số liệu tổng hợp để đán
 - FR-MGT-02/AC-04: Hệ thống hiển thị dữ liệu Feedback phục vụ đánh giá chất lượng dịch vụ.
 - FR-MGT-02/AC-05: Hệ thống tổng hợp dữ liệu báo cáo dựa trên các Request đã được ghi nhận.
 - FR-MGT-02/AC-06: Hệ thống thông báo khi dữ liệu chưa đủ để tính toán một chỉ số.
+- FR-MGT-02/AC-07: Khi không thể tải dữ liệu báo cáo, hệ thống thông báo lỗi và không trình bày dữ liệu tải lỗi như kết quả báo cáo hoàn chỉnh.
+- FR-MGT-02/AC-08: Hệ thống từ chối truy cập Reporting khi người dùng không có quyền phù hợp.
 
 **Edge Cases**
 
@@ -716,6 +733,8 @@ Hệ thống ghi nhận các hoạt động quan trọng liên quan đến Reque
 - FR-SEC-02/AC-02: Hệ thống ghi nhận các thay đổi về Priority và Assignment.
 - FR-SEC-02/AC-03: Hệ thống ghi nhận người thực hiện, thao tác được thực hiện, thời điểm thực hiện và các thay đổi liên quan đến Request.
 - FR-SEC-02/AC-04: Chỉ người dùng có quyền phù hợp mới có thể truy cập thông tin Audit Log.
+- FR-SEC-02/AC-05: Khi hệ thống không thể ghi nhận Audit Log cho thao tác quan trọng, hệ thống xử lý sự cố theo cơ chế phù hợp và không âm thầm bỏ qua lỗi ghi log.
+- FR-SEC-02/AC-06: Nếu thao tác dữ liệu bị gián đoạn trong lúc ghi nhận lịch sử, hệ thống không tạo Audit Log sai lệch so với thay đổi dữ liệu thực tế.
 
 **Edge Cases**
 
