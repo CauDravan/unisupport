@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: UniSupport
+    url: https://github.com/CauDravan/unisupport
+    about: Refer to project documentation before submitting an issue.
