@@ -40,12 +40,24 @@ PM tổng hợp thông tin từ các nguồn sau:
 | Risk Register | Risk, owner, impact, response và trạng thái. | PM phối hợp Risk Owner. |
 | Test Scenarios / Test Results | Kết quả kiểm thử, defect và bằng chứng nghiệm thu. | BA điều phối xác nhận; FE/BE hỗ trợ kiểm thử kỹ thuật. |
 
-### 4.2 Reporting Cycle
+### 4.2 Reporting Cycle (Chu kỳ báo cáo)
 
-- **Task-level update:** Người phụ trách cập nhật GitHub Issue khi trạng thái công việc thay đổi, khi có trở ngại hoặc khi có nguy cơ trễ hạn. Nội dung cập nhật cần nêu phần đã hoàn thành, phần còn lại, vấn đề và bước tiếp theo.
-- **Project review:** PM tổng hợp tình hình để nhóm rà soát trong các buổi họp tiến độ hoặc trước các mốc đánh giá/bàn giao đã thống nhất. Team Charter không quy định thời hạn phản hồi cứng cho mọi trao đổi; nhóm cần thống nhất lịch review định kỳ cụ thể nếu muốn áp dụng.
-- **Milestone review:** Trước khi đánh dấu một Milestone hoàn thành, PM phối hợp BA và người thực hiện kiểm tra deliverables cùng Acceptance Criteria; kết quả phải có bằng chứng phù hợp, không chỉ dựa vào ngày hoàn thành.
-- **Decision record:** Sau buổi họp hoặc quyết định quan trọng, PM ghi lại nội dung quyết định, lý do, người phụ trách hành động tiếp theo và thời hạn dự kiến trong tài liệu hoặc công cụ quản lý dự án.
+| Reporting Activity | Responsible | Recipient | Frequency | Report Content |
+|---|---|---|---|---|
+| **Task-level Update** | Task Owner | PM | Khi trạng thái task thay đổi, gặp blocker hoặc có nguy cơ trễ tiến độ | Công việc đã hoàn thành, công việc còn lại, trở ngại, ảnh hưởng và hành động tiếp theo |
+| **Internal Project Report** | PM | Project Team | Hằng tuần | Tiến độ tổng thể, trạng thái milestone, planned vs. actual effort nếu có, vấn đề, rủi ro và công việc sắp tới |
+| **Client Progress Report** | PM | Project Sponsor / Simulated Client | Hằng tuần | Tiến độ milestone, deliverables đã hoàn thành, công việc còn lại, rủi ro, vấn đề, quyết định cần client đưa ra và kỳ báo cáo tiếp theo |
+| **Milestone Review** | PM, BA and relevant Task Owners | Project Team and Project Sponsor / Simulated Client | Cuối mỗi milestone | Deliverables, tiêu chí nghiệm thu, bằng chứng kiểm thử, vấn đề còn tồn tại và đề xuất hoàn thành milestone |
+
+- Task Owners phải cập nhật GitHub Issues khi trạng thái thay đổi, phát sinh blocker hoặc deadline có nguy cơ bị ảnh hưởng.
+
+- PM tổng hợp thông tin từ Master Plan, GitHub Issues, Risk Register và Test Results để chuẩn bị báo cáo nội bộ và báo cáo client hằng tuần.
+
+- Client Progress Report được gửi cho Project Sponsor / Simulated Client qua kênh liên lạc đã thống nhất.
+
+- Cuối mỗi milestone, PM phối hợp với BA và các Task Owner liên quan để kiểm tra deliverables dựa trên Acceptance Criteria và bằng chứng kiểm thử hiện có.
+
+- Các báo cáo và quyết định quan trọng được lưu trong project repository để phục vụ theo dõi dự án và bàn giao.
 
 ### 4.3 Minimum Progress Report
 
@@ -130,14 +142,13 @@ Mỗi quyết định CR cần ghi tối thiểu: CR ID, mô tả, người đ�
 
 ## 8. Open Decisions and Confirmation Required
 
-Các điểm sau chưa được nguồn dự án xác nhận đầy đủ; nhóm cần thống nhất trước khi coi governance là baseline cuối cùng:
+Các mục sau đây vẫn chưa được xác nhận và cần đạt được sự đồng thuận trước khi được coi là các thông số cơ sở (baselines) của dự án:
 
-1. **Reporting cadence:** Team Charter yêu cầu cập nhật khi trạng thái thay đổi và trước các buổi họp/mốc đánh giá nhưng chưa chốt ngày họp định kỳ. Nhóm cần xác nhận lịch review (ví dụ theo tuần) và người ghi biên bản.
-2. **Escalation response time:** Chưa có thời hạn phản hồi/escalation cố định. Nhóm có thể thống nhất quy tắc nội bộ, nhưng không nên mô tả như SLA của Aurora University.
-3. **Named approver:** Vai trò phê duyệt CR được xác định ở mức Project Sponsor / Simulated Client (Director of Student Services trong giả định dự án); tên cá nhân và xác nhận thực tế chưa có.
-4. **Actual team assignment:** Cơ cấu kế hoạch có 4 roles (PM, BA, FE, BE); tên người đảm nhiệm và khả năng tham gia thực tế cần được nhóm xác nhận, đồng bộ với Resources sheet và GitHub assignees.
+1. **Escalation response time:** Hiện chưa có thời gian phản hồi cố định nào được xác nhận. Nhóm có thể thiết lập các hướng dẫn phản hồi nội bộ, nhưng những hướng dẫn này không được coi là Thỏa thuận mức dịch vụ (SLA) của Đại học Aurora.
+2. **Named approver:** Vai trò phê duyệt được xác định là Nhà tài trợ dự án / Khách hàng giả định (theo giả định của dự án, vai trò này thuộc về Giám đốc Dịch vụ Sinh viên). Hiện chưa có cá nhân cụ thể nào được chỉ định hoặc có xác nhận chính thức từ phía khách hàng.
+3. **Actual team assignment:** Cơ cấu dự kiến ​​bao gồm bốn vai trò (Quản lý dự án - PM, Chuyên viên phân tích nghiệp vụ - BA, Lập trình viên Front-end - FE và Lập trình viên Back-end - BE). Việc phân công thực tế và tình trạng sẵn sàng tham gia của các thành viên cần được xác nhận, đồng thời phải thống nhất với bảng phân bổ nguồn lực (Resources sheet) và danh sách người được phân công trên GitHub.
 
-Quy tắc xử lý bất đồng nội bộ đã được quy định trong Team Charter: nhóm ưu tiên đồng thuận; nếu không đạt đồng thuận về vấn đề không ảnh hưởng baseline, PM quyết định cuối cùng và ghi decision record. Thay đổi baseline vẫn thuộc thẩm quyền phê duyệt của Project Sponsor / Simulated Client.
+Quy trình giải quyết bất đồng nội bộ của nhóm được quy định trong Team Charter. Nhóm ưu tiên đạt được sự đồng thuận; nếu không thể đạt được sự đồng thuận đối với một vấn đề không ảnh hưởng đến các thông số cơ sở của dự án, Quản lý dự án (PM) sẽ đưa ra quyết định cuối cùng và ghi lại quyết định đó. Các thay đổi ảnh hưởng đến thông số cơ sở của dự án vẫn phải được sự phê duyệt từ Nhà tài trợ dự án / Khách hàng giả định.
 
 ## 9. Related Documents
 
