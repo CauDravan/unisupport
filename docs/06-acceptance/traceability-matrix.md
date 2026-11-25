@@ -31,8 +31,8 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-STA-02 / AC-07–AC-08 | TS-098–TS-099 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-01–AC-05 | TS-031–TS-035 | 4.2, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-06–AC-07 | TS-036–TS-037 | 5.1, 5.3 | MS-03 | Q-02 |
-| FR-STA-03 / AC-09 | TS-038 | 5.3 | MS-03 | Q-02 |
-| FR-STA-03 / WF-06 positive flow (workflow coverage, no separate detailed AC) | TS-063 | 5.3 | MS-03 | Q-02 |
+| FR-STA-03 / AC-09 (negative closure gate) | TS-038 | 5.3 | MS-03 | Q-02 |
+| FR-STA-03 / AC-15 (successful resolve and close) | TS-063 | 5.3 | MS-03 | Q-02 |
 | FR-STA-03 / AC-10–AC-11 | TS-039–TS-040 | 4.2, 4.3 | MS-02 | Q-02 |
 | FR-STA-03 / AC-12–AC-14 | TS-100–TS-102 | 4.2, 4.3 | MS-02 | Q-02 |
 | FR-MGT-01 / AC-01–AC-06 | TS-041–TS-046 | 6.1, 6.3 | MS-04 | Q-03 |
@@ -66,7 +66,7 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 | AC-06 – Staff yêu cầu Student bổ sung thông tin | FR-STA-03, FR-STU-02 | FR-STA-03/AC-04–AC-05; FR-STU-02/AC-05 | TS-011, TS-034–TS-035 | Kiểm tra yêu cầu bổ sung, cập nhật trạng thái chờ và thông báo cho Student. |
 | AC-07 – Student cung cấp thông tin bổ sung | FR-STU-03, FR-STA-03 | FR-STU-03/AC-01–AC-02; FR-STA-03/AC-11 | TS-013–TS-014, TS-040 | TS-040 kiểm tra Request có thể tiếp tục xử lý sau khi nhận đủ thông tin. |
 | AC-08 – Staff chuyển giao Request | FR-STA-03 | AC-06–AC-07 | TS-036–TS-037 | Kiểm tra Transfer và bảo toàn thông tin/lịch sử. |
-| AC-09 – Staff hoàn tất và đóng Request | FR-STA-03 | AC-09 | TS-063 | TS-063 kiểm tra luồng thành công theo WF-06: In Progress → Resolved → Closed, bao gồm lưu Resolution, Closed Date và Request History. TS-038 là Negative Test bổ trợ, kiểm tra hệ thống chặn đóng Request khi chưa đủ điều kiện. |
+| AC-09 – Staff hoàn tất và đóng Request | FR-STA-03 | AC-15 (positive), AC-09 (negative) | TS-063, TS-038 | TS-063 kiểm tra luồng thành công theo WF-06: In Progress → Resolved → Closed, bao gồm lưu Resolution, Closed Date và Request History; TS-038 kiểm tra hệ thống chặn đóng Request khi chưa đủ điều kiện. |
 | AC-10 – Student kiểm tra Request | FR-STU-02 | AC-01–AC-03 | TS-007–TS-009 | Kiểm tra danh sách Request, Status hiện tại và Request History. |
 | AC-11 – Management mở Management Dashboard | FR-MGT-01 | AC-01–AC-06 | TS-041–TS-046 | Kiểm tra các số liệu tổng quan và thông tin Request trên Dashboard. |
 | AC-12 – User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | FR-SEC-01, FR-SEC-02, FR-SEC-03 | FR-SEC-01/AC-01–AC-04; FR-SEC-02/AC-01–AC-04; FR-SEC-03/AC-02, AC-04 | TS-053–TS-056, TS-059–TS-062, TS-088, TS-090 | Mapping bao phủ xác thực, Role/permission và bảo vệ dữ liệu/truy cập. |
@@ -74,6 +74,8 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 | AC-14 – Student gửi Feedback sau khi Request được xử lý | FR-STU-03, FR-MGT-02 | FR-STU-03/AC-03–AC-06; FR-MGT-02/AC-01–AC-06 | TS-015–TS-018, TS-047–TS-052, TS-082 | TS-015/017 kiểm tra gửi và lưu Feedback; TS-016/018 kiểm tra điều kiện/quyền; TS-047–052 kiểm tra báo cáo; TS-082 kiểm tra liên kết Feedback với Request. |
 
 **Mapping notes:**
+
+- `functional-requirements.md` là authoritative source cho detailed Acceptance Criteria theo từng FR. Generic AC trong file này chỉ là summary layer; Matrix thể hiện mapping, không tạo bộ điều kiện độc lập.
 
 - Đây là mapping ở cấp tổng quát, được xây dựng từ cột `Related Requirements`, nội dung Scenario/Expected Result của Generic AC và Test Scenarios hiện có. Các Test Scenario có thể hỗ trợ nhiều Generic AC.
 - Với AC-05, TS-063 bổ sung kiểm tra luồng cập nhật Status thành công `In Progress → Resolved → Closed` theo WF-06. Với AC-09, TS-063 là Test Scenario trực tiếp cho luồng đóng thành công; TS-038 là Negative Test bổ trợ để xác minh hệ thống chặn đóng Request khi chưa đủ điều kiện.
@@ -125,19 +127,20 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 2. Test Scenario phải tham chiếu đúng Requirement ID và Acceptance Criteria ID trong tài liệu nguồn.
 3. Parent task được tham chiếu bằng WBS ID trong Master Plan. Khi GitHub Parent Issue được tạo và xác nhận, nhóm có thể bổ sung GitHub Issue ID vào bảng.
 4. Milestone phải phản ánh kế hoạch thực hiện trong Master Plan, không tự gán Milestone cho các yêu cầu chưa được chốt.
-5. Quotation ID phải được đối chiếu với `quotation.xlsx` trước khi xem là thông tin chính thức.
+5. Quotation ID được map theo hạng mục Q-xx trong `quotation.xlsx`; mã tham chiếu không đồng nghĩa với giá hoặc quotation được phê duyệt.
+6. `functional-requirements.md` là authoritative source cho detailed AC; các tài liệu acceptance khác phải đồng bộ từ nguồn này.
 6. Khi Requirement, Acceptance Criteria, Test Scenario hoặc WBS thay đổi, nhóm cần cập nhật Traceability Matrix để bảo đảm các tài liệu thống nhất.
 
 ## 5. Items Requiring Confirmation
 
-**Lưu ý về Quotation:** Các mã Q-xx trong bảng hiện được giữ theo mapping tham chiếu đang có trong WBS/Master Plan. Chúng chưa được xác nhận là mã báo giá chính thức cho đến khi đối chiếu được với dữ liệu hoàn chỉnh trong `quotation.xlsx`. Không sử dụng các mã này như đơn giá hoặc cam kết chi phí đã được phê duyệt.
+**Quotation mapping:** Q-01 đến Q-08 được đối chiếu với các hạng mục trong sheet `Hạng mục` của `docs/08-project/quotation.xlsx`; WBS, Matrix và FR mapping sử dụng cùng các mã. Đây là mapping phạm vi/effort theo hạng mục, không phải xác nhận giá hoặc quotation đã được client phê duyệt.
 
 | Item | Current status | Required action |
 |---|---|---|
 | NFR-SEC-06 | Chưa xác định WBS và Milestone | Xác nhận Data Retention/Data Handling Policy với Sponsor |
-| Quotation Q-01–Q-08 | Chưa đối chiếu được với báo giá gốc | Kiểm tra và đồng bộ với `quotation.xlsx` |
-| GitHub Parent Issue IDs | Chưa được cung cấp trong Master Plan | Bổ sung ID sau khi các Parent Issues được tạo |
-| Generic AC-01–AC-14 | Đã có mapping tại mục 2.2 | Rà soát lại khi Generic AC, FR hoặc Test Scenarios thay đổi |
+| Quotation Q-01–Q-08 | Đã đối chiếu mã và hạng mục với sheet `Hạng mục` trong `quotation.xlsx` | Duy trì mapping; cập nhật đồng bộ nếu WBS hoặc Quotation thay đổi |
+| GitHub Parent Issue IDs | Chưa được cung cấp trong Master Plan | Bổ sung ID sau khi các Parent Issues được tạo; live Issues chưa đồng bộ trong đợt chỉnh này |
+| Generic AC-01–AC-14 | Đã có mapping tại mục 2.2 | Generic AC là summary layer; sửa FR detailed AC trước, sau đó cập nhật Generic AC, Scenario và Matrix |
 
 ## 6. References
 

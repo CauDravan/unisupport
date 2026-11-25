@@ -446,6 +446,7 @@ Staff có thể xử lý Request, cập nhật tiến độ, ghi nhận hoạt �
 - FR-STA-03/AC-12: Hệ thống từ chối thao tác xử lý Request khi Staff không có quyền xử lý Request đó.
 - FR-STA-03/AC-13: Hệ thống từ chối Status update không hợp lệ theo quy trình và giữ nguyên Status trước đó.
 - FR-STA-03/AC-14: Hệ thống không hoàn tất Transfer khi chưa xác định được Department tiếp nhận và thông báo cho Staff.
+- FR-STA-03/AC-15: Staff ghi nhận Resolution; Request chuyển từ `In Progress` sang `Resolved`, sau đó chỉ được chuyển `Closed` khi đã xác nhận hoàn tất. Hệ thống lưu Resolution, Closed Date và Request History tương ứng.
 
 **Edge Cases**
 

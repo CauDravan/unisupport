@@ -20,7 +20,7 @@ Prototype được xem là đáp ứng yêu cầu khi các kịch bản chính c
 | AC-06 | Staff yêu cầu Student bổ sung thông tin | Yêu cầu bổ sung thông tin được ghi nhận và Student nhận được thông báo để thực hiện bổ sung. | FR-STA-03, FR-STU-02 |
 | AC-07 | Student cung cấp thông tin bổ sung | Thông tin bổ sung được lưu vào Request và Staff có thể tiếp tục xử lý Request. | FR-STU-03 |
 | AC-08 | Staff chuyển giao Request | Department hoặc Staff tiếp nhận mới được ghi nhận. Thông tin Request và lịch sử xử lý trước khi chuyển giao được bảo toàn. | FR-STA-03 |
-| AC-09 | Staff hoàn tất và đóng Request | Request được cập nhật sang trạng thái Closed sau khi hoàn tất quy trình giải quyết theo Workflow đã thống nhất. | FR-STA-03 |
+| AC-09 | Staff hoàn tất và đóng Request | Request chỉ được đóng sau khi đủ điều kiện giải quyết; thao tác đóng không hợp lệ bị chặn. | FR-STA-03/AC-09 (negative); AC-15 (positive flow được truy vết trong FR chi tiết) |
 | AC-10 | Student kiểm tra Request | Student có thể xem Status hiện tại và lịch sử cập nhật được phép truy cập của Request. | FR-STU-02 |
 | AC-11 | Management mở Management Dashboard | Dashboard hiển thị các số liệu tổng quan về Request, bao gồm số lượng Request mới, đang xử lý và quá hạn khi có dữ liệu tương ứng. | FR-MGT-01 |
 | AC-12 | User không được cấp quyền cố gắng truy cập chức năng hoặc dữ liệu | Hệ thống từ chối truy cập và không cho phép User thực hiện hành động nằm ngoài quyền được cấp. | FR-SEC-01, FR-SEC-02 |

@@ -20,7 +20,7 @@ Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu 
 
 ## 3. Functional Test Scenarios
 
-Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, bổ sung luồng Request Reopening (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`), các scenario kiểm tra gap AC (`TS-091`–`TS-109`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` là kịch bản kiểm tra workflow, không được xem là Test Scenario ánh xạ trực tiếp cho `FR-STA-03/AC-09`.
+Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, bổ sung luồng Request Reopening (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`), các scenario kiểm tra gap AC (`TS-091`–`TS-109`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` kiểm tra luồng Resolve and Close thành công và ánh xạ trực tiếp tới `FR-STA-03/AC-15`; `TS-038` kiểm tra điều kiện chặn đóng Request (`AC-09`).
 
 | Mã | Kiểm AC / NFR | Tiền điều kiện | Các bước | Kết quả mong đợi | Regression |
 |---|---|---|---|---|---|
@@ -90,7 +90,7 @@ Các kịch bản dưới đây bao phủ các AC đang có trong `functional-re
 | `TS-060` | `FR-SEC-02/AC-02` | Có Request và quyền thay đổi Priority/Assignment. | Thay đổi Priority và Assignment; kiểm tra Audit Log. | Các thay đổi Priority và Assignment được ghi nhận trong Audit Log. | Có |
 | `TS-061` | `FR-SEC-02/AC-03` | Có tài khoản thực hiện thao tác và Request thử nghiệm. | Thực hiện thao tác quan trọng; kiểm tra actor, action, timestamp và thông tin đối tượng/thay đổi. | Bản ghi Audit Log có người thực hiện, thao tác, thời điểm và thông tin liên quan đến Request. | Có |
 | `TS-062` | `FR-SEC-02/AC-04` | Có Audit Log và tài khoản không được cấp quyền truy cập. | Đăng nhập tài khoản không có quyền; thử mở Audit Log qua giao diện và đường dẫn trực tiếp nếu có. | Người dùng không đủ quyền không thể truy cập thông tin Audit Log. | Có |
-| `TS-063` | `FR-STA-03` (WF-06 positive flow) | Request đang ở `In Progress`; Staff được phân công và có quyền xử lý; không còn thông tin cần Student bổ sung. | Staff hoàn tất xử lý; nhập Resolution; chuyển Request sang `Resolved`; kiểm tra lại kết quả; thực hiện Close Request; mở lại Request Detail và Request History. | Hệ thống chuyển Request từ `In Progress` sang `Resolved`, sau đó sang `Closed`; Resolution và Closed Date được lưu; Status và các thay đổi liên quan xuất hiện trong Request History. | Có |
+| `TS-063` | `FR-STA-03/AC-15` (WF-06 positive flow) | Request đang ở `In Progress`; Staff được phân công và có quyền xử lý; không còn thông tin cần Student bổ sung. | Staff hoàn tất xử lý; nhập Resolution; chuyển Request sang `Resolved`; kiểm tra lại kết quả; thực hiện Close Request; mở lại Request Detail và Request History. | Hệ thống chuyển Request từ `In Progress` sang `Resolved`, sau đó sang `Closed`; Resolution và Closed Date được lưu; Status và các thay đổi liên quan xuất hiện trong Request History. | Có |
 | `TS-087` | `FR-SEC-03/AC-01` | Người dùng có tài khoản hợp lệ. | Nhập thông tin đăng nhập hợp lệ và submit. | Hệ thống xác thực và cho phép đăng nhập thành công. | Có |
 | `TS-088` | `FR-SEC-03/AC-02` | Người dùng đang ở màn hình Login. | Nhập thông tin đăng nhập không hợp lệ và submit. | Hệ thống từ chối đăng nhập và thông báo lỗi. | Có |
 | `TS-089` | `FR-SEC-03/AC-03` | Người dùng đang ở màn hình Login. | Để trống một hoặc nhiều trường bắt buộc và submit. | Hệ thống yêu cầu nhập đủ thông tin; không xác thực người dùng. | Có |
@@ -167,7 +167,7 @@ Khi thực hiện kiểm thử, nhóm cần ghi nhận tối thiểu các thông
 ## 6. Coverage Notes and Open Decisions
 
 - Các Test Scenario hiện có được giữ lại; các scenario bổ sung cho AC gap được đánh số `TS-091` đến `TS-109`.
-- Bộ Functional Test Scenarios bao gồm các kịch bản hiện có `TS-001` đến `TS-063`, `TS-083` đến `TS-090` và `TS-091` đến `TS-109`. `TS-063` là kịch bản kiểm tra workflow Resolve and Close theo WF-06, không ánh xạ trực tiếp đến một AC riêng. `FR-STA-03/AC-08` không xuất hiện trong tài liệu nguồn nên không được tự tạo.
+- Bộ Functional Test Scenarios bao gồm các kịch bản hiện có `TS-001` đến `TS-063`, `TS-083` đến `TS-090` và `TS-091` đến `TS-109`. `TS-063` ánh xạ trực tiếp đến `FR-STA-03/AC-15` để kiểm tra luồng Resolve and Close thành công theo WF-06. `FR-STA-03/AC-08` không xuất hiện trong tài liệu nguồn nên không được tự tạo.
 - Bộ Non-Functional Test Scenarios gồm `TS-064` đến `TS-082`, bao phủ 19 NFR hiện có.
 - Các ngưỡng `Proposed baseline` của NFR-PERF-01, NFR-PERF-02, NFR-USE-01, NFR-USE-02 và NFR-COMP-01 cần được xác nhận trước khi dùng làm điều kiện nghiệm thu chính thức.
 - NFR-SEC-06 phụ thuộc chính sách lưu trữ và xử lý dữ liệu do Aurora University/Sponsor phê duyệt. Nếu chưa có chính sách, ghi nhận `Blocked` hoặc `Needs Confirmation`, không tự đặt thời hạn lưu trữ.
