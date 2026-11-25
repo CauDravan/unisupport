@@ -111,7 +111,7 @@ Các tài liệu Architecture mô tả thiết kế ở mức logic phục vụ 
 
 | File | Nội dung |
 |---|---|
-| [project_proposal.md](./08-project/project_proposal.md) | Project Proposal trình bày vấn đề, phạm vi, kế hoạch, chi phí và rủi ro của dự án. |
+| [project-proposal.md](./08-project/project-proposal.md) | Project Proposal trình bày vấn đề, phạm vi, kế hoạch, chi phí và rủi ro của dự án. |
 | [master-plan.md](./08-project/master-plan.md) | Giải thích cấu trúc và nguyên tắc quản lý Master Plan. |
 | [master-plan.xlsx](./08-project/master-plan.xlsx) | Nguồn dữ liệu chính thức cho Milestones, WBS, Resources, Gantt và Change Log theo Master Plan. |
 | [wbs.md](./08-project/wbs.md) | Work Breakdown Structure, phân rã công việc và thông tin effort liên quan. |
@@ -122,6 +122,7 @@ Các tài liệu Architecture mô tả thiết kế ở mức logic phục vụ 
 | [assumptions.md](./08-project/assumptions.md) | Các giả định đang được sử dụng khi lập kế hoạch và phân tích dự án. |
 | [constraints.md](./08-project/constraints.md) | Các giới hạn ảnh hưởng đến phạm vi và cách thực hiện dự án. |
 | [open-questions.md](./08-project/open-questions.md) | Những vấn đề còn cần nhóm hoặc Sponsor xác nhận trước khi chốt quyết định. |
+| [team-charter.md — Definition of Done](./08-project/team-charter.md#10-quality-standards--definition-of-done) | Quality Standards & Definition of Done, các điều kiện để một task được xem là hoàn thành. |
 
 **Lưu ý về Project Baseline:** `master-plan.xlsx` là nguồn tham chiếu chính cho lịch trình chi tiết. Khi kiểm tra Milestone hoặc tiến độ trên GitHub, cần đối chiếu mã `MS-xx` và ngày tương ứng với Master Plan. Ngày bắt đầu được ghi là tentative trong `master-plan.md` cho đến khi nhóm xác nhận Project Baseline.
 
@@ -144,12 +145,6 @@ Các tài liệu Architecture mô tả thiết kế ở mức logic phục vụ 
 | File | Nội dung |
 |---|---|
 | [project-governance.md](./11-governance/project-governance.md) | Quy định theo dõi tiến độ, báo cáo, escalation, quản lý thay đổi và trách nhiệm phê duyệt trong dự án. |
-
-### 3.12 Supporting Materials — `docs/other/`
-
-| File | Nội dung |
-|---|---|
-| [UniSupport_GitHub_Issue_Bodies_35.md](./other/UniSupport_GitHub_Issue_Bodies_35.md) | Nội dung tham chiếu cho các GitHub Issues của dự án. |
 
 Ngoài tài liệu tham chiếu trong `docs/`, repository còn có GitHub templates tại:
 
