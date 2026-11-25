@@ -4,7 +4,7 @@
 
 Tài liệu này mô tả các kịch bản kiểm thử dùng để xác minh từng Acceptance Criteria (AC) trong `functional-requirements.md` và các Non-Functional Requirements (NFR) trong `non-functional-requirements.md` của hệ thống UniSupport.
 
-Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu giả lập và tuân theo các quy trình nghiệp vụ đã được xác định trong Workflows và tài liệu domain. Bộ hiện tại gồm các Functional Test Scenarios có ID từ `TS-001` đến `TS-063`, cùng các scenario bổ sung `TS-083` đến `TS-090`; và 19 Non-Functional Test Scenarios (`TS-064` đến `TS-082`). Các AC/NFR được tham chiếu trực tiếp để hỗ trợ kiểm thử và Traceability.
+Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu giả lập và tuân theo các quy trình nghiệp vụ đã được xác định trong Workflows và tài liệu domain. Bộ hiện tại gồm các Functional Test Scenarios có ID từ `TS-001` đến `TS-063`, cùng các scenario bổ sung `TS-083` đến `TS-109`; và 19 Non-Functional Test Scenarios (`TS-064` đến `TS-082`). Các AC/NFR được tham chiếu trực tiếp để hỗ trợ kiểm thử và Traceability.
 
 ## 2. Test Conditions
 
@@ -20,7 +20,7 @@ Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu 
 
 ## 3. Functional Test Scenarios
 
-Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, bổ sung luồng Request Reopening (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` là kịch bản kiểm tra workflow, không được xem là Test Scenario ánh xạ trực tiếp cho `FR-STA-03/AC-09`.
+Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, bổ sung luồng Request Reopening (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`), các scenario kiểm tra gap AC (`TS-091`–`TS-109`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` là kịch bản kiểm tra workflow, không được xem là Test Scenario ánh xạ trực tiếp cho `FR-STA-03/AC-09`.
 
 | Mã | Kiểm AC / NFR | Tiền điều kiện | Các bước | Kết quả mong đợi | Regression |
 |---|---|---|---|---|---|
@@ -90,11 +90,29 @@ Các kịch bản dưới đây bao phủ các AC đang có trong `functional-re
 | `TS-060` | `FR-SEC-02/AC-02` | Có Request và quyền thay đổi Priority/Assignment. | Thay đổi Priority và Assignment; kiểm tra Audit Log. | Các thay đổi Priority và Assignment được ghi nhận trong Audit Log. | Có |
 | `TS-061` | `FR-SEC-02/AC-03` | Có tài khoản thực hiện thao tác và Request thử nghiệm. | Thực hiện thao tác quan trọng; kiểm tra actor, action, timestamp và thông tin đối tượng/thay đổi. | Bản ghi Audit Log có người thực hiện, thao tác, thời điểm và thông tin liên quan đến Request. | Có |
 | `TS-062` | `FR-SEC-02/AC-04` | Có Audit Log và tài khoản không được cấp quyền truy cập. | Đăng nhập tài khoản không có quyền; thử mở Audit Log qua giao diện và đường dẫn trực tiếp nếu có. | Người dùng không đủ quyền không thể truy cập thông tin Audit Log. | Có |
-| `TS-087` | `FR-SEC-03/AC-01` | Người dùng có tài khoản hợp lệ. | Nhập thông tin đăng nhập hợp lệ và submit. | Hệ thống xác thực và cho phép đăng nhập thành công. | Có |
+| `TS-063` | `FR-STA-03` (WF-06 positive flow) | Request đang ở `In Progress`; Staff được phân công và có quyền xử lý; không còn thông tin cần Student bổ sung. | Staff hoàn tất xử lý; nhập Resolution; chuyển Request sang `Resolved`; kiểm tra lại kết quả; thực hiện Close Request; mở lại Request Detail và Request History. | Hệ thống chuyển Request từ `In Progress` sang `Resolved`, sau đó sang `Closed`; Resolution và Closed Date được lưu; Status và các thay đổi liên quan xuất hiện trong Request History. | Có || `TS-087` | `FR-SEC-03/AC-01` | Người dùng có tài khoản hợp lệ. | Nhập thông tin đăng nhập hợp lệ và submit. | Hệ thống xác thực và cho phép đăng nhập thành công. | Có |
 | `TS-088` | `FR-SEC-03/AC-02` | Người dùng đang ở màn hình Login. | Nhập thông tin đăng nhập không hợp lệ và submit. | Hệ thống từ chối đăng nhập và thông báo lỗi. | Có |
 | `TS-089` | `FR-SEC-03/AC-03` | Người dùng đang ở màn hình Login. | Để trống một hoặc nhiều trường bắt buộc và submit. | Hệ thống yêu cầu nhập đủ thông tin; không xác thực người dùng. | Có |
 | `TS-090` | `FR-SEC-03/AC-04` | Người dùng đăng nhập thành công với Role đã gán. | Truy cập chức năng tương ứng Role và thử chức năng ngoài Role. | Người dùng được phép truy cập chức năng phù hợp Role và bị từ chối ngoài quyền. | Có |
-| `TS-063` | `FR-STA-03` (WF-06 positive flow) | Request đang ở `In Progress`; Staff được phân công và có quyền xử lý; không còn thông tin cần Student bổ sung. | Staff hoàn tất xử lý; nhập Resolution; chuyển Request sang `Resolved`; kiểm tra lại kết quả; thực hiện Close Request; mở lại Request Detail và Request History. | Hệ thống chuyển Request từ `In Progress` sang `Resolved`, sau đó sang `Closed`; Resolution và Closed Date được lưu; Status và các thay đổi liên quan xuất hiện trong Request History. | Có |
+| `TS-091` | `FR-STU-01/AC-07` | Student đã mở biểu mẫu Submit Request. | Chọn hoặc gửi Request Type không thuộc danh sách được hỗ trợ; thực hiện Submit. | Hệ thống từ chối tiếp nhận Request, thông báo Request Type không hợp lệ và yêu cầu chọn lại loại hợp lệ. | Có |
+| `TS-092` | `FR-STU-01/AC-08` | Student đã mở biểu mẫu Submit Request và điền các trường bắt buộc khác hợp lệ. | Nhập Description chỉ gồm khoảng trắng; nhấn Submit. | Hệ thống không tạo Request và yêu cầu Student nhập Description hợp lệ. | Có |
+| `TS-093` | `FR-STU-02/AC-07` | Student đã đăng nhập và có Request; có thể mô phỏng lỗi tải Request. | Mở Request Detail khi xảy ra lỗi tải; chọn Retry. | Hệ thống thông báo lỗi tải thông tin và cho phép Student thử lại thao tác tải. | Có |
+| `TS-094` | `FR-STU-03/AC-11` | Request thuộc Student và đang ở Status không cho phép cung cấp Additional Information. | Mở Request; thử nhập và gửi Additional Information. | Hệ thống từ chối thao tác, không lưu thông tin bổ sung và thông báo Status hiện tại phù hợp. | Có |
+| `TS-095` | `FR-STU-03/AC-12` | Request đang cho phép bổ sung thông tin; có form Additional Information. | Để trống nội dung bắt buộc khi gửi Additional Information. | Hệ thống không lưu thông tin bổ sung và yêu cầu Student cung cấp nội dung cần thiết. | Có |
+| `TS-096` | `FR-STA-01/AC-07` | Staff đang phân loại và Assign Request; dữ liệu chưa xác định Department phù hợp. | Thực hiện xác nhận Assignment khi chưa chọn/xác định Department. | Hệ thống không xác nhận Assignment và yêu cầu Staff hoàn thiện thông tin Department. | Có |
+| `TS-097` | `FR-STA-01/AC-08` | Staff đang thực hiện Assignment; có Assignee ngoài phạm vi hợp lệ. | Chọn Assignee không hợp lệ và xác nhận Assignment. | Hệ thống từ chối Assignment và thông báo lỗi; Request không được Assign cho Assignee không hợp lệ. | Có |
+| `TS-098` | `FR-STA-02/AC-07` | Staff mở Request Queue; có thể mô phỏng lỗi tải Queue. | Mở Queue khi xảy ra lỗi tải; chọn Retry. | Hệ thống thông báo lỗi tải Queue và cho phép Staff thử lại. | Có |
+| `TS-099` | `FR-STA-02/AC-08` | Có Request vừa được cập nhật; Staff có Queue đang hiển thị. | Cập nhật Request; kiểm tra Queue và thực hiện refresh nếu cần. | Queue phản ánh cập nhật mới nhất đã được hệ thống ghi nhận tại thời điểm hiển thị hoặc refresh. | Có |
+| `TS-100` | `FR-STA-03/AC-12` | Staff đang đăng nhập; Request nằm ngoài phạm vi quyền xử lý của Staff. | Thử thực hiện thao tác xử lý Request ngoài quyền. | Hệ thống từ chối thao tác; Request không bị thay đổi bởi thao tác trái quyền. | Có |
+| `TS-101` | `FR-STA-03/AC-13` | Request đang ở Status xác định; có chuyển trạng thái không hợp lệ theo `request-status.md`. | Thử thực hiện Status update không được phép theo Status Flow. | Hệ thống từ chối Status update và giữ nguyên Status hiện tại. | Có |
+| `TS-102` | `FR-STA-03/AC-14` | Staff đang Transfer Request; chưa xác định Department tiếp nhận. | Thực hiện Transfer khi Department tiếp nhận chưa được xác định. | Hệ thống không hoàn tất Transfer và thông báo Staff cần xác định Department tiếp nhận. | Có |
+| `TS-103` | `FR-MGT-01/AC-07` | Dashboard Management; dữ liệu giả lập không có Request trong phạm vi tổng hợp. | Mở Dashboard với bộ dữ liệu trống. | Dashboard hiển thị chỉ số bằng 0 hoặc trạng thái dữ liệu trống phù hợp; không hiển thị số liệu giả tạo. | Có |
+| `TS-104` | `FR-MGT-01/AC-08` | Management đã mở Dashboard; có thể mô phỏng lỗi tải dữ liệu. | Mở Dashboard khi xảy ra lỗi tải dữ liệu. | Dashboard thông báo lỗi; không trình bày dữ liệu tải lỗi như thể dữ liệu đã tải đầy đủ và thành công. | Có |
+| `TS-105` | `FR-MGT-01/AC-09` | Có tài khoản không được cấp quyền Dashboard Management. | Đăng nhập tài khoản đó; thử truy cập Dashboard qua giao diện và đường dẫn trực tiếp nếu có. | Hệ thống từ chối truy cập Dashboard Management đối với người dùng không có quyền. | Có |
+| `TS-106` | `FR-MGT-02/AC-07` | Management mở Reporting; có thể mô phỏng lỗi tải báo cáo. | Mở báo cáo khi xảy ra lỗi tải dữ liệu. | Hệ thống thông báo lỗi và không trình bày dữ liệu tải lỗi như báo cáo hoàn chỉnh. | Có |
+| `TS-107` | `FR-MGT-02/AC-08` | Có tài khoản không được cấp quyền Reporting. | Đăng nhập tài khoản đó; thử truy cập Reporting qua giao diện và đường dẫn trực tiếp nếu có. | Hệ thống từ chối truy cập Reporting đối với người dùng không có quyền phù hợp. | Có |
+| `TS-108` | `FR-SEC-02/AC-05` | Có thao tác quan trọng và môi trường test cho phép mô phỏng lỗi ghi Audit Log. | Thực hiện thao tác quan trọng trong khi mô phỏng Audit Log write failure; kiểm tra kết quả thao tác và phản hồi hệ thống. | Hệ thống xử lý sự cố theo cơ chế phù hợp và thông báo/ghi nhận lỗi; không âm thầm bỏ qua lỗi Audit Log. Kết quả thao tác phản ánh đúng cơ chế xử lý đã được xác định cho prototype. | Có |
+| `TS-109` | `FR-SEC-02/AC-06` | Có thao tác cập nhật dữ liệu và môi trường test cho phép mô phỏng gián đoạn trong lúc ghi lịch sử. | Làm gián đoạn thao tác trong lúc ghi lịch sử; kiểm tra dữ liệu chính và Audit Log sau sự cố. | Hệ thống không tạo Audit Log sai lệch so với thay đổi dữ liệu thực tế; trạng thái dữ liệu và log không thể hiện mâu thuẫn. | Có |
 
 ## 4. Non-Functional Test Scenarios
 
@@ -147,8 +165,8 @@ Khi thực hiện kiểm thử, nhóm cần ghi nhận tối thiểu các thông
 
 ## 6. Coverage Notes and Open Decisions
 
-- Các Test Scenario `TS-001` đến `TS-006` được giữ lại từ bản hiện tại; các kịch bản tiếp theo được đánh số nối tiếp.
-- Bộ Functional Test Scenarios gồm `TS-001` đến `TS-063`. `TS-001` đến `TS-062` ánh xạ đến các AC chi tiết hiện có trong `functional-requirements.md`; `TS-063` là kịch bản bổ sung kiểm tra luồng thành công Resolve and Close theo WF-06, không ánh xạ trực tiếp đến một AC riêng. `FR-STA-03/AC-08` không xuất hiện trong tài liệu nguồn nên không được tự tạo.
+- Các Test Scenario hiện có được giữ lại; các scenario bổ sung cho AC gap được đánh số `TS-091` đến `TS-109`.
+- Bộ Functional Test Scenarios bao gồm các kịch bản hiện có `TS-001` đến `TS-063`, `TS-083` đến `TS-090` và `TS-091` đến `TS-109`. `TS-063` là kịch bản kiểm tra workflow Resolve and Close theo WF-06, không ánh xạ trực tiếp đến một AC riêng. `FR-STA-03/AC-08` không xuất hiện trong tài liệu nguồn nên không được tự tạo.
 - Bộ Non-Functional Test Scenarios gồm `TS-064` đến `TS-082`, bao phủ 19 NFR hiện có.
 - Các ngưỡng `Proposed baseline` của NFR-PERF-01, NFR-PERF-02, NFR-USE-01, NFR-USE-02 và NFR-COMP-01 cần được xác nhận trước khi dùng làm điều kiện nghiệm thu chính thức.
 - NFR-SEC-06 phụ thuộc chính sách lưu trữ và xử lý dữ liệu do Aurora University/Sponsor phê duyệt. Nếu chưa có chính sách, ghi nhận `Blocked` hoặc `Needs Confirmation`, không tự đặt thời hạn lưu trữ.
