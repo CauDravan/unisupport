@@ -198,13 +198,17 @@ Tổng effort bao gồm cả phần dự phòng không được vượt quá gi�
 
 #### 6.2 Estimated Project Cost
 
-Theo Quotation hiện tại, tổng chi phí nhân công dự kiến là:
+Theo Quotation hiện tại, chi phí nhân công dự kiến ​​cho phạm vi dự án đã lên kế hoạch là:
 
 **65,425,000 VND**
 
-Chi phí này được xây dựng dựa trên phân bổ nguồn lực và effort của các vai trò trong dự án.
+Mức dự toán này dựa trên khối lượng công việc dự kiến ​​là 304 giờ công, cùng với đơn giá theo giờ cho từng vai trò (PM, BA, FE và BE) được xác định dựa trên các tiêu chuẩn thị trường về tổng lương. Đây là mức dự toán chi phí nhân công phục vụ công tác lập kế hoạch, không phải là giá thuê ngoài (outsourcing) từ nhà cung cấp hay báo giá thương mại cuối cùng.
 
-Các khoản chi phí công cụ hoặc dịch vụ trả phí, nếu phát sinh, cần được giải thích, phân bổ và phê duyệt trước khi đưa vào ngân sách chính thức.
+Dự toán này không bao gồm chi phí quản lý chung, thuế, lợi nhuận, chi phí cho các công cụ hoặc dịch vụ trả phí, cũng như các chi phí khác nằm ngoài phạm vi nhân công, trừ khi các khoản này được xác định, xem xét và phê duyệt riêng biệt.
+
+Khoản dự phòng rủi ro là 16 giờ công được tách biệt khỏi dự toán chi phí cơ sở. Nếu cần sử dụng đến phần dự phòng này, các nhiệm vụ bị ảnh hưởng, việc phân bổ vai trò, tác động đến chi phí và sự phê duyệt phải được ghi lại thông qua quy trình kiểm soát thay đổi.
+
+Các giả định về chi phí và các hạng mục báo giá liên quan được ghi lại trong tệp `docs/08-project/assumptions.md` (tại mục A-01) và trong tệp `quotation.xlsx`.
 
 ### 7. Project Risks
 
