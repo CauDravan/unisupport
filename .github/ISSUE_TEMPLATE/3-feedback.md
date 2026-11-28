@@ -1,25 +1,26 @@
-# Product Feedback
+---
+name: Product Feedback
+about: Record user or stakeholder feedback and improvement suggestions
+title: "[FEEDBACK] "
+---
 
 ## Feedback Description
-<!-- Describe your feedback, opinion, or proposed improvement. -->
+<!-- Describe the feedback, opinion, or proposed improvement. -->
 
 ## Feedback Source
-<!-- Identify who provided the feedback (e.g., Student, Staff, Management, Project Sponsor / Simulated Client, Project Team). -->
+<!-- Student, Staff, Management, Project Sponsor / Simulated Client, Project Team, etc. -->
 
 ## Date Received
-<!-- Record the date when the feedback was received. -->
 
-## Related Module / Workflow
-<!-- Identify the affected module, feature, or workflow if applicable. -->
+## Related Module / Workflow / FR / WBS
 
 ## Current Behavior
-<!-- Describe the current system behavior or user experience. -->
+<!-- Describe current behavior or user experience. -->
 
 ## Suggested Improvement
-<!-- Describe a possible improvement, if any. This is optional and does not mean the change is approved. -->
+<!-- Optional. A suggestion is not an approved change. -->
 
 ## User Impact
-<!-- Explain how this feedback may affect user experience, usability, or project value. -->
 
 ## Evidence
 <!-- Attach screenshots, examples, or supporting evidence if available. -->

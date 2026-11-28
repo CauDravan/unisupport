@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Record a defect in the UniSupport prototype or project deliverable
+about: Report a defect in the UniSupport prototype or project deliverable
 title: "[BUG] "
 labels: bug
 ---
