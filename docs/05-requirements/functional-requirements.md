@@ -121,6 +121,7 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 
 - EF-01: Nếu Request không tồn tại hoặc không thuộc tài khoản của Student, hệ thống không hiển thị dữ liệu Request.
 - EF-02: Nếu không có lịch sử cập nhật, hệ thống hiển thị thông tin phù hợp thay vì một trang trống không có giải thích.
+- AC-08: Khi Request chưa có lịch sử cập nhật, hệ thống hiển thị thông báo trạng thái lịch sử trống rõ ràng.
 - EF-03: Nếu không thể tải thông tin Request, hệ thống thông báo lỗi và cho phép Student thử lại.
 
 **Acceptance Criteria**
@@ -150,6 +151,8 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 ---
 
 ### FR-STU-03 – Additional Information and Feedback
+
+**Baseline note:** AC-07–AC-10 and WF-08 Request Reopening are proposed and pending scope confirmation. They are not committed baseline acceptance criteria.
 
 **Description**
 
@@ -659,6 +662,7 @@ Việc Management trực tiếp xem danh sách người dùng và thay đổi Ro
 - EF-02: Nếu người dùng cố truy cập chức năng ngoài quyền hạn, hệ thống từ chối thao tác.
 - EF-03: Nếu người dùng truy cập chức năng bằng đường dẫn trực tiếp nhưng không có quyền phù hợp, hệ thống từ chối truy cập.
 - EF-04: Nếu Role của người dùng thay đổi trong quá trình sử dụng hệ thống, hệ thống áp dụng quyền mới cho các thao tác tiếp theo.
+- AC-07: Khi Role thay đổi trong phiên đang hoạt động, các thao tác tiếp theo được kiểm tra theo Role mới; thao tác không còn quyền bị từ chối.
 
 **Acceptance Criteria**
 

@@ -19,7 +19,7 @@ Dự án UniSupport được lập kế hoạch với các thông tin chính sau
 | Project Sponsor | Director of Student Services |
 | Project Duration | 15 weeks (proposed planning baseline) |
 | Planned Start Date | 16/11/2026 (Tentative; subject to team confirmation) |
-| Planned End Date | 19/02/2027 (Proposed target; subject to schedule alignment) |
+| Planned End Date | 26/02/2027 (Proposed target; aligned to MS-04) |
 | Maximum Planned Effort | 320 person-hours (304 planned effort + 16-hour contingency reserve) |
 | Project Team | 4 members |
 

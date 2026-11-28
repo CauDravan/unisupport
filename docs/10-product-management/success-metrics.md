@@ -67,7 +67,7 @@ Trong suốt dự án, BA duy trì định nghĩa các chỉ số và bằng ch�
 
 ## 7. Baseline and Open Decisions
 
-- **VM-03:** Cần baseline về số lần Student liên hệ hỏi tiến độ và cách ghi nhận thống nhất trước/sau. Đề bài không cung cấp dữ liệu vận hành thực tế; prototype chỉ có thể minh họa phép tính bằng dữ liệu giả lập.
+- **VM-03:** Cần baseline về số lần Student liên hệ hỏi tiến độ và cách ghi nhận thống nhất trước/sau. Client giả định chưa cung cấp dữ liệu vận hành thực tế; prototype chỉ có thể minh họa phép tính bằng dữ liệu giả lập.
 - **VM-04:** Cần thời gian xử lý mục tiêu hoặc quy tắc xác định quá hạn được cấu hình. Giá trị cụ thể chưa được nguồn dự án xác nhận; không tự đặt SLA.
 - **VM-01 và VM-02:** Cần thống nhất bộ Request dùng làm mẫu số, bao gồm cách xử lý Request bị hủy hoặc dữ liệu chưa hoàn chỉnh nếu các trường hợp này xuất hiện trong prototype.
 - **VM-07:** Chưa có mục tiêu định lượng về mức độ hài lòng được Client xác nhận; chỉ đánh giá khả năng thu thập và xem Feedback.

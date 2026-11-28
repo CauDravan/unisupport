@@ -24,7 +24,7 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-STU-03 / AC-01–AC-02 | TS-013–TS-014 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-03–AC-06 | TS-015–TS-018 | 5.2, 5.4 | MS-03 | Q-01 |
 | FR-STU-03 / AC-11–AC-12 | TS-094–TS-095 | 5.2, 5.4 | MS-03 | Q-01 |
-| FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 (scope confirmation required) |
+| FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 (Proposed / not in baseline; scope confirmation required) |
 | FR-STA-01 / AC-01–AC-06 | TS-019–TS-024 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-01 / AC-07–AC-08 | TS-096–TS-097 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-02 / AC-01–AC-06 | TS-025–TS-030 | 4.1, 4.3 | MS-02 | Q-02 |
@@ -151,3 +151,6 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 - `docs/08-project/master-plan.xlsx`
 - `docs/08-project/quotation.xlsx`
 - `docs/08-project/wbs.md`
+
+| FR-STU-02 / AC-08 | TS-110 | 3.3, 3.4 | MS-01 | Q-01 |
+| FR-SEC-01 / AC-07 | TS-111 | 3.2, 6.2 | MS-01, MS-04 | Q-04, Q-06 |

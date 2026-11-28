@@ -180,3 +180,13 @@ Quy trình giải quyết bất đồng nội bộ của nhóm được quy đ�
 - [Product Roadmap](../10-product-management/roadmap.md)
 - [Quality Plan](../09-quality/quality-plan.md)
 - [Traceability Matrix](../06-acceptance/traceability-matrix.md)
+
+
+## V4-06 — Escalation triggers and data-source limitations
+
+- PM escalation to the team: task is at least 1 working day overdue or a dependency threatens the milestone date.
+- Escalation to the simulated Sponsor: forecast milestone slip of 2 or more calendar days, scope change, or contingency usage reaching 8 of 16 hours (50%) while a milestone remains at risk.
+- Critical defect: notify PM and relevant owner immediately; do not wait for weekly reporting.
+- GitHub dashboard metrics are only considered reliable if the repository has matching labels and due-date fields. Until verified, report issue counts manually and state the source/limitation.
+
+These are proposed team operating thresholds, not client-confirmed commitments.

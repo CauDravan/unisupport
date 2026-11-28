@@ -39,17 +39,17 @@ Mức độ Rủi ro Tổng thể được xác định bằng cách kết hợp
 
 | ID | Risk Description | Probability | Impact | Risk Level | Risk Owner | Status |
 |---|---|---|---|---|---|
-| R01 | Scope Creep – Các bên liên quan yêu cầu bổ sung hoặc thay đổi chức năng sau khi phạm vi ban đầu đã được thống nhất. | High | High | High | PM  Open |
-| R02 | Resource Overload – Thành viên gặp quá tải hoặc không thể hoàn thành công việc theo kế hoạch. | Medium | High | High | PM  Open |
-| R03 | Conflicting Stakeholder Requirements – Các bên liên quan đưa ra những yêu cầu khác nhau hoặc mâu thuẫn. | Medium | Medium | Medium | BA  Open |
-| R04 | Design and Testing Delays – Hoạt động thiết kế hoặc kiểm thử bị chậm, làm giảm thời gian dành cho việc hoàn thiện prototype. | Medium | High | High | PM  Open |
-| R05 | Data Security and Unauthorized Access – Dữ liệu bị sử dụng không phù hợp hoặc người dùng có thể truy cập thông tin ngoài quyền hạn. | Medium | High | High | BE  Open |
-| R06 | Prototype Quality Issues – Prototype không đáp ứng đầy đủ các yêu cầu chức năng hoặc acceptance criteria đã thống nhất. | Medium | High | High | BA  Open |
-| R07 | Incomplete Documentation and Handover – Tài liệu hoặc hướng dẫn bàn giao không đầy đủ, khiến nhóm tiếp nhận khó hiểu và tiếp tục phát triển hệ thống. | Medium | Medium | Medium | PM  Open |
+| R-01 | Scope Creep – Các bên liên quan yêu cầu bổ sung hoặc thay đổi chức năng sau khi phạm vi ban đầu đã được thống nhất. | High | High | High | PM | Open |
+| R-02 | Resource Overload – Thành viên gặp quá tải hoặc không thể hoàn thành công việc theo kế hoạch. | Medium | High | High | PM | Open |
+| R-03 | Conflicting Stakeholder Requirements – Các bên liên quan đưa ra những yêu cầu khác nhau hoặc mâu thuẫn. | Medium | Medium | Medium | BA | Open |
+| R-04 | Design and Testing Delays – Hoạt động thiết kế hoặc kiểm thử bị chậm, làm giảm thời gian dành cho việc hoàn thiện prototype. | Medium | High | High | PM | Open |
+| R-05 | Data Security and Unauthorized Access – Dữ liệu bị sử dụng không phù hợp hoặc người dùng có thể truy cập thông tin ngoài quyền hạn. | Medium | High | High | BE | Open |
+| R-06 | Prototype Quality Issues – Prototype không đáp ứng đầy đủ các yêu cầu chức năng hoặc acceptance criteria đã thống nhất. | Medium | High | High | BA | Open |
+| R-07 | Incomplete Documentation and Handover – Tài liệu hoặc hướng dẫn bàn giao không đầy đủ, khiến nhóm tiếp nhận khó hiểu và tiếp tục phát triển hệ thống. | Medium | Medium | Medium | PM | Open |
 
 ### 3.1 Risk ID Convention
 
-Mỗi rủi ro được gán một mã định danh duy nhất theo định dạng `R01`, `R02`, `R03`... Mã rủi ro được sử dụng thống nhất trong Risk Register để theo dõi, trao đổi, cập nhật và quản lý các rủi ro xuyên suốt dự án. Mã đã được gán không thay đổi nhằm đảm bảo khả năng truy vết.
+Mỗi rủi ro được gán một mã định danh duy nhất theo định dạng `R-01`, `R-02`, `R-03`... Mã rủi ro được sử dụng thống nhất trong Risk Register để theo dõi, trao đổi, cập nhật và quản lý các rủi ro xuyên suốt dự án. Mã đã được gán không thay đổi nhằm đảm bảo khả năng truy vết.
 
 ### 3.2 Risk Status
 
@@ -65,13 +65,13 @@ Project Manager phối hợp với Risk Owner cập nhật trạng thái khi có
 
 | ID | Mitigation / Preventive Actions | Contingency / Response |
 |---|---|---|
-| R01 | Ghi nhận và đánh giá các yêu cầu thay đổi trước khi thực hiện. Xác nhận project scope và kiểm soát các thay đổi có thể làm tăng effort. | Ưu tiên các chức năng cốt lõi, điều chỉnh hoặc hoãn những yêu cầu không cần thiết để bảo đảm giới hạn 320 person-hours.  Open |
-| R02 | Phân công công việc rõ ràng theo vai trò, theo dõi planned effort và actual effort thường xuyên. | Điều chỉnh phân công, hỗ trợ thành viên gặp khó khăn và ưu tiên các công việc ảnh hưởng trực tiếp đến milestone.  Open |
-| R03 | Tổ chức review định kỳ và xác nhận các yêu cầu quan trọng với stakeholders trước khi triển khai. | Đưa ra các phương án thay thế và thống nhất quyết định cuối cùng trước khi tiếp tục thực hiện.  Open |
-| R04 | Theo dõi tiến độ thiết kế và kiểm thử theo Project Schedule, phân bổ thời gian dự phòng và ưu tiên các chức năng chính để hạn chế ảnh hưởng đến các milestone. | Điều chỉnh thứ tự ưu tiên công việc, giảm phạm vi các chức năng phụ và tập trung hoàn thành những luồng nghiệp vụ quan trọng để bảo đảm các milestone chính.  Open |
-| R05 | Sử dụng dữ liệu mô phỏng, áp dụng authentication và role-based access control trong prototype. | Kiểm tra và khắc phục quyền truy cập không phù hợp, điều chỉnh cơ chế phân quyền và dữ liệu liên quan.  Open |
-| R06 | Xây dựng Acceptance Criteria rõ ràng và thực hiện kiểm thử các chức năng chính trong quá trình phát triển để phát hiện lỗi sớm. | Ghi nhận các defect, ưu tiên sửa lỗi ảnh hưởng đến các luồng nghiệp vụ cốt lõi và kiểm tra lại trước khi trình diễn prototype.  Open |
-| R07 | Chuẩn hóa cấu trúc tài liệu, cập nhật nội dung theo quá trình thực hiện và chuẩn bị hướng dẫn sử dụng, thiết lập hệ thống. | Bổ sung tài liệu còn thiếu và thực hiện handover review trước khi kết thúc dự án.  Open |
+| R-01 | Ghi nhận và đánh giá các yêu cầu thay đổi trước khi thực hiện. Xác nhận project scope và kiểm soát các thay đổi có thể làm tăng effort. | Ưu tiên các chức năng cốt lõi, điều chỉnh hoặc hoãn những yêu cầu không cần thiết để bảo đảm giới hạn 320 person-hours. | Open |
+| R-02 | Phân công công việc rõ ràng theo vai trò, theo dõi planned effort và actual effort thường xuyên. | Điều chỉnh phân công, hỗ trợ thành viên gặp khó khăn và ưu tiên các công việc ảnh hưởng trực tiếp đến milestone. | Open |
+| R-03 | Tổ chức review định kỳ và xác nhận các yêu cầu quan trọng với stakeholders trước khi triển khai. | Đưa ra các phương án thay thế và thống nhất quyết định cuối cùng trước khi tiếp tục thực hiện. | Open |
+| R-04 | Theo dõi tiến độ thiết kế và kiểm thử theo Project Schedule, phân bổ thời gian dự phòng và ưu tiên các chức năng chính để hạn chế ảnh hưởng đến các milestone. | Điều chỉnh thứ tự ưu tiên công việc, giảm phạm vi các chức năng phụ và tập trung hoàn thành những luồng nghiệp vụ quan trọng để bảo đảm các milestone chính. | Open |
+| R-05 | Sử dụng dữ liệu mô phỏng, áp dụng authentication và role-based access control trong prototype. | Kiểm tra và khắc phục quyền truy cập không phù hợp, điều chỉnh cơ chế phân quyền và dữ liệu liên quan. | Open |
+| R-06 | Xây dựng Acceptance Criteria rõ ràng và thực hiện kiểm thử các chức năng chính trong quá trình phát triển để phát hiện lỗi sớm. | Ghi nhận các defect, ưu tiên sửa lỗi ảnh hưởng đến các luồng nghiệp vụ cốt lõi và kiểm tra lại trước khi trình diễn prototype. | Open |
+| R-07 | Chuẩn hóa cấu trúc tài liệu, cập nhật nội dung theo quá trình thực hiện và chuẩn bị hướng dẫn sử dụng, thiết lập hệ thống. | Bổ sung tài liệu còn thiếu và thực hiện handover review trước khi kết thúc dự án. | Open |
 
 ## 5. Risk Monitoring
 

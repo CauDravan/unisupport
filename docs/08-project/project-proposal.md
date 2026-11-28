@@ -63,7 +63,7 @@ Giải pháp cần giúp sinh viên dễ dàng gửi và theo dõi yêu cầu, h
 
 #### 3.1 Project Goal
 
-Lập kế hoạch và thiết kế giải pháp UniSupport giúp Aurora University quản lý tập trung quá trình tiếp nhận, phân công, xử lý và theo dõi yêu cầu hỗ trợ sinh viên.
+Lập kế hoạch, thiết kế và xây dựng prototype UniSupport có thể chạy và dùng thử theo các milestone giúp Aurora University quản lý tập trung quá trình tiếp nhận, phân công, xử lý và theo dõi yêu cầu hỗ trợ sinh viên.
 
 #### 3.2 Project Objectives
 
@@ -122,7 +122,7 @@ Module này cũng xem xét việc ghi nhận lịch sử truy cập và thay đ�
 
 Lưu ý: Phạm vi Role Administration, tức chức năng cho phép quản lý tự tạo hoặc thay đổi Role, chưa được xác nhận là chức năng bàn giao chính thức. Vì vậy, chức năng này không được xem là cam kết In Scope ở thời điểm hiện tại.
 
-#### 4.2 Out of Scope & Future Considerations
+#### 4.3 Out of Scope & Future Considerations
 
 Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype và các tài liệu cần thiết để kiểm chứng giải pháp. Một số nội dung có thể được xem xét trong future roadmap khi có đủ nguồn lực và sự phê duyệt phù hợp:
 
@@ -136,7 +136,7 @@ Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype và c�
 
 Các nội dung trên không phải trọng tâm của phạm vi hiện tại và không được làm ảnh hưởng đến tính khả thi của các chức năng chính.
 
-#### 4.2 Deliverables & Acceptance Criteria
+#### 4.4 Deliverables & Acceptance Criteria
 
 Dự án dự kiến bàn giao prototype có thể chạy và dùng thử theo từng Product Increment Milestone, kèm tài liệu liên quan. Client (Mô phỏng) review các phần bàn giao bằng tài khoản mô phỏng và dữ liệu giả lập, dựa trên Acceptance Criteria đã liên kết với Functional Requirements (FR), Security Requirements và Non-functional Requirements trong tài liệu yêu cầu và Master Plan.
 

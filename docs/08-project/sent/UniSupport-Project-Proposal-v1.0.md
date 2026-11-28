@@ -122,7 +122,7 @@ Module này cũng xem xét việc ghi nhận lịch sử truy cập và thay đ�
 
 Lưu ý: Phạm vi Role Administration, tức chức năng cho phép quản lý tự tạo hoặc thay đổi Role, chưa được xác nhận là chức năng bàn giao chính thức. Vì vậy, chức năng này không được xem là cam kết In Scope ở thời điểm hiện tại.
 
-#### 4.2 Deliverables & Acceptance Criteria
+#### 4.3 Deliverables & Acceptance Criteria
 
 Dự án dự kiến bàn giao prototype có thể chạy và dùng thử theo từng Product Increment Milestone, kèm tài liệu liên quan. Client (Mô phỏng) review các phần bàn giao bằng tài khoản mô phỏng và dữ liệu giả lập, dựa trên Acceptance Criteria đã liên kết với Functional Requirements (FR), Security Requirements và Non-functional Requirements trong tài liệu yêu cầu và Master Plan Excel.
 
@@ -135,7 +135,7 @@ Dự án dự kiến bàn giao prototype có thể chạy và dùng thử theo t
 
 Acceptance Criteria chi tiết, mã FR/AC, kịch bản kiểm tra và các điều kiện regression được duy trì tại nguồn yêu cầu và sheet Milestones trong `master-plan.xlsx`. Proposal chỉ tóm tắt điều kiện nghiệm thu ở cấp milestone để tránh tạo một bộ Acceptance Criteria thứ hai. Việc nghiệm thu được ghi nhận trong review/feedback records (Mô phỏng).
 
-#### 4.3 Out of Scope & Future Considerations
+#### 4.4 Out of Scope & Future Considerations
 
 Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype có thể chạy và dùng thử trên dữ liệu giả lập, cùng các tài liệu cần thiết để kiểm chứng giải pháp. Một số nội dung có thể được xem xét trong future roadmap khi có đủ nguồn lực và sự phê duyệt phù hợp:
 
@@ -166,7 +166,7 @@ Dự án được lập kế hoạch trong 15 tuần. Việc phát triển và b
 
 Mỗi Milestone đại diện cho một mốc bàn giao Product Increment theo Product Roadmap và Master Plan.
 
-Các buổi đánh giá học phần như Intermediate Project Review hoặc Final Presentation không được sử dụng thay thế cho Product Increment Milestones.
+Các buổi review milestone với simulated client như Intermediate Project Review hoặc Final Client review / project demonstration không được sử dụng thay thế cho Product Increment Milestones.
 
 #### 5.3 Project Resources
 

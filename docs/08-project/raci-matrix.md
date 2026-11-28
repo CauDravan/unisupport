@@ -43,7 +43,7 @@ Project Proposal. Đây là cơ cấu mô phỏng phục vụ lập kế hoạch
 | Test Planning & Acceptance Validation | C | A/R | R | R |
 | System Integration & Defect Resolution | I | C | R | A/R |
 | Project Monitoring, Risk & Change Assessment | A/R | C | I | I |
-| Final Documentation, Presentation & Handover | A | R | C | R |
+| Final Documentation, Client review / project demonstration & Handover | A | R | C | R |
 
 ## 4. Role Responsibilities
 

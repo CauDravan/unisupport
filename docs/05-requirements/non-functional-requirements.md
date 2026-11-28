@@ -54,10 +54,10 @@ Các phép đo hiệu năng và usability phải được thực hiện trên c�
 
 | Nội dung cần xác nhận | Lý do | Người cần xác nhận |
 | --- | --- | --- |
-| Các ngưỡng Proposed baseline về thời gian phản hồi, số phiên đồng thời và quy mô dữ liệu | Đề bài không quy định các con số này; chúng đang được dùng làm ngưỡng kiểm thử prototype đề xuất. | Project Sponsor và Project Management Team |
+| Các ngưỡng Proposed baseline về thời gian phản hồi, số phiên đồng thời và quy mô dữ liệu | Client giả định chưa xác nhận các con số này; chúng đang được dùng làm ngưỡng kiểm thử prototype đề xuất. | Project Sponsor và Project Management Team |
 | Số lượng người tham gia usability test | Tài liệu nguồn không quy định cỡ mẫu usability test. | Project Management Team và đại diện người dùng |
-| Viewport kiểm thử desktop/mobile | Đề bài yêu cầu hỗ trợ hai loại thiết bị nhưng không chỉ định kích thước màn hình. | Project Management Team |
-| Chính sách lưu trữ và xử lý dữ liệu nhạy cảm | Đề bài yêu cầu phải xem xét retention và sensitive data nhưng không nêu thời hạn hoặc chính sách cụ thể. | Aurora University / Project Sponsor |
+| Viewport kiểm thử desktop/mobile | Project brief định hướng hỗ trợ hai loại thiết bị nhưng không chỉ định kích thước màn hình. | Project Management Team |
+| Chính sách lưu trữ và xử lý dữ liệu nhạy cảm | Project brief định hướng phải xem xét retention và sensitive data nhưng không nêu thời hạn hoặc chính sách cụ thể. | Aurora University / Project Sponsor |
 | SLA hoặc thời gian xử lý mục tiêu dùng để xác định Request quá hạn | Module M03 nhắc đến thời gian xử lý được cấu hình nhưng nguồn chưa quy định giá trị cụ thể. | Aurora University / Project Sponsor |
 
 ## 7. Scope Limitations

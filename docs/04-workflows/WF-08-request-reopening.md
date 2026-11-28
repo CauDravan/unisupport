@@ -1,6 +1,6 @@
 # WF-08 — Request Reopening (Proposed)
 
-> **Status: Proposed — requires Sponsor/Client and team confirmation.** This workflow is a draft for documenting the newly proposed reopening function, not an approved process.
+> **Status: Proposed — excluded from current baseline pending Sponsor/Client and team confirmation.** This workflow is a draft for documenting the newly proposed reopening function, not an approved process.
 
 ## 1. Purpose
 
