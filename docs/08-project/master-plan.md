@@ -4,7 +4,7 @@
 
 Master Plan xác định kế hoạch tổng thể cho dự án UniSupport, bao gồm phạm vi công việc, lịch trình, nguồn lực, các mốc bàn giao và việc quản lý thay đổi.
 
-Tài liệu này cung cấp cái nhìn tổng quan về cách nhóm tổ chức và kiểm soát dự án theo proposed planning baseline hiện tại, với thời gian dự kiến 15 tuần.
+Tài liệu này cung cấp cái nhìn tổng quan về cách nhóm tổ chức và kiểm soát dự án theo proposed planning baseline hiện tại, với thời gian dự kiến 23 tuần.
 
 File `master-plan.xlsx` là tài liệu quản lý kế hoạch chi tiết và là nguồn dữ liệu chính thức (Single Source of Truth) cho lịch trình, Work Breakdown Structure (WBS), Milestones, Resources và Change Log.
 
@@ -17,13 +17,15 @@ Dự án UniSupport được lập kế hoạch với các thông tin chính sau
 | Project Name | UniSupport – Student Support Management System |
 | Project Client | Aurora University (Simulated Client) |
 | Project Sponsor | Director of Student Services |
-| Project Duration | 15 weeks (proposed planning baseline) |
+| Project Duration | 23 weeks (revised proposed planning baseline) |
 | Planned Start Date | 16/11/2026 (Tentative; subject to team confirmation) |
-| Planned End Date | 26/02/2027 (Proposed target; aligned to MS-04) |
+| Planned End Date | 23/04/2027 (Revised proposed target; aligned to MS-04) |
 | Maximum Planned Effort | 320 person-hours (304 planned effort + 16-hour contingency reserve) |
 | Project Team | 4 members |
 
 Ngày bắt đầu hiện là giả định tạm thời và cần được nhóm xác nhận trước khi chốt Project Baseline.
+
+Schedule correction v1.2 kéo dài kế hoạch đến 23 tuần để phản ánh dependency sequence. Effort không tăng; việc kéo dài lịch không đồng nghĩa với tăng effort hoặc mở rộng scope. Các ngày mới vẫn cần xác nhận nội bộ và simulated client.
 
 ## 3. Master Plan Structure
 
@@ -45,8 +47,8 @@ Dự án được chia thành 4 Milestones chính:
 |---|---|---|
 | MS-01 | Student Request Submission & Tracking | 15/01/2027 |
 | MS-02 | Staff Request Classification & Processing | 29/01/2027 |
-| MS-03 | Request Transfer, Resolution & Feedback | 12/02/2027 |
-| MS-04 | Management Dashboard, Security & Handover | 26/02/2027 |
+| MS-03 | Request Transfer, Resolution & Feedback | 19/03/2027 |
+| MS-04 | Management Dashboard, Security & Handover | 23/04/2027 |
 
 Mỗi Milestone đại diện cho một nhóm chức năng có thể được kiểm tra và đánh giá bởi client.
 
@@ -73,15 +75,3 @@ Quy trình quản lý thay đổi được thực hiện như sau:
 5. Ghi lại nội dung và trạng thái thay đổi trong sheet Change Log.
 6. Đồng bộ những nội dung liên quan trên GitHub và các tài liệu dự án.
 
-Các phiên bản kế hoạch trước đó cần được lưu lại để nhóm có thể theo dõi lịch sử thay đổi và đối chiếu khi cần thiết.
-
-## 6. Related Documents
-
-Các tài liệu liên quan đến Master Plan:
-
-- [Master Plan Excel](master-plan.xlsx)
-- [Work Breakdown Structure](wbs.md)
-- [Risk Register](risk-register.md)
-- [RACI Matrix](raci-matrix.md)
-- [Team Charter](team-charter.md)
-- [Project Proposal](project_proposal.md)

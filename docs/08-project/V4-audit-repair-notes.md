@@ -40,3 +40,30 @@ Các file có thay đổi nằm ở Product Scope, WF-08, Functional/Non-Functio
 - Traceability Matrix: tách mapping reopening sang Proposed Feature Traceability.
 - Open Questions: thêm OQ-12; không dùng Q-01 (Quotation code) làm mã Open Question.
 - Chưa chỉnh Master Plan, Quotation hoặc GitHub native issues trong repair này; các phần đó cần kiểm tra ở audit tiếp theo.
+
+
+## V4-02 — Master Plan Dependencies (2026-11-28)
+
+- WBS schedule re-sequenced for 5.2, 5.4, 5.6–5.8, 6.1–6.9 and 8.1–8.4.
+- Planning horizon extended from 15 to 23 weeks; MS-03 week 18 (19/03/2027), MS-04 week 23 (23/04/2027).
+- Gantt expanded to W22; WBS includes Dependency Check formula column.
+- Change log v1.2 recorded; effort values and scope were not increased.
+- Remaining validation: open in Excel/LibreOffice to confirm formulas/conditional formatting render; team must confirm revised dates.
+
+
+## V4-02 — Master Plan Dependencies (2026-11-28)
+
+- WBS schedule re-sequenced for 5.2, 5.4, 5.6–5.8, 6.1–6.9 and 8.1–8.4.
+- Planning horizon extended from 15 to 20 weeks; MS-03 week 17 (12/03/2027), MS-04 week 20 (02/04/2027).
+- Gantt expanded to W20; WBS includes Dependency Check formula column.
+- Change log v1.2 recorded; effort values and scope were not increased.
+- Remaining validation: open in Excel/LibreOffice to confirm formulas/conditional formatting render; team must confirm revised dates.
+
+
+## V4-02 — Master Plan Dependencies (2026-11-28)
+
+- WBS schedule re-sequenced for 5.2, 5.4, 5.6–5.8, 6.1–6.9 and 8.1–8.4.
+- Planning horizon extended from 15 to 20 weeks; MS-03 week 18 (19/03/2027), MS-04 week 20 (02/04/2027).
+- Gantt expanded to W20; WBS includes Dependency Check formula column.
+- Change log v1.2 recorded; effort values and scope were not increased.
+- Remaining validation: open in Excel/LibreOffice to confirm formulas/conditional formatting render; team must confirm revised dates.
