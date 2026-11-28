@@ -27,6 +27,8 @@ Ngày bắt đầu hiện là giả định tạm thời và cần được nhó
 
 Schedule correction v1.2 kéo dài kế hoạch đến 23 tuần để phản ánh dependency sequence. Effort không tăng; việc kéo dài lịch không đồng nghĩa với tăng effort hoặc mở rộng scope. Các ngày mới vẫn cần xác nhận nội bộ và simulated client.
 
+
+
 ## 3. Master Plan Structure
 
 File `master-plan.xlsx` bao gồm 5 sheets, mỗi sheet đảm nhiệm một phần quản lý dự án:

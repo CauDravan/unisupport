@@ -67,3 +67,16 @@ Các file có thay đổi nằm ở Product Scope, WF-08, Functional/Non-Functio
 - Gantt expanded to W20; WBS includes Dependency Check formula column.
 - Change log v1.2 recorded; effort values and scope were not increased.
 - Remaining validation: open in Excel/LibreOffice to confirm formulas/conditional formatting render; team must confirm revised dates.
+
+
+## V4-03 — Project Proposal Sync (2026-11-28)
+
+- Proposal master Markdown được đồng bộ Project Duration thành 23 tuần theo proposed planning baseline hiện tại.
+- MS-01/MS-02 giữ ngày 15/01/2027 và 29/01/2027; MS-03/MS-04 được đồng bộ thành 19/03/2027 và 23/04/2027 theo Master Plan (Week 18/23).
+- Ghi rõ Project Start Date 16/11/2026 là planning assumption cần nhóm xác nhận; nếu thay đổi phải review lịch milestone.
+- Sửa numbering trong Project Scope của Proposal để không bị thiếu/trùng subsection (Out of Scope và Deliverables/Acceptance Criteria).
+- Markdown là master source; DOCX và PDF được tạo lại từ master để tránh drift.
+- Thêm record v1.1 review draft; không ghi nhận là đã gửi hoặc được Sponsor phê duyệt. Bản v1.0 trong `sent/` giữ nguyên như lịch sử tham khảo.
+- Effort/cost không thay đổi trong lượt sửa này.
+
+**Status:** Proposal schedule/content synchronization performed. Team confirmation of the proposed 23-week schedule and start-date assumption remains pending; external sending/approval is not claimed.

@@ -6,7 +6,7 @@
 **Project Name:** UniSupport – Student Support Management System Project  
 **Project Client:** Aurora University (Simulated Client)  
 **Project Sponsor:** Director of Student Services (Simulated Project Sponsor)  
-**Project Duration:** 15 Weeks (proposed planning baseline).
+**Project Duration:** 23 Weeks (proposed planning baseline; pending team confirmation).
 **Maximum Project Effort:** 320 Person-Hours
 
 UniSupport là dự án lập kế hoạch và thiết kế một giải pháp quản lý tập trung các yêu cầu hỗ trợ sinh viên tại Aurora University.
@@ -122,7 +122,7 @@ Module này cũng xem xét việc ghi nhận lịch sử truy cập và thay đ�
 
 Lưu ý: Phạm vi Role Administration, tức chức năng cho phép quản lý tự tạo hoặc thay đổi Role, chưa được xác nhận là chức năng bàn giao chính thức. Vì vậy, chức năng này không được xem là cam kết In Scope ở thời điểm hiện tại.
 
-#### 4.3 Out of Scope & Future Considerations
+#### 4.2 Out of Scope & Future Considerations
 
 Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype và các tài liệu cần thiết để kiểm chứng giải pháp. Một số nội dung có thể được xem xét trong future roadmap khi có đủ nguồn lực và sự phê duyệt phù hợp:
 
@@ -136,7 +136,7 @@ Trong giai đoạn hiện tại, dự án ưu tiên xây dựng prototype và c�
 
 Các nội dung trên không phải trọng tâm của phạm vi hiện tại và không được làm ảnh hưởng đến tính khả thi của các chức năng chính.
 
-#### 4.4 Deliverables & Acceptance Criteria
+#### 4.3 Deliverables & Acceptance Criteria
 
 Dự án dự kiến bàn giao prototype có thể chạy và dùng thử theo từng Product Increment Milestone, kèm tài liệu liên quan. Client (Mô phỏng) review các phần bàn giao bằng tài khoản mô phỏng và dữ liệu giả lập, dựa trên Acceptance Criteria đã liên kết với Functional Requirements (FR), Security Requirements và Non-functional Requirements trong tài liệu yêu cầu và Master Plan.
 
@@ -149,11 +149,11 @@ Dự án dự kiến bàn giao prototype có thể chạy và dùng thử theo t
 
 Acceptance Criteria chi tiết, mã FR/AC, kịch bản kiểm tra và các điều kiện regression được duy trì tại nguồn yêu cầu và sheet Milestones trong `master-plan.xlsx`. Proposal chỉ tóm tắt điều kiện nghiệm thu ở cấp milestone để tránh tạo một bộ Acceptance Criteria thứ hai. Việc nghiệm thu được ghi nhận trong review/feedback records (Mô phỏng).
 
-### 5. Project Plan & Timeline (proposed planning baseline).
+### 5. Project Plan & Timeline (Proposed Planning Baseline)
 
 #### 5.1 Project Duration
 
-Dự án được lập kế hoạch trong 15 tuần. Việc phát triển và bàn giao được tổ chức theo bốn Product Increment Milestones nhằm cung cấp từng phần sản phẩm có thể xem xét và dùng thử.
+Dự án được lập kế hoạch trong 23 tuần theo proposed planning baseline hiện tại. Lịch này được đồng bộ với Master Plan (WBS/Gantt/Milestones) và vẫn cần nhóm xác nhận Project Start Date cùng lịch tổng thể. Việc phát triển và bàn giao được tổ chức theo bốn Product Increment Milestones nhằm cung cấp từng phần sản phẩm có thể xem xét và dùng thử.
 
 #### 5.2 Product Increment Milestones
 
@@ -161,8 +161,10 @@ Dự án được lập kế hoạch trong 15 tuần. Việc phát triển và b
 |---|---|
 | MS-01 | 15 January 2027 |
 | MS-02 | 29 January 2027 |
-| MS-03 | 12 February 2027 |
-| MS-04 | 26 February 2027 |
+| MS-03 | 19 March 2027 |
+| MS-04 | 23 April 2027 |
+
+Các ngày chốt trên được lấy từ Master Plan hiện tại (Week 9, 11, 18 và 23, tương ứng). Project Start Date 16/11/2026 là planning assumption chưa được nhóm xác nhận; nếu mốc này thay đổi, lịch milestone cần được rà soát và cập nhật đồng bộ.
 
 Mỗi Milestone đại diện cho một mốc bàn giao Product Increment theo Product Roadmap và Master Plan. Các Product Increment Milestones được sử dụng để theo dõi tiến độ, review deliverables và đánh giá mức độ hoàn thành các mục tiêu dự án.
 
@@ -229,7 +231,7 @@ Các rủi ro sẽ được theo dõi chi tiết trong Risk Register, bao gồm 
 
 #### 8.1 Project Constraints
 
-- Thời gian thực hiện dự án là 15 tuần.
+- Thời gian thực hiện dự án dự kiến là 23 tuần theo proposed planning baseline hiện tại; lịch cần được nhóm xác nhận.
 - Tổng effort tối đa là 320 person-hours.
 - Mọi hoạt động cần có effort estimate.
 - Nhóm cần theo dõi planned effort và actual effort.
