@@ -5,7 +5,7 @@
 
 ## 1. Các chỉnh sửa đã thực hiện (cần nhóm xác nhận)
 
-- **V4-01 – Scope và Traceability:** Tạm xác định Login (FR-SEC-03) thuộc baseline và MS-01; Request Reopening (WF-08, AC-07–AC-10, TS-083–TS-086) vẫn là nội dung đề xuất, chưa đưa vào baseline cho đến khi câu hỏi Q-01 được xác nhận.
+- **V4-01 – Scope và Traceability:** Đã cập nhật Product Scope, Functional Requirements, WF-08, Test Scenarios và Traceability Matrix: Login (FR-SEC-03) được giữ trong baseline, MS-01; Request Reopening (WF-08, BR-06–BR-09, AC-07–AC-10, TS-083–TS-086) được tách và đánh dấu Proposed, excluded from baseline. Câu hỏi scope được theo dõi bằng OQ-12. Cần review chéo Quotation/WBS/GitHub để xác nhận không tính reopening vào effort cam kết.
 - **V4-02 – WBS và tiến độ:** Đã đề xuất điều chỉnh một số tuần thực hiện task để giảm chồng lấn và cập nhật mục tiêu MS-04 sang 26/02/2027. Lịch vẫn cần kiểm tra thủ công, tính lại công thức Excel và đối chiếu quan hệ phụ thuộc.
 - **V4-03 – Project Proposal:** Đã điều chỉnh một số nội dung trong Markdown và bản tham chiếu ở thư mục `sent/` để mô tả nhất quán hơn kết quả dự kiến (prototype có thể chạy, dùng thử cùng các tài liệu planning/design). Word được cập nhật ở những nội dung khớp. PDF chưa được xuất lại; thư mục `sent/` chưa phải bằng chứng đã gửi hoặc được phê duyệt.
 - **V4-04 – Issue Templates:** Đã khôi phục các template và Pull Request template từ commit trong repository. Chỉ kiểm tra tĩnh tại repository; chưa kiểm tra giao diện tạo Issue trên GitHub.
@@ -18,7 +18,7 @@
 
 ## 2. Các việc còn cần thực hiện
 
-1. Xác nhận Q-01 về Request Reopening với nhóm/Sponsor mô phỏng; nếu thay đổi phạm vi, cập nhật đồng bộ Proposal, Quotation, WBS/effort và mapping Issue.
+1. Xác nhận OQ-12 về Request Reopening với nhóm/Sponsor mô phỏng; nếu thay đổi phạm vi, cập nhật đồng bộ Proposal, Quotation, WBS/effort và mapping Issue.
 2. Rà soát GitHub Issues #1–#35, đặc biệt #8, #22, #28, #29, #30; chia task nếu task đang trải qua nhiều milestone, đặt milestone đúng và điền Assignee/Due date vào trường tương ứng.
 3. Kiểm tra cả bốn Issue templates trên giao diện New Issue của GitHub; xác minh labels và cấu hình template.
 4. Nhóm phân loại Critical/Core cho từng Test Scenario theo milestone, sau đó xác nhận các release gate trong Quality Plan.
@@ -30,3 +30,13 @@
 ## 3. Phạm vi file đã chỉnh
 
 Các file có thay đổi nằm ở Product Scope, WF-08, Functional/Non-Functional Requirements, Acceptance Criteria/Test Scenarios/Traceability, Master Plan (MD/XLSX), Proposal (MD/DOCX và bản tham chiếu), Risk Register, RACI, Success Metrics và Governance. Các file/Issue trên GitHub và PDF Proposal chưa được cập nhật trực tiếp.
+
+## 4. V4-01 Repair Record
+
+- Product Scope: giữ FR-SEC-03 trong baseline; Request Reopening được nêu rõ là Proposed, ngoài baseline.
+- Functional Requirements: BR-06–BR-09 và AC-07–AC-10 được tách khỏi yêu cầu baseline FR-STU-03 sang phần Proposed Feature.
+- WF-08: giữ workflow draft; related references được cập nhật để chỉ rõ Proposed Rules.
+- Test Scenarios: TS-083–TS-086 vẫn được giữ, nhưng không thuộc release gate hoặc baseline acceptance.
+- Traceability Matrix: tách mapping reopening sang Proposed Feature Traceability.
+- Open Questions: thêm OQ-12; không dùng Q-01 (Quotation code) làm mã Open Question.
+- Chưa chỉnh Master Plan, Quotation hoặc GitHub native issues trong repair này; các phần đó cần kiểm tra ở audit tiếp theo.

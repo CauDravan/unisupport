@@ -10,7 +10,9 @@ Product Scope được xác định dựa trên Project Goal, các nhu cầu ngh
 
 ## 2. In Scope
 
-User Authentication (FR-SEC-03) thuộc baseline và được lập kế hoạch tại WBS 3.2 / MS-01. Request Reopening chưa thuộc baseline hiện tại cho đến khi phạm vi được xác nhận; các AC và kịch bản liên quan được giữ lại dưới dạng đề xuất, chưa dùng làm điều kiện nghiệm thu milestone.
+User Authentication (FR-SEC-03) thuộc baseline hiện tại và được lập kế hoạch tại WBS 3.2 / MS-01.
+
+Request Reopening (WF-08) là chức năng đề xuất, chưa thuộc baseline hiện tại. Các tài liệu Workflow và Test Scenarios liên quan được giữ lại để tham khảo và đánh giá trong tương lai. Chức năng này chỉ được đưa vào phạm vi triển khai khi có quyết định thông qua Change Management.
 
 Các chức năng dưới đây thuộc phạm vi sản phẩm UniSupport trong giai đoạn hiện tại.
 

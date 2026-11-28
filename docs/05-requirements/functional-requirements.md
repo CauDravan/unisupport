@@ -152,8 +152,6 @@ Sinh viên có thể theo dõi trạng thái hiện tại, lịch sử cập nh�
 
 ### FR-STU-03 – Additional Information and Feedback
 
-**Baseline note:** AC-07–AC-10 and WF-08 Request Reopening are proposed and pending scope confirmation. They are not committed baseline acceptance criteria.
-
 **Description**
 
 Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và gửi Feedback sau khi Request đã được xử lý và đóng (Closed), theo quy trình WF-07.
@@ -190,10 +188,6 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - BR-03: Feedback chỉ được gửi sau khi Request đã được xử lý và đóng (Closed), theo quy trình WF-07.
 - BR-04: Nội dung bổ sung và Feedback phải được lưu lại để phục vụ việc theo dõi.
 - BR-05: Sau khi Student cung cấp đầy đủ thông tin được yêu cầu, Request có thể chuyển từ trạng thái "Chờ bổ sung thông tin" trở lại "Đang xử lý" theo quy trình.
-- BR-06: Student có thể yêu cầu xem xét lại (Request Reopening) một Request đã đóng (Closed) nếu không hài lòng với kết quả xử lý.
-- BR-07: Student chỉ được yêu cầu mở lại Request thuộc tài khoản của mình.
-- BR-08: Yêu cầu mở lại Request phải được Staff có trách nhiệm xem xét trước khi Request được tiếp tục xử lý.
-- BR-09: Quyết định xem xét lại Request phải được ghi nhận để phục vụ việc theo dõi và kiểm tra lịch sử xử lý.
 
 **Alternative and Error Flows**
 
@@ -211,10 +205,6 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - FR-STU-03/AC-04: Hệ thống không cho phép gửi Feedback khi Request chưa ở trạng thái Closed theo điều kiện của WF-07.
 - FR-STU-03/AC-05: Hệ thống ghi nhận nội dung và thời điểm gửi Feedback.
 - FR-STU-03/AC-06: Hệ thống từ chối thao tác trên Request không thuộc tài khoản của Student.
-- FR-STU-03/AC-07: Student có thể gửi yêu cầu xem xét lại (Request Reopening) đối với Request đã ở trạng thái Closed khi không hài lòng với kết quả xử lý.
-- FR-STU-03/AC-08: Hệ thống ghi nhận yêu cầu xem xét lại và liên kết với Request tương ứng để Staff có thể kiểm tra.
-- FR-STU-03/AC-09: Staff có thể xem xét yêu cầu Reopening và ghi nhận quyết định chấp nhận hoặc từ chối.
-- FR-STU-03/AC-10: Khi yêu cầu Reopening được chấp nhận, Request được tiếp tục xử lý theo quy trình đã thống nhất và thông tin về quyết định được lưu lại.
 - FR-STU-03/AC-11: Hệ thống không tiếp nhận thao tác cung cấp Additional Information khi Request không ở trạng thái cho phép bổ sung thông tin và thông báo trạng thái hiện tại phù hợp.
 - FR-STU-03/AC-12: Hệ thống không lưu Additional Information khi nội dung bắt buộc bị thiếu và yêu cầu Student cung cấp nội dung cần thiết.
 
@@ -230,6 +220,36 @@ Sinh viên có thể cung cấp thông tin bổ sung khi Staff yêu cầu và g�
 - Module: [M01 – Student Portal](../03-modules/M01-student-portal/prd.md)
 - Workflow: [WF-04 – Request Additional Information](../04-workflows/WF-04-request-additional-information.md)
 - Workflow: [WF-07 – Feedback](../04-workflows/WF-07-feedback.md)
+
+---
+
+### Proposed Feature — Request Reopening
+
+**Status:** Proposed — Excluded from Current Baseline
+
+Request Reopening là chức năng đề xuất cho phép Student yêu cầu xem xét lại kết quả xử lý của Request đã Closed. Chức năng này chưa thuộc phạm vi triển khai hoặc nghiệm thu của baseline hiện tại.
+
+Các Business Rules và Acceptance Criteria dưới đây được lưu giữ để phục vụ việc đánh giá và xem xét scope change trong tương lai.
+
+**Proposed Business Rules**
+
+- BR-06: Student có thể yêu cầu xem xét lại (Request Reopening) một Request đã đóng (Closed) nếu không hài lòng với kết quả xử lý.
+- BR-07: Student chỉ được yêu cầu mở lại Request thuộc tài khoản của mình.
+- BR-08: Yêu cầu mở lại Request phải được Staff có trách nhiệm xem xét trước khi Request được tiếp tục xử lý.
+- BR-09: Quyết định xem xét lại Request phải được ghi nhận để phục vụ việc theo dõi và kiểm tra lịch sử xử lý.
+
+**Proposed Acceptance Criteria**
+
+- FR-STU-03/AC-07: Student có thể gửi yêu cầu xem xét lại (Request Reopening) đối với Request đã ở trạng thái Closed khi không hài lòng với kết quả xử lý.
+- FR-STU-03/AC-08: Hệ thống ghi nhận yêu cầu xem xét lại và liên kết với Request tương ứng để Staff có thể kiểm tra.
+- FR-STU-03/AC-09: Staff có thể xem xét yêu cầu Reopening và ghi nhận quyết định chấp nhận hoặc từ chối.
+- FR-STU-03/AC-10: Khi yêu cầu Reopening được chấp nhận, Request được tiếp tục xử lý theo quy trình đã thống nhất và thông tin về quyết định được lưu lại.
+
+**Related Workflow:** WF-08 — Request Reopening (Proposed)
+
+**Related Test Scenarios:** TS-083–TS-086 (Proposed / Not included in current release gate)
+
+Việc triển khai chức năng này cần được đánh giá về Scope, Effort, Schedule và Cost trước khi được đưa vào baseline thông qua Change Management.
 
 ---
 

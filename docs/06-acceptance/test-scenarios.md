@@ -22,9 +22,9 @@ Các kịch bản tập trung vào phạm vi prototype, sử dụng dữ liệu 
 
 Cột Critical/Core để trống để nhóm thống nhất phân loại theo từng milestone. Không tự gán mức độ quan trọng khi chưa có quyết định của nhóm.
 
-**Lưu ý về phạm vi:** TS-083–TS-086 (Request Reopening) là các kịch bản đề xuất và chưa được đưa vào release gate của milestone hiện tại cho đến khi Q-01 được xác nhận.
+**Scope note:** TS-083–TS-086 (Request Reopening) là kịch bản đề xuất, không thuộc release gate, baseline acceptance, hoặc effort cam kết hiện tại. Scope change cần được xem xét qua Change Management; câu hỏi xác nhận được theo dõi tại OQ-12.
 
-Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, bổ sung luồng Request Reopening (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`), các scenario kiểm tra gap AC (`TS-091`–`TS-109`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` kiểm tra luồng Resolve and Close thành công và ánh xạ trực tiếp tới `FR-STA-03/AC-15`; `TS-038` kiểm tra điều kiện chặn đóng Request (`AC-09`).
+Các kịch bản dưới đây bao phủ các AC đang có trong `functional-requirements.md`, lưu riêng luồng Request Reopening dạng đề xuất (`TS-083`–`TS-086`), User Authentication (`TS-087`–`TS-090`), các scenario kiểm tra gap AC (`TS-091`–`TS-109`) và luồng thành công Resolve and Close theo WF-06 (`TS-063`). Mã AC được giữ nguyên theo tài liệu nguồn; riêng `FR-STA-03` không có `AC-08`, vì vậy tài liệu này không tự bổ sung mã còn thiếu. `TS-063` kiểm tra luồng Resolve and Close thành công và ánh xạ trực tiếp tới `FR-STA-03/AC-15`; `TS-038` kiểm tra điều kiện chặn đóng Request (`AC-09`).
 
 | Mã | Critical/Core | Kiểm AC / NFR | Tiền điều kiện | Các bước | Kết quả mong đợi | Regression |
 |---|---|---|---|---|---|---|

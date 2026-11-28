@@ -52,7 +52,7 @@ Student không hài lòng với kết quả xử lý của Request đã Closed v
 ## 9. Related Requirements
 
 - FR-STU-03/AC-07–AC-10
-- BR-06–BR-09 trong FR-STU-03
+- Proposed Business Rules BR-06–BR-09 trong phần Proposed Feature của FR-STU-03
 - TS-083–TS-086
 
 **End of Proposed Workflow**

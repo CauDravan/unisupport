@@ -24,7 +24,6 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-STU-03 / AC-01–AC-02 | TS-013–TS-014 | 4.4 | MS-02 | Q-01 |
 | FR-STU-03 / AC-03–AC-06 | TS-015–TS-018 | 5.2, 5.4 | MS-03 | Q-01 |
 | FR-STU-03 / AC-11–AC-12 | TS-094–TS-095 | 5.2, 5.4 | MS-03 | Q-01 |
-| FR-STU-03 / AC-07–AC-10 | TS-083–TS-086 | 5.2, 5.4 | MS-03 | Q-01 (Proposed / not in baseline; scope confirmation required) |
 | FR-STA-01 / AC-01–AC-06 | TS-019–TS-024 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-01 / AC-07–AC-08 | TS-096–TS-097 | 4.1, 4.3 | MS-02 | Q-02 |
 | FR-STA-02 / AC-01–AC-06 | TS-025–TS-030 | 4.1, 4.3 | MS-02 | Q-02 |
@@ -46,13 +45,21 @@ Tài liệu giúp nhóm kiểm tra:
 | FR-SEC-02 / AC-05–AC-06 | TS-108–TS-109 | 6.2 | MS-04 | Q-04 |
 | FR-SEC-03 / AC-01–AC-04 | TS-087–TS-090 | 3.2 | MS-01 | Q-04 |
 
+### 2.2 Proposed Feature Traceability
+
+| Proposed Feature | Acceptance Criteria | Test Scenario | Workflow | Baseline Status |
+|---|---|---|---|---|
+| Request Reopening | FR-STU-03/AC-07–AC-10 (Proposed) | TS-083–TS-086 (Proposed) | WF-08 | Excluded from Current Baseline |
+
+**Note:** Mapping above is maintained for future scope evaluation and is not used for current milestone acceptance, committed effort or release gate evaluation.
+
 **Notes:**
 
 - FR-STA-03 hiện không có AC-08 trong tài liệu Functional Requirements. Vì vậy, bảng không tự tạo AC-08 hoặc Test Scenario tương ứng.
 - FR-SEC-01 / AC-05 và AC-06 kiểm tra việc hệ thống xác định Role của User và áp dụng quyền truy cập tương ứng. Hai Acceptance Criteria này thuộc phạm vi Authentication & Access Control trong WBS 3.2, MS-01. Chức năng Management trực tiếp xem danh sách User và cập nhật Role (Role Administration) không thuộc phạm vi nghiệm thu chính thức của giai đoạn hiện tại.
 - FR-STU-02 được chia thành hai phần vì các Acceptance Criteria về thông báo và yêu cầu bổ sung thông tin được thực hiện ở MS-02, trong khi các chức năng theo dõi Request thuộc MS-01.
 
-### 2.2 Generic Acceptance Criteria Traceability
+### 2.3 Generic Acceptance Criteria Traceability
 
 Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-criteria.md` với Functional Requirements, Acceptance Criteria chi tiết trong `functional-requirements.md` và Test Scenarios. Mã `AC-01` đến `AC-14` ở đây là mã tổng quát; không được nhầm với mã AC riêng bên trong từng FR.
 
@@ -82,7 +89,7 @@ Bảng này liên kết 14 Acceptance Criteria tổng quát trong `acceptance-cr
 - Với AC-14, điều kiện gửi Feedback phải tuân theo WF-07: Request ở trạng thái `Closed`. TS-016 kiểm tra trường hợp Request chưa Closed và không được xem là bằng chứng cho luồng gửi Feedback thành công.
 - Mapping này không thay thế các liên kết chi tiết theo FR trong mục 2.1.
 
-### 2.3 Non-Functional Requirements
+### 2.4 Non-Functional Requirements
 
 | Requirement | Test Scenario | Parent task (WBS) | Milestone | Quotation |
 |---|---|---|---|---|
